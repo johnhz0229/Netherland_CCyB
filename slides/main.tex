@@ -70,11 +70,6 @@
 \newcommand{\nv}[1]{\textcolor{navy}{\bfseries #1}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.18}
-% speaker notes: generated from docs/speech_script.md by code/make_notes.py
-\newcommand{\slidenote}[1]{\note{\input{notes/s#1}}}
-\ifdefined\withnotes\setbeameroption{show notes}\fi
-\setbeamerfont{note page}{size=\footnotesize}
-\setbeamertemplate{note page}{\vspace{0.3cm}\insertnote}
 
 \title{Refilling the Buffer in a Storm}
 \subtitle{The Netherlands' countercyclical capital buffer, 0\% → 2\% (2022–2024)}
@@ -87,7 +82,6 @@
 % =====================================================================================
 \begin{frame}[plain]
   \titlepage
-  \slidenote{0}
 \end{frame}
 
 % ===================================================================================== 1
@@ -121,7 +115,6 @@
   \vspace{4pt}
   \textbf{Verdict:} \hl{normalisation, not tightening.} \quad \textbf{Trade-off:} relies on discretion and credibility; release never tested.
   \source{DNB (2020, 2022, 2023, 2026); DNB Financial Stability Reports 2022–23; BIS credit-to-GDP gaps; ECB; bank disclosures; own calculations.}
-  \slidenote{1}
 \end{frame}
 
 % ===================================================================================== 2
@@ -153,7 +146,6 @@
     \end{alertblock}
   \end{columns}
   \source{ESRB, CCyB rates table (release announcements, Mar–Apr 2020); DNB press release “DNB lowers bank buffer requirements to support lending”, 17 Mar 2020.}
-  \slidenote{2}
 \end{frame}
 
 % ===================================================================================== 3
@@ -189,7 +181,6 @@
     \end{itemize}
   \end{columns}
   \source{CRD (Arts.\ 130–136); BCBS (2024) d585; Couaillier, Lo Duca, Reghezza \& Rodriguez d'Acri (2022), ECB WP 2644. Stack not to scale.}
-  \slidenote{3}
 \end{frame}
 
 % ===================================================================================== 4
@@ -228,7 +219,6 @@
   \end{tikzpicture}
   \end{center}
   \source{CBS (HICP 2022); ECB monetary policy decision, 21 Jul 2022; BIS credit-to-GDP gaps (latest data at each decision: 2021Q4, 2022Q4).}
-  \slidenote{4}
 \end{frame}
 
 % ===================================================================================== 5
@@ -251,7 +241,6 @@
     \fill[grey] (6.91,0) circle (2.6pt); \draw[grey] (6.91,0)--(6.91,-1.25) node[below,align=center,text width=2.05cm,font=\scriptsize]{\textbf{30 Nov 2026}\\risk-weight floor expires};
   \end{tikzpicture}
   \source{DNB press releases (17 Mar 2020; 27 May 2022; 31 May 2023; 17 Sep 2026; 24 Apr 2026); ESRB O-SII notifications (27 Nov 2020; 31 May 2023); ECB (21 Jul 2022; 14 Sep 2023).}
-  \slidenote{5}
 \end{frame}
 
 % ===================================================================================== 6
@@ -270,7 +259,6 @@
   \end{block}
   \small By end-2021 the Dutch economy was almost 3\% larger than at end-2019 — the recovery DNB's framework requires before building the buffer.
   \source{CBS (GDP, Nov 2021; inflation 2022); ECB monetary policy decision 21 Jul 2022; DNB Financial Stability Report, spring 2022.}
-  \slidenote{6}
 \end{frame}
 
 % ===================================================================================== 7
@@ -287,7 +275,6 @@
     \textbf{Credit:} household debt high (107\% of GDP vs 58\% in the euro area) but \emph{falling}; debt service at its lowest since 2005.
   \end{columns}
   \source{BIS (WS\_SPP, WS\_TC, WS\_DSR); DNB Financial Stability Report, spring 2022; own calculations. Gold lines: CCyB announcements (May-22, May-23).}
-  \slidenote{7}
 \end{frame}
 
 % ===================================================================================== 8
@@ -313,7 +300,6 @@
   \vspace{4pt}
   \small DNB (FSR 2022): higher rates \emph{“may ultimately have a positive impact on the profitability of financial institutions.”}
   \source{DNB Financial Stability Reports, spring 2022 and spring 2023.}
-  \slidenote{8}
 \end{frame}
 
 % ===================================================================================== 9
@@ -326,7 +312,6 @@
   \textbf{Credit-to-GDP gap} = credit/GDP ratio minus its long-run trend (Hodrick-Prescott filter). \textbf{Rule:} gap $<$ 2pp → 0\%, gap $>$ 10pp → 2.5\%. Our one-sided filter ($\lambda=400{,}000$) reproduces the official BIS gap within 0.00005pp (1971–2026).\\
   {\scriptsize\color{grey}Alternative trend filters are noisy around COVID (two-sided HP +4.2pp in 2021Q4) — one more reason not to trigger on any of them.}
   \source{BIS credit-to-GDP gaps (Q.NL.P.A); Drehmann et al.\ (2010); Repullo \& Saurina (2011); Edge \& Meisenzahl (2011); own calculations.}
-  \slidenote{9}
 \end{frame}
 
 % ===================================================================================== 10
@@ -356,7 +341,6 @@
     \item Not alone: 17 jurisdictions run a \emph{positive neutral} CCyB (kept filled in normal times); NL, Sweden, UK, Poland target 2\%. ECB loss-based range: 1.1–1.8\%.
   \end{itemize}
   \source{DNB (2022), Analytical framework for setting the CCyB in the Netherlands; BCBS (2024) d585, Table 1; De Nora, Pereira, Pirovano \& Stammwitz (2025), ECB WP 3061.}
-  \slidenote{10}
 \end{frame}
 
 % ===================================================================================== 11
@@ -378,7 +362,6 @@
   \vspace{6pt}
   \small\centering Both decisions: \textbf{a normal-to-elevated risk picture + strong banks + the promise}. Credit growth is never the reason.
   \source{DNB Financial Stability Report, spring 2022; DNB press releases of 27 May 2022 and 31 May 2023.}
-  \slidenote{11}
 \end{frame}
 
 % ===================================================================================== 12
@@ -402,7 +385,6 @@
     DNB on the 2020 recomposition: more releasable capital is \emph{“a valuable addition given the sensitivity/volatility of the Dutch economy to external events.”} A releasable buffer is the only tool that works whatever the source of the shock.
   \end{exampleblock}
   \source{DNB Financial Stability Reports, spring 2022 and spring 2023; ESRB O-SII notification NL (31 May 2023); DNB (24 Apr 2026); Tinbergen (1952).}
-  \slidenote{12}
 \end{frame}
 
 % ===================================================================================== 13
@@ -427,7 +409,6 @@
       {Five predictions, five matches: \hl{normalisation}. The last row is the key to the whole story.};
   \end{tikzpicture}
   \source{BIS (WS\_CREDIT\_GAP, WS\_DSR, WS\_TC, WS\_SPP); DNB press releases 2022–2026 (house prices: DNB, 26 Mar 2026); DNB framework (2022); ESRB O-SII notifications.}
-  \slidenote{13}
 \end{frame}
 
 % ===================================================================================== 14
@@ -446,7 +427,6 @@
   \vspace{2pt}
   {\scriptsize\color{grey} Waterfall: approximate, own calculation. Buffer cuts valued at end-2022 total RWA of ING, Rabobank, ABN AMRO, de Volksbank (BNG excluded); CCyB amounts are DNB's sector-wide figures on Dutch exposures. Relative to 2021 the change was an increase.}
   \source{DNB press release 17 Mar 2020; Knot (2023), statement to the Standing Committee for Finance, 7 Jun 2023; DNB FSR spring 2023; BCBS (2024) d585; bank annual reports 2022.}
-  \slidenote{14}
 \end{frame}
 
 % ===================================================================================== 15
@@ -465,7 +445,6 @@
   \vspace{3pt}
   \centering\hl{Not the wrong moment — arguably the right one.}
   \source{Bank disclosures (ING, Rabobank, ABN AMRO, de Volksbank, 2021–22), de Volksbank requirement derived; DNB FSR 2023; ECB Macroprudential Bulletin 24 (2024) and 31 (2025, Box 2).}
-  \slidenote{15}
 \end{frame}
 
 % ===================================================================================== 16
@@ -487,7 +466,6 @@
     {\scriptsize\color{grey} One treated country, small control group, housing rebound: \textbf{no sign of contraction}, not a causal estimate.}
   \end{columns}
   \source{ECB Data Portal (MIR, BSI); ESRB CCyB table (control selection); BIS (WS\_TC); DNB press release 17 Sep 2026; own two-way fixed-effects event study.}
-  \slidenote{16}
 \end{frame}
 
 % ===================================================================================== 17
@@ -512,7 +490,6 @@
   \vspace{6pt}
   \small\centering One monetary policy for the euro area, but national macroprudential policy: the CCyB is the \textbf{Dutch-specific lever} — and the insurance against a rate shock gone wrong.
   \source{ECB Macroprudential Bulletin 31 (Detken, Hempell \& Pirovano, 2025); DNB Financial Stability Report, spring 2022.}
-  \slidenote{17}
 \end{frame}
 
 % ===================================================================================== 18
@@ -544,7 +521,6 @@
     \end{tabular}
   \end{columns}
   \source{DNB press release 31 May 2023; ESRB CCyB rates table (Sep 2026); ECB Macroprudential Bulletin 21 (Behn et al., 2023); Aiyar, Calomiris \& Wieladek (2014), JMCB.}
-  \slidenote{18}
 \end{frame}
 
 % ===================================================================================== 19
@@ -569,7 +545,6 @@
     \end{alertblock}
   \end{columns}
   \source{DNB framework (2022); Lang \& Menno (2023), ECB WP 2828; DNB press release 24 Apr 2026.}
-  \slidenote{19}
 \end{frame}
 
 % ===================================================================================== 20
@@ -586,7 +561,6 @@
     \bottomrule
   \end{tabularx}
   \source{Kydland \& Prescott (1977); De Nora et al.\ (2025); ECB Macroprudential Bulletin 21 (2023) and 31 (2025); DNB (2022, 2023).}
-  \slidenote{20}
 \end{frame}
 
 % ===================================================================================== 21
@@ -615,7 +589,6 @@
          {\normalsize\itshape The best time to fill a buffer is when nobody thinks you need it — even in a storm.}};
     \end{tikzpicture}
   \end{center}
-  \slidenote{21}
 \end{frame}
 
 % ===================================================================================== Glossary (backup)
@@ -686,7 +659,6 @@
     Repullo \& Saurina (2011). The countercyclical capital buffer of Basel III: a critical assessment. CEMFI WP 1102.\par
     Tinbergen (1952). \emph{On the Theory of Economic Policy}. North-Holland.\par
   \end{columns}
-  \slidenote{22}
 \end{frame}
 
 \end{document}

@@ -410,3 +410,20 @@ Short windows, 6 months after vs 6 months before each date (NL minus controls, p
   - BNG excluded
   - RWA date is end-2022, not 2020
 - Code: `slides/figs.py` (`fig_swap`).
+
+**2026-10-01: CCyB releases in spring 2020 (ESRB CCyB table, `data/esrb_ccyb_rates.xlsx`), used in the speaker script**
+
+Rate in force → new rate, by announcement date:
+- Denmark 1.0% → 0% (12 Mar; a pending 1.5%/2.0% was scrapped)
+- Norway 2.5% → 1.0% (13 Mar)
+- Sweden 2.5% → 0% (16 Mar)
+- Iceland 2.0% → 0% (18 Mar)
+- Czech Republic 1.75% → 1.0% (26 Mar)
+- Belgium: pending 0.5% cancelled (27 Mar)
+- Lithuania 1.0% → 0% (31 Mar)
+- Germany: pending 0.25% cancelled (31 Mar)
+- France 0.25% → 0% (1 Apr; a pending 0.5% was scrapped)
+- Ireland 1.0% → 0% (1 Apr)
+- Slovakia: pending 2.0% cancelled; 1.5% kept, then cut to 1.0% from Aug 2020
+
+The UK is not in the ESRB table and is therefore not quoted.
