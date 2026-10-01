@@ -67,3 +67,9 @@ Nothing in tier C failed verification. Remaining caution: the "Borio et al. (spe
 - CBS (2023). Inflation rate 10.0 percent in 2022 (HICP 11.6%). https://www.cbs.nl/en-gb/news/2023/02/inflation-rate-10-0-percent-in-2022
 - CBS via NL Times (2021-11-16). Dutch economy back to pre-Covid level in 3rd quarter. https://nltimes.nl/2021/11/16/dutch-economy-back-pre-covid-level-3rd-quarter
 - Bank disclosures: ING, Rabobank, ABN AMRO, de Volksbank (see `02_findings.md` §3 and `data/nl_bank_capital.csv`).
+
+## F. Added for storyline v4 (read directly)
+- Behn, M., Pereira, A., Pirovano, M. & Testa, A. (2023). A positive neutral rate for the countercyclical capital buffer: state of play in the banking union. *ECB Macroprudential Bulletin* 21. https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu202304_01~6eef01bb6a.en.html
+- Herrera, L., Scalone, V. & Pirovano, M. (2024). The importance of being positive: costs and benefits of a positive neutral rate for the countercyclical capital buffer. *ECB Macroprudential Bulletin* 24. https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu202406_01~0ed53a85fa.en.html
+- Detken, C., Hempell, H. S. & Pirovano, M. (2025). Macroprudential and monetary policy interaction: the role of early activation of the countercyclical capital buffer. *ECB Macroprudential Bulletin* 31. https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu20250818_01.en.html
+- ECB (2022-07-21). Monetary policy decisions. https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.mp220721~53e5bdd317.en.html

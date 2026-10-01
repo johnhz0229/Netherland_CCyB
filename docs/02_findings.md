@@ -376,3 +376,25 @@ Short windows, 6 months after vs 6 months before each date (NL minus controls, p
   - BCBS: 17 jurisdictions, and **Poland** also targets 2%; the UK offset its 2% neutral rate against P2A and resolution requirements
   - 17 Sep 2026: DNB itself says lending shows "no signs of constraints in bank credit supply"
 - No number in the storyline had to be withdrawn.
+
+**2026-10-01, storyline v4 sources (read directly)**
+- **DNB FSR spring 2022:**
+  - *"When the systemic risk buffers for ABN AMRO, Rabobank and ING were lowered in March 2020, we also announced our intention to restore the buffers by raising the CCyB. The risk profile is currently dominated by uncertainty caused by the war in Ukraine, but at the same time the robust economic recovery following the COVID-19 pandemic provides grounds for a gradual build-up of the CCyB."*
+  - *"In the event of a sharp rise in financial stability risks during the build-up period, we will reconsider the increase."*
+  - *"Finally, the overheated housing market calls for further measures. Tax breaks, loose borrowing rules and subsidies for first-time buyers ultimately lead to higher house prices and should therefore be phased out."* So DNB did call housing overheated, and assigned other tools to it.
+  - *"The higher interest rates may ultimately have a positive impact on the profitability of financial institutions."*
+  - Monetary policy: *"postponing normalisation of monetary policy unnecessarily could lead to financial stability risks … a sudden tightening of financial conditions could also have a negative impact on financial stability."*
+  - Risk list: war in Ukraine, energy and commodity prices, high inflation, rapid tightening of financial conditions, debt sustainability, corporate insolvencies, cyber risk, housing and household mortgage debt.
+- **DNB FSR spring 2023 risk list:**
+  - persistent inflation and tightening financial conditions
+  - "very rapid transition from a low-for-long environment"
+  - US bank failures and Credit Suisse
+  - house prices falling since Aug 2022
+  - commercial real estate: about 52% of exposures to be refinanced 2022–24; CRE is 10% of bank assets
+- **ECB Macroprudential Bulletin 21 (Apr 2023), Behn, Pereira, Pirovano & Testa:** positive-neutral frameworks in LT, EE, IE, CY and NL; neutral rates CY 0.5%, EE/LT 1.0%, IE 1.5%, NL 2.0%. https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu202304_01~6eef01bb6a.en.html
+- **ECB Macroprudential Bulletin 24 (Jun 2024), Herrera, Scalone & Pirovano:** "a gradual build-up of the buffer and favourable banking sector conditions (e.g. high profitability) limit these economic costs". https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu202406_01~0ed53a85fa.en.html
+- **ECB Macroprudential Bulletin 31 (Aug 2025), Detken, Hempell & Pirovano:**
+  - Early CCyB activation "helps monetary policy focus on its primary objective of price stability, thereby largely eliminating the potential for conflict".
+  - Box 2: activating buffers during the 2022Q4–2023Q3 tightening "can mitigate implementation costs".
+  - It lists the Netherlands among countries with 2022–23 excess-profit bank levies.
+  - https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu20250818_01.en.html
