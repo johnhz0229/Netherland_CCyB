@@ -22,11 +22,14 @@ All numbers can be reproduced from `data/` with the scripts in `code/`. Data com
   - normal: 2%, built up by 1pp per year over two years
   - elevated risk: >2%
   - materialisation: release
+- Phase names in the framework: 1 recovery, 2 normality, 3 increased risk, 4 materialisation. The build-up is "in principle … at a rate of 1% per year in order to reach the neutral level of 2% after two years".
 - Calibration:
   - peak accumulated losses (PAL) 2007–2016 ≈ €12bn
   - 2% ≈ €6bn of releasable CET1
   - enough to support up to about €150bn of lending
-- Guided discretion rather than a mechanical rule.
+- The framework adds that 2% is appropriate *"also taking into account the impact of the buffer reduction in March 2020"*.
+- Guided discretion rather than a mechanical rule: *"there is no mechanical link between the indicator values and the level of the CCyB. DNB will take decisions on the basis of guided discretion."*
+- ✔ Verified verbatim in the framework PDF (user-supplied copy, 2026-10-01).
 
 **Criteria DNB cited**
 - 2022:
@@ -44,14 +47,14 @@ All numbers can be reproduced from `data/` with the scripts in `code/`. Data com
 **Bank capital**
 - CET1 ratio (FSR 2022/2023):
   - 2019Q4: 16.9%
-  - 2021Q4: 17.7% (EU average 15.7%)
-  - end-2022: 16.3%
+  - 2021Q4: 17.7% (EU average 15.7% in **2021Q3**) ✔ FSR spring 2022, verbatim
+  - end-2022: 16.3% ✔ FSR spring 2023 ("average core capital ratio of 16.3%", "in line with the European average")
 - Stress tests:
-  - FSR 2022: CET1 falls from 16.6% to 13.3%.
-  - FSR 2023: the four large banks fall from 15.2% to 11.5%.
+  - FSR 2022: average CET1 of Dutch banks falls from 16.6% to 13.3% ✔
+  - FSR 2023: the average CET1 of the four major banks falls by 3.8pp, to 11.5% at end-2025; the starting point printed is 15.2% at end-2022 ✔ (two-column layout; the 15.2% is the stress-test base)
   - Both remain above the 8% minimum.
-- Net interest income: +6.7% in 2022, 67.7% of income (FSR 2023).
-- DNB lowered O-SII buffers because banking-sector assets/GDP had fallen from about 400% to about 280%. Timing and size: see §0a.
+- Net interest income: +6.7% in 2022, 67.7% of income (FSR 2023) ✔ verbatim.
+- DNB lowered O-SII buffers because the banking sector "at the time represented around 400% of GDP" and "fell to 280% of GDP at the end of 2022" (FSR 2023, ✔ verbatim). Timing and size: see §0a.
 
 ---
 
@@ -81,21 +84,35 @@ Sources:
 - 2023 cut: [DNB, "DNB adjusts O-SII buffers" (2023)](https://www.dnb.nl/en/sector-news/supervision-2023/dnb-adjusts-o-sii-buffers/) and [ESRB notification, 31 May 2023](https://www.esrb.europa.eu/pub/pdf/other/Esrb.notification230531_OSII_NL~a94ebd83a4.en.pdf).
 
 **Key finding: the CCyB was announced as the replacement for the 2020 systemic-buffer cut.**
-- DNB's March 2020 press release (wording from secondary summaries): the systemic-buffer reduction will be compensated by gradually raising the CCyB to 2% of Dutch risk-weighted exposures, so the total buffer requirement returns to its previous level.
+- DNB press release, 17 Mar 2020 (✔ read verbatim, user-supplied copy): *"Combined, these measures will free up EUR 8 billion in capital. … As the total impact on lending could rise to a maximum of EUR 200 billion, it is paramount that banks use this freed-up capital to support lending, and not to pay dividend or share repurchases. … Once the situation is back to normal, DNB will compensate the systemic buffers reduction by gradually increasing the countercyclical capital buffer to 2% of Dutch risk-weighted exposures. This will bring back the capital requirements to the current level … This compensatory arrangement will work out more or less capital-neutral for the three large banks involved, and the same effect is envisaged for the other banks."*
 - **Primary confirmation (read directly):**
   - ESRB notification, 27 Nov 2020: *"The reduction of the systemic buffers went hand in hand with DNB's outspoken intention to build up a 2% countercyclical capital buffer (CCyB) in the future. This would bring the capital level of these three banks back to roughly their original levels. In other words, the decision was prompted by the desire to keep the current level of the capital requirement constant, but modify the composition."*
   - ESRB notification, 31 May 2023: *"The policy actions in 2020 shifted DNB's buffer requirement composition – which heavily focussed on structural buffers – to a more balanced mix and enlarged the amount of releasable capital at DNB's disposal."*
   - DNB press release, 27 May 2022: *"Because it is important to rebuild buffers after a crisis, DNB also immediately expressed its intention on 17 March 2020 to apply a 2% CCyB in the Netherlands in time."* and *"The CCyB brings the amount of 'fixed' and releasable buffer capital into better balance."*
 - So the 2% CCyB was pre-announced two years before the 2022 framework. In part it **re-composes the capital stack**, moving capital from a non-releasable systemic buffer into a releasable cyclical one. This strengthens the normalisation thesis, and slides 6, 8 and 15 should say it.
-- Capital freed in March 2020: **€8bn for the two measures combined** (systemic-buffer cut plus postponement of the mortgage risk-weight floor). DNB said this could support up to €200bn of lending, and asked banks not to use it for dividends or buybacks. Source: summary of the DNB press release by [Regulation Tomorrow](https://www.regulationtomorrow.com/the-netherlands/covid-19-dnb-lowers-bank-buffer-requirements-to-support-lending/) (read directly).
+- Capital freed in March 2020: **€8bn for the two measures combined** (systemic-buffer cut plus postponement of the mortgage risk-weight floor), supporting up to €200bn of lending. ✔ DNB press release, verbatim (above).
   - The "€5bn" figure from a search extract **does not appear** on the ESRB page. It is dropped.
-- 2023 decision: *"The raising of the CCyB and the lowering of the O-SII will cause a limited increase in the net capital requirements for the Dutch banking sector."*
-  - **Correction:** this sentence is *not* in the 2023 CCyB press release (checked directly). It comes from DNB's 2023 introductory statement to the parliamentary Standing Committee for Finance ([DNB speech 2023](https://www.dnb.nl/en/general-news/speech-2023/introductory-line-for-the-standing-parliamentary-committee-for-finance/); confirmed through a search extract only).
+- 2023 decision, now verified in two primary sources:
+  - Klaas Knot, introductory statement to the Standing Parliamentary Committee for Finance, **7 June 2023** (✔ verbatim): *"Taken together, the raising of the CCyB and the lowering of the O-SII will cause a limited increase in the net capital requirements for the Dutch banking sector. The combination of these two changes will nevertheless have different impacts on individual banks."*
+  - FSR spring 2023 (✔ verbatim): *"Although the impact on each bank differs, the combination of these measures slightly increases the capital requirements for the banking sector as a whole."*
+  - The sentence is not in the 31 May 2023 CCyB press release.
   - **Own calculation:** the O-SII cuts valued at end-2022 total RWA (§3) come to about **€2.7bn** (ING €1.7bn, Rabobank €0.6bn, ABN AMRO €0.3bn, de Volksbank €0.1bn; BNG excluded).
   - Against the €3.4bn second CCyB step, that is a **net increase of about €0.7bn**. This is approximate: the O-SII applies to global consolidated RWA, the CCyB only to Dutch exposures.
 - **Bank-level asymmetry.** Over 2020–24, ING's systemic buffer fell by 1.0pp (3%→2%), Rabobank's by 1.25pp and ABN AMRO's by 1.75pp. The 2% CCyB applies only to Dutch exposures.
   - For a bank whose RWA is largely abroad, such as ING, the CCyB adds much less than 2pp to its overall requirement. ING reported a fully loaded CCyB of 47bp in its 2022 SREP release ([ING 2022 SREP](https://www.ing.com/Newsroom/News/Press-releases/ING-Group-2022-SREP-process-completed.htm); confirmed through a search extract).
   - So for ING the net combined requirement fell over 2020–24, while for domestic banks it roughly returned to the pre-COVID level, as DNB intended.
+
+**International comparison: BCBS (2024), d585 (✔ read in full, user-supplied copy)**
+- Table 1 lists **17 jurisdictions** with a positive neutral CCyB: 7 BCBS members and 10 non-BCBS EU countries. South Africa is still at the proposal stage.
+- Target rates range from 0.5% to 2%. **2% targets:** Netherlands (31 May 2024), Sweden (22 Jun 2023), United Kingdom (5 Jul 2023) and **Poland** (24 Sep 2026). Slide 7 should add Poland.
+- Box 2 on the Netherlands: calibrated on historical losses and previous buffer releases, and the switch *"shifted the composition of buffers in the Netherlands, reducing the large predominance of structural buffers and increasing the amount of releasable capital"*.
+- The Netherlands and Sweden both used "two steps of 1% over two years".
+- **The UK did the same kind of offset:** its rise to a 2% neutral rate was offset by cutting Pillar 2A by 50% of the CCyB increase, with the other 50% offset through lower resolution requirements. Our "partly a swap" reading is therefore not unusual internationally. Good for slide 7 or 19.
+
+**Latest DNB decision, 17 Sep 2026 (✔ read verbatim, user-supplied copy)**
+- 2% maintained, *"above the 0% implied by the Basel buffer guide"*, because DNB *"bases its decision on a broader assessment instead of only the credit-to-GDP gap"*. This is the puzzle of slide 1, in DNB's own words, still true in 2026.
+- *"Bank lending growth in particular has been relatively strong, suggesting no signs of constraints in bank credit supply."* DNB's own wording matches our "no sign of contraction" (slide 17).
+- Property prices +7% in real terms over two years (residential and commercial). Next reassessment in 2026Q4.
 
 **Other Dutch and euro-area COVID capital relief (2020)**
 - 17 Mar 2020: DNB postponed the mortgage risk-weight floor (Art. 458 CRR). It was originally notified in Jan 2020 to start around Sep 2020, and finally took effect on **1 Jan 2022**. It was extended twice, most recently in 2024.
@@ -312,7 +329,7 @@ Short windows, 6 months after vs 6 months before each date (NL minus controls, p
 - [x] BIS data refresh done after network access was opened: no revisions, no new quarter (2026Q2 not yet published). See §7.
 - [ ] **New:** a source for "long fixed-rate mortgages slow rate pass-through" (§2) is still needed.
 - [x] The €8bn (2020) covers the systemic-buffer cut and the risk-weight-floor postponement combined (§0a).
-- [ ] DNB FSR and framework PDFs could not be downloaded (bot protection). The calibration numbers (PAL €12bn, €6bn, €150bn) rest on the earlier reading recorded in tier A of `03_references.md`.
+- [x] DNB FSR 2022/2023, the CCyB framework, the 2020 press release, the Knot speech (7 Jun 2023), the 17 Sep 2026 decision and BCBS d585 were supplied by the user and read in full. All tier-A numbers are confirmed (§0, §0a).
 
 ---
 
@@ -348,3 +365,13 @@ Short windows, 6 months after vs 6 months before each date (NL minus controls, p
   - the 1% press release is dated 27 May 2022, though the FSR announcement was on 25 May
 - **New fact:** the mortgage risk-weight floor expires 30 Nov 2026.
 - **Stage 3** added (§4b): lending rates show no difference from peers, and household credit growth is higher. This supports "no sign of contraction"; it is not causal.
+
+**2026-10-01, user-supplied primary documents (7 files)**
+- All Stage-2 items that had rested on search extracts are now verified verbatim: PAL €12bn / €6bn / €150bn; €8bn and €200bn; "compensate … CCyB to 2%"; "limited increase" (Knot, 7 Jun 2023) plus "slightly increases" (FSR 2023); CET1 17.7% / 16.3%; stress tests; NII +6.7%; 400%→280%.
+- Additions and precisions:
+  - EU average 15.7% refers to 2021Q3
+  - FSR 2023 stress test = −3.8pp to 11.5% for the four major banks
+  - 2020 release: the swap was meant to be "more or less capital-neutral for the three large banks"
+  - BCBS: 17 jurisdictions, and **Poland** also targets 2%; the UK offset its 2% neutral rate against P2A and resolution requirements
+  - 17 Sep 2026: DNB itself says lending shows "no signs of constraints in bank credit supply"
+- No number in the storyline had to be withdrawn.

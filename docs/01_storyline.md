@@ -63,7 +63,8 @@
 - Banks were reluctant to use their other buffers because of MDA restrictions and stigma (Couaillier et al. 2022).
 
 **Slide 7 · Paradigm shift: the positive neutral CCyB.**
-- BCBS (2024): 17+ jurisdictions have adopted one; the Netherlands, Sweden and the UK set it at 2%.
+- BCBS (2024): 17 jurisdictions listed with a positive neutral CCyB; the Netherlands, Sweden, the UK and Poland target 2%.
+- The UK also offset its 2% neutral rate (lower Pillar 2A and resolution requirements), which mirrors the Dutch swap.
 - Calibration methods include stress tests, historical losses and models (ECB losses-to-buffer approach: 1.1–1.8%, De Nora et al. 2025).
 - Transition to the Netherlands.
 
@@ -121,6 +122,7 @@
 - Banks' profits benefited from higher rates.
 
 **Slide 17 · Implication 2: no contraction in lending.**
+- DNB (17 Sep 2026): "no signs of constraints in bank credit supply".
 - Bank credit grew +16.6% in the Netherlands vs +7.9% in the euro area (2022Q1–2026Q1).
 - Event study (Fig. 3): lending rates moved with euro-area peers (inside the placebo band); household credit growth was higher; nothing happens at May-22, May-23 or May-24.
 - Spell out the identification limits.

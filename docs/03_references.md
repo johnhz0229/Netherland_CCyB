@@ -1,9 +1,10 @@
 # References and sources
 
-## A. Verified primary sources (original text read)
+## A. Verified primary sources (original text read; re-checked 2026-10-01 against user-supplied copies)
 - DNB (2022). *Analytical framework for setting the countercyclical capital buffer in the Netherlands.* dnb.nl
 - DNB (2022-05-27; announced in the FSR of 25 May 2022). *DNB activates countercyclical capital buffer (CCyB) in the Netherlands.* https://www.dnb.nl/en/general-news/news-2022/dnb-activates-countercyclical-capital-buffer-ccyb-in-the-netherlands/
 - DNB (2023-05-31). *DNB raises countercyclical capital buffer (CCyB) from 1.0% to 2.0%.* https://www.dnb.nl/en/sector-news/supervision-2023/dnb-raises-countercyclical-capital-buffer-ccyb-from-1-0-to-2-0/
+- DNB (2026-09-17). *DNB maintains the countercyclical capital buffer at 2%.* (read in full; latest decision)
 - DNB (2026-03-26). *DNB maintains the countercyclical capital buffer at 2%.* https://www.dnb.nl/en/sector-news/supervision-2026/dnb-maintains-the-countercyclical-capital-buffer-at-2/ (the URL resolves to the 26 March 2026 decision; a 17 Sep 2026 decision to maintain 2% is listed on dnb.nl)
 - DNB (2026-04-24). *Risk weight measure on bank mortgage loans expires.* https://www.dnb.nl/en/sector-news/supervision-2026/q2/risk-weight-measure-on-bank-mortgage-loans-expires/
 - DNB (2023-05-31). *DNB adjusts O-SII buffers.* https://www.dnb.nl/en/sector-news/supervision-2023/dnb-adjusts-o-sii-buffers/
@@ -13,7 +14,7 @@
 - ECB Data Portal: MIR and BSI series (keys in `code/event_study.py`). https://data.ecb.europa.eu
 - DNB. *Financial Stability Report Spring 2022.* https://www.dnb.nl/media/5lnd4pxq/dnb-financial-stability-report-spring-2022.pdf
 - DNB. *Financial Stability Report Spring 2023.* https://www.dnb.nl/media/svbdtnyu/ofs-may-2023.pdf
-- BCBS (2024, Nov). *Range of practices in implementing a positive neutral countercyclical capital buffer* (d585). bis.org
+- BCBS (2024, Nov). *Range of practices in implementing a positive neutral countercyclical capital buffer* (d585). https://www.bis.org/bcbs/publ/d585.pdf (read in full: Table 1, Box 2 on NL, UK offset)
 - BIS statistics: WS_CREDIT_GAP, WS_TC, WS_DSR, WS_SPP. https://data.bis.org
 
 ## B. Cited in DNB/BCBS reference lists (existence confirmed, content not yet read)
@@ -57,8 +58,8 @@ Nothing in tier C failed verification. Remaining caution: the "Borio et al. (spe
 ## E. New sources added in Stage 2
 - De Nora, G., Pereira, A., Pirovano, M. & Stammwitz, F. (2025). From losses to buffer: calibrating the positive neutral CCyB rate in the euro area. *ECB Working Paper* 3061. https://ideas.repec.org/p/ecb/ecbwps/20253061.html
   - Range 1.1–1.8%; replaces "about 1–1.5%" on slide 7.
-- DNB (2020-03-17). DNB lowers bank buffer requirements to support lending (DNB page blocked to scripts; content via Regulation Tomorrow summary: https://www.regulationtomorrow.com/the-netherlands/covid-19-dnb-lowers-bank-buffer-requirements-to-support-lending/).
-- DNB (2023). Introductory statement to the Standing Parliamentary Committee for Finance (source of the "limited increase in net capital requirements" quote; search extract only). https://www.dnb.nl/en/general-news/speech-2023/introductory-line-for-the-standing-parliamentary-committee-for-finance/ https://www.dnb.nl/en/general-news/press-releases-2015-2020/dnb-lowers-bank-buffer-requirements-to-support-lending/
+- DNB (2020-03-17). DNB lowers bank buffer requirements to support lending. https://www.dnb.nl/en/general-news/press-releases-2015-2020/dnb-lowers-bank-buffer-requirements-to-support-lending/ (read in full)
+- Knot, K. / DNB (2023-06-07). Introductory line for the Standing Parliamentary Committee for Finance (source of the "limited increase in net capital requirements" quote; read in full). https://www.dnb.nl/en/general-news/speech-2023/introductory-line-for-the-standing-parliamentary-committee-for-finance/ https://www.dnb.nl/en/general-news/press-releases-2015-2020/dnb-lowers-bank-buffer-requirements-to-support-lending/
 - DNB (2023). DNB adjusts O-SII buffers. https://www.dnb.nl/en/sector-news/supervision-2023/dnb-adjusts-o-sii-buffers/
 - ESRB. COVID-19 policy measures: the Netherlands (read directly; contains no euro amount). https://www.esrb.europa.eu/home/search/coronavirus/countries/html/esrb.covidpmc_thenetherlands.en.html
 - ESRB O-SII notifications for NL: 27 Nov 2020; 31 May 2023 (links in `02_findings.md` §0a).
