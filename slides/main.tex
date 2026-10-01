@@ -1,0 +1,627 @@
+% Netherlands CCyB group presentation (Frankfurt School, MSc FinTech)
+% Build: cd slides && latexmk -pdf main.tex      (figures: python slides/figs.py from repo root)
+% Storyline: docs/01_storyline.md (v4). Numbers: docs/02_findings.md.
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme[progressbar=foot,numbering=fraction,block=fill,sectionpage=none]{metropolis}
+\geometry{papersize={20cm,11.25cm}}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{textcomp,newunicodechar,booktabs,tabularx,array,colortbl,pifont,tikz,xcolor}
+\usetikzlibrary{positioning,calc,arrows.meta,decorations.pathreplacing,shapes.symbols}
+
+% ---------- unicode shortcuts
+\newunicodechar{−}{\textminus}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\newunicodechar{×}{\ensuremath{\times}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{½}{\ensuremath{\tfrac{1}{2}}}
+\newunicodechar{€}{\texteuro}
+\newunicodechar{✔}{\textcolor{okgreen}{\ding{51}}}
+\newunicodechar{✘}{\textcolor{nlred}{\ding{55}}}
+
+% ---------- palette (same as slides/figs.py)
+\definecolor{navy}{HTML}{1F3B73}
+\definecolor{nlred}{HTML}{C0392B}
+\definecolor{gold}{HTML}{E0A100}
+\definecolor{grey}{HTML}{7F8C8D}
+\definecolor{light}{HTML}{D5DBE5}
+\definecolor{okgreen}{HTML}{2E8B57}
+\definecolor{paper}{HTML}{FAFAFA}
+\setbeamercolor{frametitle}{bg=navy,fg=white}
+\setbeamercolor{normal text}{fg=black!85,bg=paper}
+\setbeamercolor{alerted text}{fg=nlred}
+\setbeamercolor{progress bar}{fg=gold,bg=light}
+\setbeamercolor{block title}{bg=navy!12,fg=navy}
+\setbeamercolor{block body}{bg=navy!4}
+\setbeamercolor{block title alerted}{bg=nlred!14,fg=nlred}
+\setbeamercolor{block body alerted}{bg=nlred!4}
+\setbeamercolor{block title example}{bg=okgreen!14,fg=okgreen!80!black}
+\setbeamercolor{block body example}{bg=okgreen!4}
+\setbeamerfont{frametitle}{size=\large}
+\setbeamerfont{block title}{size=\small,series=\bfseries}
+\setbeamersize{text margin left=0.55cm,text margin right=0.55cm}
+
+% ---------- frame title with wrap + assignment tag (Q1/Q2/Q3)
+\gdef\theqtag{}
+\newcommand{\qtag}[1]{\gdef\theqtag{#1}}
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\paperwidth,sep=0.2cm,leftskip=0.35cm,rightskip=0.2cm]{frametitle}%
+    \begin{minipage}[c]{0.80\paperwidth}\raggedright\usebeamerfont{frametitle}\insertframetitle\end{minipage}%
+    \hfill
+    \begin{minipage}[c]{0.13\paperwidth}\raggedleft\scriptsize\color{gold}\bfseries\theqtag\end{minipage}%
+  \end{beamercolorbox}}
+
+% ---------- helpers
+\newcommand{\source}[1]{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south west,inner sep=0pt,text width=0.86\paperwidth,align=left,font=\fontsize{6.5}{7.5}\selectfont,text=grey]
+      at ($(current page.south west)+(0.55cm,0.30cm)$) {Source: #1};
+  \end{tikzpicture}}
+\newcommand{\kpi}[3]{% value, label, colour
+  \begin{tikzpicture}
+    \node[draw=#3!60,fill=#3!6,rounded corners=3pt,minimum width=3.6cm,minimum height=1.55cm,align=center,inner sep=4pt,font=\scriptsize]
+      {{\Large\bfseries\color{#3}#1}\\[2pt]#2};
+  \end{tikzpicture}}
+\newcommand{\quot}[2]{{\itshape “#1”}\hfill{\scriptsize\color{grey}— #2}}
+\newcommand{\hl}[1]{\textcolor{nlred}{\bfseries #1}}
+\newcommand{\nv}[1]{\textcolor{navy}{\bfseries #1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.18}
+
+\title{Refilling the Buffer in a Storm}
+\subtitle{The Netherlands' countercyclical capital buffer, 0\% → 2\% (2022–2024)}
+\author{[Speaker A] \quad·\quad [Speaker B]}
+\institute{Country implementation of a CCyB increase\\[2pt]Frankfurt School of Finance \& Management · MSc FinTech}
+\date{October 2026}
+
+\begin{document}
+
+% =====================================================================================
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+% ===================================================================================== 1
+\qtag{Summary}
+\begin{frame}{The Netherlands filled its CCyB to 2\% when the rulebook said 0\% —\\ refilling a buffer, not fighting a boom}
+  \small
+  \textbf{Decision:} CCyB 0\% → 1\% (ann.\ May 2022) → \hl{2\%} (ann.\ May 2023, binding 31 May 2024), together with lower O-SII buffers.\\[3pt]
+  \textbf{Puzzle:} the Basel credit-to-GDP gap stood at \nv{−33pp} and \nv{−47pp} at the two decisions → the buffer guide implied \nv{0\%}.
+  \vspace{4pt}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.32\textwidth}
+    \begin{block}{Q1 · Environment}\scriptsize
+      Recovered economy, then war, energy shock and \textbf{11.6\%} inflation; ECB hikes from Jul-2022.\\[2pt]
+      Credit cold; housing hot (+19\% y/y), then falling.\\[2pt]
+      Banks strong (CET1 17.7\%) and more profitable as rates rose.
+    \end{block}
+    \column{0.32\textwidth}
+    \begin{block}{Q2 · Criteria \& risks}\scriptsize
+      DNB framework (2022): \textbf{2\% = “standard risk environment”}, calibrated on past crisis losses (€12bn), not on credit growth.\\[2pt]
+      Insures against shocks no indicator predicts; housing left to other tools.\\[2pt]
+      Keeps the March-2020 promise to restore releasable capital.
+    \end{block}
+    \column{0.32\textwidth}
+    \begin{block}{Q3 · Implications}\scriptsize
+      \textbf{Cheap:} ≤ about one fifth of big banks' CET1 headroom.\\[2pt]
+      \textbf{A swap:} structural buffers cut in 2020 and 2024.\\[2pt]
+      \textbf{No sign of contraction} in credit or its price.\\[2pt]
+      Complements ECB tightening; reciprocated abroad; \textbf{€6.7bn} releasable.
+    \end{block}
+  \end{columns}
+  \vspace{4pt}
+  \textbf{Verdict:} \hl{normalisation, not tightening.} \quad \textbf{Trade-off:} relies on discretion and credibility; release never tested.
+  \source{DNB (2020, 2022, 2023, 2026); DNB Financial Stability Reports 2022–23; BIS credit-to-GDP gaps; ECB; bank disclosures; own calculations.}
+\end{frame}
+
+% ===================================================================================== 2
+\qtag{Prologue}
+\begin{frame}{When COVID hit, neighbours released their buffers —\\ the Netherlands had nothing to release}
+  \begin{center}
+  \begin{tikzpicture}[x=0.62cm,y=1cm,font=\scriptsize]
+    \draw[-{Latex[length=2mm]},thick,grey] (0,0) -- (23.5,0);
+    \foreach \d/\lab in {0/10 Mar,7/17 Mar,14/24 Mar,21/31 Mar}{\draw[grey] (\d,0.08)--(\d,-0.08) node[below]{\lab};}
+    \foreach \d/\c/\y in {2/Denmark/0.55,3/Norway (→1\%)/1.15,6/Sweden/0.55,17/Belgium/1.15,21/Lithuania\, Germany/0.55,22.6/France\, Ireland/1.15}{
+      \fill[navy] (\d,0) circle (2.4pt); \draw[navy] (\d,0)--(\d,\y-0.15) node[above,text=navy,font=\scriptsize\bfseries]{\c};}
+    \node[font=\tiny,text=grey] at (22.6,-0.45) {1 Apr};
+    \node[draw=nlred,fill=nlred!8,rounded corners,font=\small\bfseries,text=nlred,align=center] at (11.5,-1.25) {Netherlands: CCyB 0\% — nothing to release};
+  \end{tikzpicture}
+  \end{center}
+  \vspace{-4pt}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}\small
+    \textbf{DNB improvised (17 Mar 2020):}
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item cut systemic buffers of ING, Rabobank, ABN AMRO: 3\% → 2.5 / 2 / 1.5\%
+      \item postponed the mortgage risk-weight floor
+      \item \nv{€8bn} freed, up to \nv{€200bn} of lending
+    \end{itemize}
+    \column{0.49\textwidth}
+    \begin{alertblock}{… and made a promise}\small\itshape
+      “Once the situation is back to normal, DNB will compensate the systemic buffers reduction by gradually increasing the countercyclical capital buffer to 2\%.”
+    \end{alertblock}
+  \end{columns}
+  \source{ESRB, CCyB rates table (release announcements, Mar–Apr 2020); DNB press release “DNB lowers bank buffer requirements to support lending”, 17 Mar 2020.}
+\end{frame}
+
+% ===================================================================================== 3
+\qtag{Prologue}
+\begin{frame}{The CCyB is the only layer of bank capital designed to be switched off in a crisis}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.44\textwidth}
+    \centering
+    \begin{tikzpicture}[font=\scriptsize,box/.style={draw=white,thick,minimum width=4.1cm,align=center,inner sep=2pt}]
+      \node[box,fill=navy!80,text=white,minimum height=1.25cm] (p1) {Pillar 1 minimum · 4.5\%};
+      \node[box,fill=navy!60,text=white,minimum height=0.65cm,above=0pt of p1] (p2r) {Pillar 2 requirement (bank-specific)};
+      \node[box,fill=grey!55,minimum height=0.85cm,above=0pt of p2r] (ccob) {Capital conservation buffer · 2.5\%};
+      \node[box,fill=grey!35,minimum height=0.65cm,above=0pt of ccob] (osii) {O-SII / systemic risk buffer};
+      \node[box,fill=nlred,text=white,minimum height=0.65cm,above=0pt of osii,font=\scriptsize\bfseries] (ccyb) {CCyB · 0–2.5\% · \emph{releasable}};
+      \node[box,draw=grey,dashed,fill=white,minimum height=0.5cm,above=0pt of ccyb] (p2g) {Pillar 2 guidance (non-binding)};
+      \draw[decorate,decoration={brace,amplitude=4pt},thick] ([xshift=3pt]ccyb.north east) -- ([xshift=3pt]ccob.south east)
+        node[midway,right=5pt,align=left,text width=2.2cm]{Combined buffer:\\dipping in → MDA limits on dividends \& bonuses};
+      \draw[nlred,very thick,dashed] ([xshift=-6pt]ccob.south west) -- ([xshift=6pt]ccob.south east);
+      \node[left=2pt of ccob.south west,anchor=east,text=nlred,font=\scriptsize\bfseries] {MDA};
+    \end{tikzpicture}
+    \column{0.53\textwidth}\small
+    \textbf{Design}
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item 0–2.5\% of risk-weighted assets, on \emph{domestic} exposures
+      \item Increases bind after 12 months; releases are immediate
+      \item EU reciprocity: foreign banks lending in NL hold it too
+    \end{itemize}
+    \textbf{Why “releasable” matters}
+    \begin{itemize}\setlength\itemsep{1pt}
+      \item In COVID, banks close to buffer thresholds \hl{cut lending} even when \emph{allowed} to use buffers (stigma, MDA)
+      \item Only an explicitly \textbf{released} buffer is truly usable
+    \end{itemize}
+  \end{columns}
+  \source{CRD (Arts.\ 130–136); BCBS (2024) d585; Couaillier, Lo Duca, Reghezza \& Rodriguez d'Acri (2022), ECB WP 2644. Stack not to scale.}
+\end{frame}
+
+% ===================================================================================== 4
+\qtag{The question}
+\begin{frame}{DNB raised capital requirements in the middle of a storm, when its own rulebook said zero. Wrong moment?}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.44\textwidth}
+    \begin{alertblock}{The storm (2022–23)}\small
+      War in Ukraine · record energy prices\\
+      HICP inflation \textbf{11.6\%} (2022)\\
+      ECB hikes from \textbf{21 Jul 2022}\\
+      House prices turning down\\
+      Basel gap \textbf{−33 / −47pp} → guide \textbf{0\%}
+    \end{alertblock}
+    \column{0.10\textwidth}\centering\vspace{0.9cm}
+    \begin{tikzpicture}\draw[-{Latex[length=3mm]},line width=2pt,navy](0,0)--(1,0);\end{tikzpicture}
+    \column{0.42\textwidth}
+    \begin{block}{The decision}\small
+      CCyB \textbf{0\% → 1\% → 2\%}\\
+      announced May 2022 and May 2023\\
+      binding May 2023 and May 2024
+    \end{block}
+  \end{columns}
+  \vspace{6pt}
+  \begin{center}\large
+    Raising capital in a downturn is the \hl{procyclical mistake} the CCyB was invented to avoid.\\[2pt]
+    \normalsize Tightening into a slowdown? Fighting a hidden boom? Or something else?
+  \end{center}
+  \vspace{2pt}
+  \begin{center}\small
+  \begin{tikzpicture}[node distance=0.35cm,act/.style={draw=navy,fill=navy!6,rounded corners,minimum width=3.9cm,minimum height=0.75cm,align=center,font=\scriptsize}]
+    \node[act] (a1) {\textbf{Act 1 · The setting}\\Q1 Environment};
+    \node[act,right=of a1] (a2) {\textbf{Act 2 · The decision}\\Q2 Criteria \& risks};
+    \node[act,right=of a2] (a3) {\textbf{Act 3 · The consequences}\\Q3 Implications};
+    \draw[-{Latex},navy] (a1)--(a2); \draw[-{Latex},navy] (a2)--(a3);
+  \end{tikzpicture}
+  \end{center}
+  \source{CBS (HICP 2022); ECB monetary policy decision, 21 Jul 2022; BIS credit-to-GDP gaps (latest data at each decision: 2021Q4, 2022Q4).}
+\end{frame}
+
+% ===================================================================================== 5
+\qtag{Q1 · Environment}
+\begin{frame}{The path to 2\% was announced in 2020 — and walked step by step\\ inside the ECB's tightening cycle}
+  \centering
+  \begin{tikzpicture}[x=1.95cm,font=\scriptsize]
+    \fill[gold!18] (2.54,-0.35) rectangle (3.75,0.35);
+    \node[text=gold!70!black,font=\scriptsize\bfseries,anchor=west] at (2.56,-0.95) {ECB hikes Jul-22 – Sep-23};
+    \draw[-{Latex[length=2mm]},thick,grey] (-0.1,0)--(7.1,0);
+    \foreach \y/\x in {2020/0,2021/1,2022/2,2023/3,2024/4,2025/5,2026/6}{\draw[grey](\x,0.07)--(\x,-0.07) node[below=1pt]{\y};}
+    \fill[nlred] (0.21,0) circle (2.6pt); \draw[nlred] (0.21,0)--(0.21,1.25) node[above,align=center,text width=2.05cm,font=\scriptsize]{\textbf{17 Mar 2020}\\systemic buffers cut + promise of 2\% CCyB};
+    \fill[grey] (0.99,0) circle (2.6pt); \draw[grey] (0.99,0)--(0.99,-1.25) node[below,align=center,text width=2.05cm,font=\scriptsize]{\textbf{29 Dec 2020}\\SRB replaced by O-SII buffers};
+    \fill[grey] (2.0,0) circle (2.6pt); \draw[grey] (2.0,0)--(2.0,1.25) node[above left=0pt and -0.35cm,align=center,text width=2.05cm,font=\scriptsize]{\textbf{1 Jan 2022}\\mortgage risk-weight floor};
+    \fill[navy] (2.11,0) circle (2.6pt); \draw[navy] (2.11,0)--(2.11,-1.25) node[below,align=center,text width=2.05cm,font=\scriptsize]{\textbf{Feb 2022}\\new CCyB framework (2\% neutral)};
+    \fill[nlred] (2.40,0) circle (2.6pt); \draw[nlred] (2.40,0)--(2.40,2.35) node[above,align=center,text width=2.05cm,font=\scriptsize]{\textbf{25 May 2022}\\\textbf{1\%} announced};
+    \fill[nlred] (3.41,0) circle (2.6pt); \draw[nlred] (3.41,0)--(3.41,1.25) node[above,align=center,text width=2.05cm,font=\scriptsize]{\textbf{31 May 2023}\\\textbf{2\%} + O-SII cuts announced};
+    \fill[nlred] (4.41,0) circle (2.6pt); \draw[nlred] (4.41,0)--(4.41,-1.25) node[below,align=center,text width=2.05cm,font=\scriptsize]{\textbf{31 May 2024}\\2\% and lower O-SII both binding};
+    \fill[navy] (5.5,0) circle (2.6pt); \draw[navy] (5.5,0)--(5.5,1.25) node[above,align=center,text width=2.05cm,font=\scriptsize]{\textbf{2024 – Sep 2026}\\held at 2\% every quarter};
+    \fill[grey] (6.91,0) circle (2.6pt); \draw[grey] (6.91,0)--(6.91,-1.25) node[below,align=center,text width=2.05cm,font=\scriptsize]{\textbf{30 Nov 2026}\\risk-weight floor expires};
+  \end{tikzpicture}
+  \source{DNB press releases (17 Mar 2020; 27 May 2022; 31 May 2023; 17 Sep 2026; 24 Apr 2026); ESRB O-SII notifications (27 Nov 2020; 31 May 2023); ECB (21 Jul 2022; 14 Sep 2023).}
+\end{frame}
+
+% ===================================================================================== 6
+\qtag{Q1 · Environment}
+\begin{frame}{The economy had fully recovered — then war, energy and inflation darkened the outlook}
+  \centering
+  \kpi{2021Q3}{GDP back above\\pre-COVID level}{okgreen}\hfill
+  \kpi{11.6\%}{HICP inflation, 2022\\(national CPI 10.0\%)}{nlred}\hfill
+  \kpi{+50bp}{ECB's first hike\\21 July 2022}{navy}\hfill
+  \kpi{record}{energy \& commodity prices\\after the invasion}{gold}
+  \vspace{10pt}
+  \raggedright
+  \begin{block}{DNB, Financial Stability Report, spring 2022}\small
+    \itshape “After a strong recovery from the pandemic, the economic outlook has worsened due to the war in Ukraine and high inflation, and financial stability risks have increased.”\\[3pt]
+    “Higher funding costs may put pressure on the debt sustainability of governments, businesses and households.”
+  \end{block}
+  \small By end-2021 the Dutch economy was almost 3\% larger than at end-2019 — the recovery DNB's framework requires before building the buffer.
+  \source{CBS (GDP, Nov 2021; inflation 2022); ECB monetary policy decision 21 Jul 2022; DNB Financial Stability Report, spring 2022.}
+\end{frame}
+
+% ===================================================================================== 7
+\qtag{Q1 · Environment}
+\begin{frame}{Credit was cold; housing was the one hot spot — and it turned}
+  \centering
+  \includegraphics[width=\textwidth]{figs/indicators.pdf}
+  \vspace{-2pt}
+  \raggedright\small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+    \textbf{Housing:} nominal prices +19\% y/y (22Q1), real 16\% above the 2007 peak. DNB itself: \emph{“the overheated housing market calls for further measures.”}
+    \column{0.47\textwidth}
+    \textbf{Credit:} household debt high (107\% of GDP vs 58\% in the euro area) but \emph{falling}; debt service at its lowest since 2005.
+  \end{columns}
+  \source{BIS (WS\_SPP, WS\_TC, WS\_DSR); DNB Financial Stability Report, spring 2022; own calculations. Gold lines: CCyB announcements (May-22, May-23).}
+\end{frame}
+
+% ===================================================================================== 8
+\qtag{Q1 · Environment}
+\begin{frame}{Banks entered the storm well capitalised —\\ and rising rates were lifting their profits}
+  \centering
+  \kpi{17.7\%}{CET1 ratio, end-2021\\(EU 15.7\%, 21Q3)}{navy}\hfill
+  \kpi{16.3\%}{CET1 ratio, end-2022\\“in line with EU average”}{navy}\hfill
+  \kpi{+6.7\%}{net interest income 2022\\(67.7\% of income)}{okgreen}\hfill
+  \kpi{11.5\%}{four major banks' CET1\\after FSR-2023 stress (−3.8pp)}{gold}
+  \vspace{8pt}
+  \raggedright
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\textwidth}
+    \begin{alertblock}{Against raising now}\small
+      war and energy shock · 11.6\% inflation\\ rapid ECB tightening · house prices turning
+    \end{alertblock}
+    \column{0.48\textwidth}
+    \begin{exampleblock}{For raising now}\small
+      economy recovered · credit cold\\ banks strong, profits rising with rates
+    \end{exampleblock}
+  \end{columns}
+  \vspace{4pt}
+  \small DNB (FSR 2022): higher rates \emph{“may ultimately have a positive impact on the profitability of financial institutions.”}
+  \source{DNB Financial Stability Reports, spring 2022 and spring 2023.}
+\end{frame}
+
+% ===================================================================================== 9
+\qtag{Q2 · Criteria \& risks}
+\begin{frame}{The Basel rule said 0\% — but on Dutch data it had missed the last crisis and raised false alarms}
+  \centering
+  \includegraphics[height=0.66\textheight]{figs/gap.pdf}\par
+  \vspace{-2pt}
+  \raggedright\small
+  Rule: gap $<$ 2pp → 0\%, gap $>$ 10pp → 2.5\%. Our one-sided HP filter ($\lambda=400{,}000$) reproduces the official BIS gap within 0.00005pp (1971–2026).\\
+  {\scriptsize\color{grey}Alternative trend filters are noisy around COVID (two-sided HP +4.2pp in 2021Q4) — one more reason not to trigger on any of them.}
+  \source{BIS credit-to-GDP gaps (Q.NL.P.A); Drehmann et al.\ (2010); Repullo \& Saurina (2011); Edge \& Meisenzahl (2011); own calculations.}
+\end{frame}
+
+% ===================================================================================== 10
+\qtag{Q2 · Criteria \& risks}
+\begin{frame}{DNB's compass: 2\% is the normal-times level, calibrated on past crisis losses — not on credit growth}
+  \centering
+  \begin{tikzpicture}[font=\scriptsize,ph/.style={draw=white,minimum height=1.05cm,minimum width=3.15cm,align=center,inner sep=2pt}]
+    \node[ph,fill=grey!35] (a) {\textbf{1 · Recovery}\\CCyB released};
+    \node[ph,fill=nlred,text=white,right=1pt of a] (b) {\textbf{2 · Normality}\\\textbf{CCyB 2\%}};
+    \node[ph,fill=gold!70,right=1pt of b] (c) {\textbf{3 · Increased risk}\\CCyB $>$ 2\%};
+    \node[ph,fill=navy!75,text=white,right=1pt of c] (d) {\textbf{4 · Materialisation}\\release};
+    \node[below=1pt of b,font=\scriptsize\color{nlred}] {built up 1pp a year → 2\% after two years};
+  \end{tikzpicture}
+  \vspace{8pt}
+
+  \begin{tikzpicture}[font=\small,st/.style={draw=navy,fill=navy!6,rounded corners,minimum height=1.0cm,text width=4.6cm,align=center,font=\small}]
+    \node[st] (x) {Peak accumulated losses\\of Dutch banks, 2007–16:\\\textbf{€12bn}};
+    \node[st,right=0.8cm of x] (y) {2\% buffer ≈ \textbf{€6bn}\\of releasable core capital};
+    \node[st,right=0.8cm of y] (z) {release creates lending\\headroom of \textbf{up to €150bn}};
+    \draw[-{Latex},thick,navy](x)--(y); \draw[-{Latex},thick,navy](y)--(z);
+  \end{tikzpicture}
+  \vspace{6pt}
+  \raggedright\small
+  \begin{itemize}\setlength\itemsep{1pt}
+    \item Criteria: a dashboard (macro, banks, households \& firms, markets); \emph{“no mechanical link … guided discretion.”}
+    \item 2\% chosen \emph{“also taking into account the impact of the buffer reduction in March 2020.”}
+    \item Not alone: 17 jurisdictions run a positive neutral CCyB; NL, Sweden, UK, Poland target 2\%. ECB loss-based range: 1.1–1.8\%.
+  \end{itemize}
+  \source{DNB (2022), Analytical framework for setting the CCyB in the Netherlands; BCBS (2024) d585, Table 1; De Nora, Pereira, Pirovano \& Stammwitz (2025), ECB WP 3061.}
+\end{frame}
+
+% ===================================================================================== 11
+\qtag{Q2 · Criteria \& risks}
+\begin{frame}{DNB justified the steps by recovery, uncertainty and its 2020 promise —\\ not by credit growth}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.49\textwidth}
+    \begin{block}{May 2022 · 0\% → 1\%}\small
+      \itshape “When the systemic risk buffers \ldots{} were lowered in March 2020, we also announced our intention to \textbf{restore the buffers} by raising the CCyB.”\\[3pt]
+      “The risk profile is currently dominated by uncertainty caused by the war in Ukraine, but \ldots{} the robust economic recovery \ldots{} provides grounds for a gradual build-up.”\\[3pt]
+      \upshape Cyclical risks: “normal” to elevated.
+    \end{block}
+    \column{0.49\textwidth}
+    \begin{block}{May 2023 · 1\% → 2\%}\small
+      \itshape “Although the credit-to-GDP gap shows \textbf{no signs of excessive credit growth}, some other indicators already point to higher cyclical risk.”\\[3pt]
+      \upshape Cited: investors' rising risk appetite · real-estate prices \emph{falling} · debt sustainability of firms and governments · banks “robust, partly due to rising interest rates”.
+    \end{block}
+  \end{columns}
+  \vspace{6pt}
+  \small\centering Both decisions: \textbf{a normal-to-elevated risk picture + strong banks + the promise}. Credit growth is never the reason.
+  \source{DNB Financial Stability Report, spring 2022; DNB press releases of 27 May 2022 and 31 May 2023.}
+\end{frame}
+
+% ===================================================================================== 12
+\qtag{Q2 · Criteria \& risks}
+\begin{frame}{The CCyB insures against shocks nobody can forecast;\\ the known hot spots got their own tools}
+  \small
+  \begin{tabularx}{\textwidth}{@{}L{9.6cm}X@{}}
+    \toprule
+    \textbf{Financial-stability risks named by DNB (FSR 2022/23)} & \textbf{Instrument} \\
+    \midrule
+    War, energy and supply shocks · rapid tightening of financial conditions and market corrections · debt sustainability of governments, firms, households · bank turmoil abroad (SVB, Credit Suisse, 2023) & \cellcolor{nlred!10}\textbf{CCyB} — releasable for \emph{any} shock \\
+    \midrule
+    “Overheated” housing · high mortgage debt of first-time buyers · interest-only loans & LTV/LTI limits, tax reform, \textbf{mortgage risk-weight floor} (Jan 2022 – Nov 2026) \\
+    \midrule
+    Size and concentration of the large banks (sector \textbf{400\% → 280\%} of GDP) & \textbf{O-SII buffer} (cut 2024) \\
+    \bottomrule
+  \end{tabularx}
+  \vspace{10pt}
+
+  \begin{exampleblock}{Principle: one instrument per target (Tinbergen, 1952)}\small
+    DNB on the 2020 recomposition: more releasable capital is \emph{“a valuable addition given the sensitivity/volatility of the Dutch economy to external events.”} A releasable buffer is the only tool that works whatever the source of the shock.
+  \end{exampleblock}
+  \source{DNB Financial Stability Reports, spring 2022 and spring 2023; ESRB O-SII notification NL (31 May 2023); DNB (24 Apr 2026); Tinbergen (1952).}
+\end{frame}
+
+% ===================================================================================== 13
+\qtag{Q2 · Criteria \& risks}
+\begin{frame}{The verdict: every prediction fits normalisation — none fits overheating}
+  \centering\small
+  \renewcommand{\arraystretch}{1.08}\begin{tabular}{@{}L{4.6cm}L{3.3cm}L{3.0cm}L{5.0cm}c@{}}
+    \toprule
+    \textbf{If DNB were …} & \textbf{normalising} & \textbf{fighting overheating} & \textbf{what happened} & \\
+    \midrule
+    Responding to credit indicators & no link & rises with them & gap, debt service, HH debt ratio \emph{falling}; CCyB \emph{up} & ✔ \\
+    Path & +1pp a year, stop at 2\% & follows risk & 1\% → 2\% → held & ✔ \\
+    2023: house prices falling, rates jumping & raise anyway & pause & raised & ✔ \\
+    2024–26: house prices rising again (+10\% y/y, Mar-26) & stay at 2\% & go above 2\% (phase 3) & held at 2\% & ✔ \\
+    \rowcolor{gold!15} Other buffers & cut structural ones to compensate & keep them & cut in 2020 and 2024 & ✔ \\
+    \bottomrule
+  \end{tabular}
+  \vspace{8pt}
+
+  \begin{tikzpicture}
+    \node[draw=nlred,fill=nlred!6,rounded corners,inner sep=7pt,font=\normalsize]
+      {Five predictions, five matches: \hl{normalisation}. The last row is the key to the whole story.};
+  \end{tikzpicture}
+  \source{BIS (WS\_CREDIT\_GAP, WS\_DSR, WS\_TC, WS\_SPP); DNB press releases 2022–2026 (house prices: DNB, 26 Mar 2026); DNB framework (2022); ESRB O-SII notifications.}
+\end{frame}
+
+% ===================================================================================== 14
+\qtag{Q2 · Criteria \& risks}
+\begin{frame}{A swap, not a squeeze: DNB moved capital from structural to releasable buffers}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.60\textwidth}
+    \includegraphics[width=\textwidth]{figs/swap.pdf}
+    \column{0.38\textwidth}\small
+    \textbf{DNB's own words}\\[2pt]
+    \quot{more or less capital-neutral for the three large banks}{2020}\\[3pt]
+    \quot{a limited increase in the net capital requirements}{Knot, Jun 2023}\\[3pt]
+    \quot{slightly increases the capital requirements for the banking sector as a whole}{FSR 2023}\\[6pt]
+    \textbf{Not unusual:} the UK offset its 2\% neutral CCyB by lowering Pillar 2A and resolution requirements.
+  \end{columns}
+  \vspace{2pt}
+  {\scriptsize\color{grey} Waterfall: approximate, own calculation. Buffer cuts valued at end-2022 total RWA of ING, Rabobank, ABN AMRO, de Volksbank (BNG excluded); CCyB amounts are DNB's sector-wide figures on Dutch exposures. Relative to 2021 the change was an increase.}
+  \source{DNB press release 17 Mar 2020; Knot (2023), statement to the Standing Committee for Finance, 7 Jun 2023; DNB FSR spring 2023; BCBS (2024) d585; bank annual reports 2022.}
+\end{frame}
+
+% ===================================================================================== 15
+\qtag{Q3 · Implications}
+\begin{frame}{The twist: the storm made it the cheapest moment —\\ higher rates gave banks the profits to build the buffer}
+  \centering
+  \includegraphics[width=0.92\textwidth]{figs/headroom.pdf}
+  \vspace{-2pt}
+  \raggedright\small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.52\textwidth}
+    Net interest income \textbf{+6.7\%} in 2022 → banks build buffers from \emph{retained earnings}, not by cutting loans. Headroom shrank because of RWA growth and payouts, not the CCyB.
+    \column{0.45\textwidth}
+    \textbf{ECB:} gradual build-up + high profitability “limit these economic costs” (MPB 24); activating buffers during the 2022–23 tightening “can mitigate implementation costs” (MPB 31).
+  \end{columns}
+  \vspace{3pt}
+  \centering\hl{Not the wrong moment — arguably the right one.}
+  \source{Bank disclosures (ING, Rabobank, ABN AMRO, de Volksbank, 2021–22), de Volksbank requirement derived; DNB FSR 2023; ECB Macroprudential Bulletin 24 (2024) and 31 (2025, Box 2).}
+\end{frame}
+
+% ===================================================================================== 16
+\qtag{Q3 · Implications}
+\begin{frame}{Credit kept flowing — and its price moved with the rest of the euro area}
+  \centering
+  \includegraphics[width=0.97\textwidth]{figs/event.pdf}
+  \vspace{-2pt}
+  \raggedright\small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}\setlength\itemsep{0pt}
+      \item Dutch lending rates stayed \textbf{inside the placebo range} at all three CCyB dates
+      \item Household credit grew \textbf{faster} than in peers; bank credit 2022–26: NL +16.6\% vs euro area +7.9\% (but NL lagged in 2019–22: +4.3\% vs +11.3\%)
+    \end{itemize}
+    \column{0.42\textwidth}
+    \textbf{DNB (Sep 2026):} \emph{“no signs of constraints in bank credit supply.”}\\[3pt]
+    {\scriptsize\color{grey} One treated country, small control group (AT, FI, IT, MT, LU), housing rebound: \textbf{no sign of contraction}, not a causal estimate.}
+  \end{columns}
+  \source{ECB Data Portal (MIR, BSI); ESRB CCyB table (control selection); BIS (WS\_TC); DNB press release 17 Sep 2026; own two-way fixed-effects event study.}
+\end{frame}
+
+% ===================================================================================== 17
+\qtag{Q3 · Implications}
+\begin{frame}{Building the buffer while the ECB hiked did not double the squeeze —\\ it let monetary policy focus on inflation}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.47\textwidth}
+    \begin{alertblock}{The concern}\small
+      Two tightenings at once: ECB rates \emph{and} capital requirements → credit crunch?
+    \end{alertblock}
+    \begin{exampleblock}{What the data show}\small
+      Dutch lending rates did not diverge from euro-area peers (event study); bank profits \emph{rose} with rates (net interest income +6.7\%).
+    \end{exampleblock}
+    \column{0.50\textwidth}
+    \begin{block}{ECB Macroprudential Bulletin 31 (2025)}\small\itshape
+      Early CCyB activation “helps monetary policy focus on its primary objective of price stability, thereby largely eliminating the potential for conflict between price stability and financial stability.”
+    \end{block}
+    \begin{block}{DNB, FSR 2022}\small\itshape
+      “A sudden tightening of financial conditions could also have a negative impact on financial stability.”
+    \end{block}
+  \end{columns}
+  \vspace{6pt}
+  \small\centering One monetary policy for the euro area, but national macroprudential policy: the CCyB is the \textbf{Dutch-specific lever} — and the insurance against a rate shock gone wrong.
+  \source{ECB Macroprudential Bulletin 31 (Detken, Hempell \& Pirovano, 2025); DNB Financial Stability Report, spring 2022.}
+\end{frame}
+
+% ===================================================================================== 18
+\qtag{Q3 · Implications}
+\begin{frame}{Through reciprocity every bank lending in the Netherlands holds the 2\% —\\ and Europe is moving the same way}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.45\textwidth}\small
+    \textbf{Across borders}
+    \begin{itemize}\setlength\itemsep{2pt}
+      \item Foreign banks with Dutch exposures must also hold the 2\% (mandatory reciprocity up to 2.5\%)
+      \item Limits leakage to foreign lenders — a known problem with national capital tools (Aiyar, Calomiris \& Wieladek, 2014); \emph{non-bank} leakage remains
+      \item In April 2023, 5 banking-union countries had positive-neutral frameworks; NL had the \textbf{highest} rate (2\%)
+    \end{itemize}
+    \column{0.52\textwidth}
+    \centering\small
+    \textbf{CCyB increases in the euro area}\\[3pt]
+    \begin{tabular}{@{}lrl@{}}
+      \toprule
+      Country & Rate & Applies from \\
+      \midrule
+      Germany & 0.75\% & Feb 2023 \\
+      France & 1.0\% & Jan 2024 \\
+      Ireland & 1.5\% & Jun 2024 \\
+      \rowcolor{nlred!10}\textbf{Netherlands} & \textbf{2.0\%} & \textbf{May 2024} \\
+      Belgium & 1.0\% & Oct 2024 \\
+      Portugal & 0.75\% & Jan 2026 \\
+      Spain & 1.0\% & Oct 2026 \\
+      \bottomrule
+    \end{tabular}
+  \end{columns}
+  \source{DNB press release 31 May 2023; ESRB CCyB rates table (Sep 2026); ECB Macroprudential Bulletin 21 (Behn et al., 2023); Aiyar, Calomiris \& Wieladek (2014), JMCB.}
+\end{frame}
+
+% ===================================================================================== 19
+\qtag{Q3 · Implications}
+\begin{frame}{Next time, DNB can release €6.7bn overnight}
+  \centering
+  \kpi{€0 → €6.7bn}{releasable-by-design capital\\2020 → 2024}{nlred}\hfill
+  \kpi{≈ half}{of the €12bn peak losses\\after the GFC}{navy}\hfill
+  \kpi{€150bn}{lending headroom\\if released}{okgreen}
+  \vspace{10pt}
+  \raggedright
+  \begin{columns}[T,onlytextwidth]
+    \column{0.49\textwidth}
+    \begin{block}{Asymmetric payoff (Lang \& Menno, 2023)}\small
+      \textbf{Normal times:} +1pp requirement → about \textbf{−0.1\%} lending.\\
+      \textbf{Bad times:} 1pp release → up to about \textbf{+10\%} lending.\\
+      Cheap to hold, powerful to release.
+    \end{block}
+    \column{0.48\textwidth}
+    \begin{alertblock}{A growing role}\small
+      The mortgage risk-weight floor expires on 30 Nov 2026. DNB: this \emph{“underpins the importance of … the current countercyclical capital buffer (CCyB) of 2\%.”}
+    \end{alertblock}
+  \end{columns}
+  \source{DNB framework (2022); Lang \& Menno (2023), ECB WP 2828; DNB press release 24 Apr 2026.}
+\end{frame}
+
+% ===================================================================================== 20
+\qtag{Q3 · Implications}
+\begin{frame}{The price of discretion is credibility — and the buffer has never been tested}
+  \small
+  \begin{tabularx}{\textwidth}{@{}L{3.3cm}X@{}}
+    \toprule
+    \textbf{Credibility} & Without a mechanical rule, markets must trust DNB's judgement and communication — the classic rules-vs-discretion trade-off (Kydland \& Prescott, 1977). \\
+    \textbf{Calibration} & Why 2\%, not 1.5\%? The ECB's loss-based range is 1.1–1.8\%; NL chose the top of the banking union. \\
+    \textbf{Untested} & No release yet: will banks lend the freed capital — or hoard it, as with usable buffers in COVID? \\
+    \textbf{Baseline} & Relative to 2021 (not 2019) it \emph{was} an increase: +€3.3bn before the O-SII offset. \\
+    \textbf{Same profits, two claims} & The ECB lists the Netherlands among countries adopting bank levies on excess profits in 2022–23 — partly claiming the earnings that fund the buffer. \\
+    \bottomrule
+  \end{tabularx}
+  \source{Kydland \& Prescott (1977); De Nora et al.\ (2025); ECB Macroprudential Bulletin 21 (2023) and 31 (2025); DNB (2022, 2023).}
+\end{frame}
+
+% ===================================================================================== 21
+\qtag{Epilogue}
+\begin{frame}{A promise kept: the buffer was refilled in the storm —\\ at the moment it was cheapest}
+  \small
+  \begin{columns}[T,onlytextwidth]
+    \column{0.32\textwidth}
+    \begin{block}{Q1 · Environment}\scriptsize
+      Recovered economy hit by war, inflation and rate hikes; credit cold; housing hot, then cooling; strong, profitable banks.
+    \end{block}
+    \column{0.32\textwidth}
+    \begin{block}{Q2 · Criteria \& risks}\scriptsize
+      2\% normal-times level, calibrated on past losses; insurance against unforeseeable shocks; housing to other tools; structural buffers cut in return.
+    \end{block}
+    \column{0.32\textwidth}
+    \begin{block}{Q3 · Implications}\scriptsize
+      Cheap · largely a swap · no sign of contraction · complements monetary policy · reciprocated abroad · €6.7bn releasable · relies on discretion.
+    \end{block}
+  \end{columns}
+  \vspace{16pt}
+  \begin{center}
+    \begin{tikzpicture}
+      \node[fill=navy,text=white,rounded corners=4pt,inner sep=12pt,text width=0.82\textwidth,align=center,font=\large]
+        {In March 2020, the Netherlands had nothing to release.\\ Next time, it will.\\[6pt]
+         {\normalsize\itshape The best time to fill a buffer is when nobody thinks you need it — even in a storm.}};
+    \end{tikzpicture}
+  \end{center}
+\end{frame}
+
+% ===================================================================================== 22
+\qtag{Appendix}
+\begin{frame}{Methods and references}
+  \fontsize{6.6}{7.7}\selectfont
+  \textbf{Methods.} Credit gap: one-sided (recursive) and two-sided HP filter, $\lambda=400{,}000$, sample from 1961Q1; Hamilton (2018) regression filter, $h=8,20$, $p=4$. Headroom: (CET1 ratio − CET1 requirement/MDA) × total RWA per bank; CCyB amount sector-wide (upper bound); 6–47\% assumption grid as sensitivity. Event study: two-way FE, NL × 3-month event-time bins, country and month FE; placebo inference over controls with no CCyB change 2021–25. Code and data: GitHub repository (code/, data/).\par\medskip
+  \begin{columns}[T,onlytextwidth]
+    \column{0.49\textwidth}
+    \textbf{Primary sources}\par
+    BCBS (2024). Range of practices in implementing a positive neutral CCyB (d585).\par
+    DNB (2020). DNB lowers bank buffer requirements to support lending, 17 Mar.\par
+    DNB (2022). Analytical framework for setting the CCyB in the Netherlands.\par
+    DNB (2022, 2023). CCyB press releases, 27 May 2022, 31 May 2023; O-SII news item, 31 May 2023.\par
+    DNB (2026). CCyB decisions 26 Mar and 17 Sep; risk-weight measure expires, 24 Apr.\par
+    DNB. Financial Stability Report, spring 2022 and spring 2023.\par
+    Knot, K. (2023). Introductory statement, Standing Parliamentary Committee for Finance, 7 Jun.\par
+    ECB (2020). Temporary capital and operational relief, 12 Mar; ECB (2022). Monetary policy decisions, 21 Jul.\par
+    ESRB. CCyB rates table; O-SII notifications NL (27 Nov 2020; 31 May 2023); COVID-19 measures.\par
+    Data: BIS (credit gaps, total credit, DSR, property prices); ECB Data Portal (MIR, BSI); CBS; bank annual and Pillar 3 reports (ING, Rabobank, ABN AMRO, de Volksbank).\par
+    \column{0.49\textwidth}
+    \textbf{Literature}\par
+    Aiyar, Calomiris \& Wieladek (2014). Does macro-prudential regulation leak? \emph{JMCB} 46(s1).\par
+    Behn, Pereira, Pirovano \& Testa (2023). A positive neutral rate for the CCyB. \emph{ECB MPB} 21.\par
+    Couaillier, Lo Duca, Reghezza \& Rodriguez d'Acri (2022). Caution: do not cross! \emph{ECB WP} 2644.\par
+    De Nora, Pereira, Pirovano \& Stammwitz (2025). From losses to buffer. \emph{ECB WP} 3061.\par
+    Detken, Hempell \& Pirovano (2025). Macroprudential and monetary policy interaction. \emph{ECB MPB} 31.\par
+    Drehmann, Borio, Gambacorta, Jiménez \& Trucharte (2010). Countercyclical capital buffers: exploring options. \emph{BIS WP} 317.\par
+    Edge \& Meisenzahl (2011). The unreliability of credit-to-GDP ratio gaps in real time. \emph{IJCB} 7(4).\par
+    Hamilton (2018). Why you should never use the Hodrick-Prescott filter. \emph{REStat} 100(5).\par
+    Herrera, Scalone \& Pirovano (2024). The importance of being positive. \emph{ECB MPB} 24.\par
+    Kydland \& Prescott (1977). Rules rather than discretion. \emph{JPE} 85(3).\par
+    Lang \& Menno (2023). The state-dependent impact of changes in bank capital requirements. \emph{ECB WP} 2828.\par
+    Repullo \& Saurina (2011). The countercyclical capital buffer of Basel III: a critical assessment. CEMFI WP 1102.\par
+    Tinbergen (1952). \emph{On the Theory of Economic Policy}. North-Holland.\par
+  \end{columns}
+\end{frame}
+
+\end{document}

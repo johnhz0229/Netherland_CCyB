@@ -12,6 +12,7 @@
 ## Layout
 - `docs/01_storyline.md`: 22-slide storyline (latest).
 - `docs/02_findings.md`: all results, numbers, limitations and open items. This is the source of truth for numbers.
+- `slides/`: Beamer deck (`main.tex`, metropolis theme, 20×11.25cm 16:9). Figures: `python slides/figs.py` (from repo root) → `slides/figs/*.pdf`; build: `cd slides && latexmk -pdf main.tex`. Needs texlive-latex-extra, texlive-fonts-extra (Fira), texlive-pictures. Final PDF copied to `Netherlands_CCyB_slides.pdf`.
 - `docs/03_references.md`: sources in three tiers (verified / cited but unread / unverified).
 - `data/`: BIS data snapshot (downloaded 2026-10-01) and derived results.
 - `code/fetch_data.py`: re-downloads the BIS data to `data/fresh/` and diffs it against the snapshot (`--replace` to overwrite). Last run 2026-10-01: no revisions.

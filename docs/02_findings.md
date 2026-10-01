@@ -398,3 +398,15 @@ Short windows, 6 months after vs 6 months before each date (NL minus controls, p
   - Box 2: activating buffers during the 2022Q4–2023Q3 tightening "can mitigate implementation costs".
   - It lists the Netherlands among countries with 2022–23 excess-profit bank levies.
   - https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu20250818_01.en.html
+
+**2026-10-01, Beamer deck: swap waterfall (slide "A swap, not a squeeze"), own calculation**
+- 2020 systemic-buffer cut, valued at end-2022 total RWA: ING 0.5pp × €331.5bn = €1.7bn; Rabobank 1.0pp × €240.4bn = €2.4bn; ABN AMRO 1.5pp × €128.6bn = €1.9bn → **≈ €6.0bn**.
+  - This is consistent with DNB's €8bn for the systemic cut plus the floor postponement combined.
+- 2024 O-SII cut ≈ €2.7bn (§0a). CCyB +€3.3bn (May-23) and +€3.4bn (May-24), DNB's sector-wide figures.
+- Cumulative change vs the pre-COVID requirement ≈ **−€2.0bn**, i.e. roughly unchanged or slightly lower. Relative to 2021 it is an increase.
+- Caveats on the slide:
+  - different exposure bases (consolidated RWA vs Dutch exposures)
+  - CCyB amounts include foreign and small banks
+  - BNG excluded
+  - RWA date is end-2022, not 2020
+- Code: `slides/figs.py` (`fig_swap`).
