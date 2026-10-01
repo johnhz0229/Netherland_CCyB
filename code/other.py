@@ -53,6 +53,28 @@ hg = pd.DataFrame(out, columns=['date', 'CET1 %', 'req ex-CCyB %', 'RWA bn', 'he
 print(hg.to_string(index=False))
 hg.to_csv(D + 'nl_headroom_grid.csv', index=False)
 
+# ---------- B2. CET1 headroom from bank disclosures (replaces the assumption grid as the headline)
+# CET1 ratio, total RWA and CET1 requirement / MDA trigger per bank: data/nl_bank_capital.csv (sources inside).
+# Numerator = DNB's sector-wide CCyB amount, so the share is an upper bound for the four banks.
+bk = pd.read_csv(D + 'nl_bank_capital.csv')
+bk['headroom bn'] = (bk['cet1_pct'] - bk['cet1_req_pct']) / 100 * bk['rwa_eur_bn']
+print('\nCET1 headroom over requirement / MDA, by bank (EUR bn):')
+print(bk[['bank', 'date', 'cet1_pct', 'rwa_eur_bn', 'cet1_req_pct', 'headroom bn']].round(1).to_string(index=False))
+agg = bk.groupby('date').agg(rwa=('rwa_eur_bn', 'sum'), headroom=('headroom bn', 'sum'))
+agg['CCyB bn'] = agg.index.map(ccyb_eur)
+agg['CCyB as % of headroom'] = agg['CCyB bn'] / agg['headroom'] * 100
+agg['agg CET1 % (RWA-weighted)'] = bk.assign(c=bk.cet1_pct * bk.rwa_eur_bn).groupby('date')['c'].sum() / agg['rwa']
+print(agg.round(1).to_string())
+agg.round(2).to_csv(D + 'nl_headroom_actual.csv')
+
+# O-SII cuts effective 31 May 2024 (DNB, June 2023), valued at end-2022 total RWA (consolidated basis).
+# BNG (1% -> 0.25%) is not in the bank sample, so the total is a lower bound.
+osii_cut_pp = {'ING': 0.5, 'Rabobank': 0.25, 'ABN AMRO': 0.25, 'de Volksbank': 0.75}
+r22 = bk[bk.date == '2022-Q4'].set_index('bank')['rwa_eur_bn']
+osii_eur = sum(osii_cut_pp[k] / 100 * r22[k] for k in osii_cut_pp)
+print(f"\nO-SII cut valued at end-2022 RWA: EUR {osii_eur:.1f}bn (excl. BNG) vs CCyB 1->2% step EUR 3.4bn "
+      f"-> net change ~ EUR {3.4 - osii_eur:+.1f}bn")
+
 # ---------- C. bank credit growth NL vs peers (descriptive)
 yoy = bank.pct_change(4) * 100
 idx = bank / bank.loc['2022-Q1'] * 100

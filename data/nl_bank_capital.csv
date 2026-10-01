@@ -1,0 +1,9 @@
+bank,date,cet1_pct,rwa_eur_bn,cet1_req_pct,req_basis,source
+ING,2021-Q4,15.9,313.1,10.51,"overall CET1 requirement incl. buffers (ING 2021 SREP release)","ING Annual Report / Pillar III 2021; ING press release 3 Feb 2022"
+ING,2022-Q4,14.5,331.5,10.71,"fully loaded CET1 requirement for 2022 (ING 2021 SREP release; phased in during 2022)","ING FY2022 results / Form 20-F 2022; ING press release 3 Feb 2022"
+Rabobank,2021-Q4,17.4,211.9,10.00,"MDA trigger implied by 'CET1 17.4%, 740bp above MDA'","Rabobank Annual Report 2021 / Investor presentation FY2021"
+Rabobank,2022-Q4,16.0,240.4,10.10,"overall CET1 requirement (Art. 92(1) CRR + Art. 104(1) CRD + combined buffer)","Rabobank Annual Report 2022 / Pillar 3 2022"
+ABN AMRO,2021-Q4,16.3,117.7,9.6,"MDA trigger excl. AT1 shortfall","ABN AMRO Q4 2021 Quarterly Report"
+ABN AMRO,2022-Q4,15.2,128.6,9.7,"MDA trigger excl. AT1 shortfall","ABN AMRO Q4 2022 Quarterly Report"
+de Volksbank,2021-Q4,22.7,14.0,9.41,"DERIVED: 4.5 P1 + 1.41 P2R-CET1 + 2.5 CCoB + 1.0 O-SII","de Volksbank Annual Report 2022 / Pillar 3 2021; requirement own calculation"
+de Volksbank,2022-Q4,20.3,15.3,9.41,"DERIVED: 4.5 P1 + 1.41 P2R-CET1 + 2.5 CCoB + 1.0 O-SII","de Volksbank Full-year Financial Report 2022; requirement own calculation"

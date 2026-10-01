@@ -25,7 +25,8 @@
   - DNB's 2022 framework defines 2% as the "normal-times" level.
   - The buffer targets unforeseeable shocks and the Dutch economy's structural vulnerabilities, not cyclical overheating.
 - **Answer 3 · Implications.**
-  - Low cost: roughly 6–47% of banks' capital headroom, depending on assumptions.
+  - Low cost: the full 2% uses at most about a fifth of the four large banks' CET1 headroom (≈8% in 2021, ≈19% in 2022; bank disclosures).
+  - Partly a swap: DNB cut systemic buffers in 2020 and 2023 and framed the CCyB as the replacement, so the net requirement barely rose.
   - No sign of a credit contraction.
   - About €6.7bn of releasable capital.
   - Trade-offs: more reliance on discretion, and the release mechanism has never been tested.
@@ -56,12 +57,13 @@
 
 **Slide 6 · COVID as a real-world stress test.**
 - Countries with a positive CCyB (UK, Sweden, Norway, etc.) released it immediately.
-- The Netherlands was at 0%, so it had nothing to release.
+- The Netherlands' CCyB was at 0%, so it had nothing to release. Instead DNB cut the non-releasable systemic buffer of ING, Rabobank and ABN AMRO (3% → 2.5/2/1.5%), and pre-announced a 2% CCyB to replace it (DNB, 17 Mar 2020).
+- It also postponed the mortgage risk-weight floor (to 1 Jan 2022); the ECB allowed banks to use P2G and the CCoB.
 - Banks were reluctant to use their other buffers because of MDA restrictions and stigma (Couaillier et al. 2022).
 
 **Slide 7 · Paradigm shift: the positive neutral CCyB.**
 - BCBS (2024): 17+ jurisdictions have adopted one; the Netherlands, Sweden and the UK set it at 2%.
-- Calibration methods include stress tests, historical losses and models (ECB losses-to-buffer approach: about 1–1.5%).
+- Calibration methods include stress tests, historical losses and models (ECB losses-to-buffer approach: 1.1–1.8%, De Nora et al. 2025).
 - Transition to the Netherlands.
 
 ---
@@ -70,13 +72,16 @@
 
 **Slide 8 · Timeline.**
 - 0% from 2016 to 2021.
+- 17 March 2020: systemic-buffer cut, with a 2% CCyB pre-announced as the replacement.
+- 29 December 2020: SRB converted to O-SII buffers (CRD V).
+- 1 January 2022: mortgage risk-weight floor in force.
 - February 2022: new framework published.
 - 25 May 2022: 1% announced.
-- 31 May 2023: 2% announced.
+- 31 May 2023: 2% announced; June 2023: O-SII cuts announced (effective 31 May 2024, the same day the 2% CCyB became binding).
 - Maintained at 2% through September 2026.
 
 **Slide 9 · Economic and financial environment at the decisions.**
-- Recovery from COVID; double-digit inflation in 2022; ECB hikes from July 2022.
+- Recovery from COVID (GDP back above its pre-COVID level in 2021Q3); HICP inflation 11.6% in 2022; ECB hikes from July 2022.
 - House prices +19% y/y in 2022Q1, then falling.
 - Banks' CET1 ratio 17.7%; net interest income +6.7% in 2022.
 
@@ -108,10 +113,10 @@
 - CCyB → unforeseeable external shocks. The Netherlands is a small open economy with a banking sector of about 280% of GDP.
 - Household debt and housing → borrower-based measures and the mortgage risk-weight floor.
 - Systemic importance → the O-SII buffer.
-- The O-SII cut means capital partly moved from a non-releasable layer to a releasable one (amount to be verified).
+- The O-SII cuts mean capital partly moved from a non-releasable layer to a releasable one: about €2.7bn of O-SII relief vs +€3.4bn CCyB in 2023, so the net change was about +€0.7bn (own calculation; DNB: "limited increase").
 
 **Slide 16 · Implication 1: low cost for banks.**
-- €6.7bn compared with capital headroom: 6–47% sensitivity table.
+- €6.7bn compared with the four large banks' CET1 headroom over the MDA (€42bn at end-2021, €36bn at end-2022): ≈8% / ≈19% (upper bounds). The old 6–47% grid goes to the appendix as a sensitivity check.
 - Banks' profits benefited from higher rates.
 
 **Slide 17 · Implication 2: no contraction in lending.**

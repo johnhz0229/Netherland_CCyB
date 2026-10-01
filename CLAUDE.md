@@ -17,7 +17,7 @@
 - `code/fetch_data.py`: re-downloads the data from the BIS API. Never run with network access, so check it first.
 - `code/gap.py`: HP (one-/two-sided) and Hamilton gaps → `data/nl_gaps.csv`.
 - `code/fig1.py`: Fig. 1 (credit gap).
-- `code/other.py`: indicator dashboard, CET1 headroom grid, lending growth, Fig. 2.
+- `code/other.py`: indicator dashboard, CET1 headroom (bank data + assumption grid), O-SII offset, lending growth, Fig. 2.
 - Run order: `python code/gap.py && python code/fig1.py && python code/other.py`
 - Dependencies: numpy, pandas, scipy, matplotlib. The HP filter is implemented with scipy.sparse, so statsmodels is not needed.
 
@@ -26,4 +26,5 @@
 - Every number must come from `data/`, from `docs/02_findings.md`, or from a new source you cite. Never invent numbers.
 - Before citing anything marked "unverified" in `03_references.md`, verify it online. If you cannot, drop it or flag it.
 - Be careful with causal language. On lending effects, say only "no sign of contraction".
-- In the headroom calculation, RWA and the MDA requirement are assumptions. Label them as such, and ideally replace them with bank annual-report data.
+- Headroom now uses bank disclosures (`data/nl_bank_capital.csv`); only the de Volksbank requirement is derived. The old assumption grid is a sensitivity check only.
+- Network: in the cloud sandbox, stats.bis.org, data-api.ecb.europa.eu, dnb.nl and esrb.europa.eu are blocked by the egress policy; web search works.

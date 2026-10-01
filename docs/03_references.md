@@ -16,15 +16,46 @@
 - Herrera-Bravo et al. (2024); Lang & Menno (2023); Drehmann & Juselius (2014)
 - Borio et al. (specific paper to be determined)
 
-## C. Cited from memory, UNVERIFIED (confirm authors, year, title and outlet on Google Scholar before use)
-- Drehmann, Borio, Gambacorta, Jiménez & Trucharte (2010). Countercyclical capital buffers: exploring options. BIS WP 317.
-- Edge & Meisenzahl (2011). The unreliability of credit-to-GDP ratio gaps in real time. IJCB.
-- Repullo & Saurina (2011). The countercyclical capital buffer of Basel III: a critical assessment.
-- Hamilton (2018). Why you should never use the Hodrick-Prescott filter. REStat.
-- Drehmann & Tsatsaronis (2014). The credit-to-GDP gap and countercyclical capital buffers: questions and answers. BIS QR.
-- Jiménez, Ongena, Peydró & Saurina (2017). Macroprudential policy, countercyclical bank capital buffers and credit supply. JPE.
-- Aiyar, Calomiris & Wieladek (2014); Cerutti, Claessens & Laeven (2017); Akinci & Olmstead-Rumsey (2018); Basten (2020).
-- Adrian, Boyarchenko & Giannone (2019). Vulnerable growth. AER.
-- Orphanides & van Norden (2002) (the "quasi-real-time" concept).
-- Kydland & Prescott (1977); Tinbergen (1952) (rules vs discretion; one instrument per target).
-- Goodman-Bacon (2021); Callaway & Sant'Anna (2021); Abadie, Diamond & Hainmueller (2010) (DiD and synthetic control).
+## C. Formerly "cited from memory": now bibliographically VERIFIED (Stage 2, 2026-10-01)
+Authors, year, title and outlet were checked against publisher, RePEc/IDEAS or journal pages, through web search; direct page fetches are blocked in the sandbox. Content was checked at abstract level only.
+
+| Reference | Verified citation | Check link | Note |
+|---|---|---|---|
+| Drehmann et al. (2010) | Drehmann, M., Borio, C., Gambacorta, L., Jiménez, G. & Trucharte, C. (2010). Countercyclical capital buffers: exploring options. *BIS Working Papers* No. 317. | https://www.bis.org/publ/work317.htm | ✓ |
+| Edge & Meisenzahl (2011) | Edge, R. M. & Meisenzahl, R. R. (2011). The unreliability of credit-to-GDP ratio gaps in real time: implications for countercyclical capital buffers. *International Journal of Central Banking* 7(4), 261–298. | https://ideas.repec.org/a/ijc/ijcjou/y2011q4a10.html | ✓ |
+| Repullo & Saurina (2011) | Repullo, R. & Saurina, J. (2011). The countercyclical capital buffer of Basel III: a critical assessment. CEMFI WP 1102 / CEPR DP 8304. | https://www.cemfi.es/ftp/wp/1102.pdf | ✓ working paper, not a journal article |
+| Hamilton (2018) | Hamilton, J. D. (2018). Why you should never use the Hodrick-Prescott filter. *Review of Economics and Statistics* 100(5), 831–843. | https://direct.mit.edu/rest/article/100/5/831/58479 | ✓ |
+| Drehmann & Tsatsaronis (2014) | Drehmann, M. & Tsatsaronis, K. (2014). The credit-to-GDP gap and countercyclical capital buffers: questions and answers. *BIS Quarterly Review*, March 2014. | https://www.bis.org/publ/qtrpdf/r_qt1403g.htm | ✓ |
+| Jiménez et al. (2017) | Jiménez, G., Ongena, S., Peydró, J.-L. & Saurina, J. (2017). Macroprudential policy, countercyclical bank capital buffers, and credit supply: evidence from the Spanish dynamic provisioning experiments. *Journal of Political Economy* 125(6), 2126–2177. | https://doi.org/10.1086/694289 | ✓ **Caution: it is about dynamic provisioning, not the Basel CCyB** |
+| Aiyar, Calomiris & Wieladek (2014) | Does macro-prudential regulation leak? Evidence from a UK policy experiment. *Journal of Money, Credit and Banking* 46(s1), 181–214. | https://ideas.repec.org/a/wly/jmoncb/v46y2014is1p181-214.html | ✓ |
+| Cerutti, Claessens & Laeven (2017) | The use and effectiveness of macroprudential policies: new evidence. *Journal of Financial Stability* 28, 203–224. | https://econpapers.repec.org/RePEc:eee:finsta:v:28:y:2017:i:c:p:203-224 | ✓ |
+| Akinci & Olmstead-Rumsey (2018) | How effective are macroprudential policies? An empirical investigation. *Journal of Financial Intermediation* 33, 33–57. | https://www.researchgate.net/publication/316579073 | ✓ |
+| Basten (2020) | Higher bank capital requirements and mortgage pricing: evidence from the counter-cyclical capital buffer. *Review of Finance* 24(2), 453–495. | https://revfin.org/higher-bank-capital-requirements-and-mortgage-pricing-evidence-from-the-counter-cyclical-capital-buffer/ | ✓ Swiss sectoral CCyB; +8bp mortgage pricing for exposed banks |
+| Adrian, Boyarchenko & Giannone (2019) | Vulnerable growth. *American Economic Review* 109(4), 1263–1289. | https://doi.org/10.1257/aer.20161923 | ✓ |
+| Orphanides & van Norden (2002) | The unreliability of output-gap estimates in real time. *Review of Economics and Statistics* 84(4), 569–583. | https://ideas.repec.org/a/tpr/restat/v84y2002i4p569-583.html | ✓ |
+| Kydland & Prescott (1977) | Rules rather than discretion: the inconsistency of optimal plans. *Journal of Political Economy* 85(3), 473–491. | https://ideas.repec.org/a/ucp/jpolec/v85y1977i3p473-91.html | ✓ |
+| Tinbergen (1952) | *On the Theory of Economic Policy*. Amsterdam: North-Holland. | https://books.google.com/books?id=2fQOAQAAMAAJ | ✓ |
+| Goodman-Bacon (2021) | Difference-in-differences with variation in treatment timing. *Journal of Econometrics* 225(2), 254–277. | https://econpapers.repec.org/RePEc:eee:econom:v:225:y:2021:i:2:p:254-277 | ✓ |
+| Callaway & Sant'Anna (2021) | Difference-in-differences with multiple time periods. *Journal of Econometrics* 225(2), 200–230. | https://ideas.repec.org/a/eee/econom/v225y2021i2p200-230.html | ✓ |
+| Abadie, Diamond & Hainmueller (2010) | Synthetic control methods for comparative case studies: estimating the effect of California's tobacco control program. *JASA* 105(490), 493–505. | https://www.jstor.org/stable/29747059 | ✓ |
+
+Nothing in tier C failed verification. Remaining caution: the "Borio et al. (specific paper to be determined)" entry in tier B is still unresolved, so keep it off the slides.
+
+## D. Tier-B items verified in Stage 2 (used on slides)
+- Lang, J. H. & Menno, D. (2023). The state-dependent impact of changes in bank capital requirements. *ECB Working Paper* 2828 (also Bundesbank DP 19/2023). https://ideas.repec.org/p/ecb/ecbwps/20232828.html
+  - Normal states: about 0.1% less lending per 1pp higher requirement. Bad states: up to about 10% more lending per 1pp release.
+- Couaillier, C., Lo Duca, M., Reghezza, A. & Rodriguez d'Acri, C. (2022). Caution: do not cross! Capital buffers and lending in Covid-19 times. *ECB Working Paper* 2644. https://ideas.repec.org/p/ecb/ecbwps/20222644.html
+  - Published version: *JMCB* 57(4), 833–862 (2025).
+- Drehmann, M. & Juselius, M. (2014). Evaluating early warning indicators of banking crises: satisfying policy requirements. *International Journal of Forecasting* 30(3), 759–780. https://econpapers.repec.org/RePEc:eee:intfor:v:30:y:2014:i:3:p:759-780
+
+## E. New sources added in Stage 2
+- De Nora, G., Pereira, A., Pirovano, M. & Stammwitz, F. (2025). From losses to buffer: calibrating the positive neutral CCyB rate in the euro area. *ECB Working Paper* 3061. https://ideas.repec.org/p/ecb/ecbwps/20253061.html
+  - Range 1.1–1.8%; replaces "about 1–1.5%" on slide 7.
+- DNB (2020-03-17). DNB lowers bank buffer requirements to support lending. https://www.dnb.nl/en/general-news/press-releases-2015-2020/dnb-lowers-bank-buffer-requirements-to-support-lending/
+- DNB (2023). DNB adjusts O-SII buffers. https://www.dnb.nl/en/sector-news/supervision-2023/dnb-adjusts-o-sii-buffers/
+- ESRB. COVID-19 policy measures: the Netherlands. https://www.esrb.europa.eu/home/search/coronavirus/countries/html/esrb.covidpmc_thenetherlands.en.html
+- ESRB O-SII notifications for NL: 27 Nov 2020; 31 May 2023 (links in `02_findings.md` §0a).
+- ECB Banking Supervision (2020-03-12). Temporary capital and operational relief in reaction to coronavirus. https://www.bankingsupervision.europa.eu/press/pr/date/2020/html/ssm.pr200312~43351ac3ac.en.html
+- CBS (2023). Inflation rate 10.0 percent in 2022 (HICP 11.6%). https://www.cbs.nl/en-gb/news/2023/02/inflation-rate-10-0-percent-in-2022
+- CBS via NL Times (2021-11-16). Dutch economy back to pre-Covid level in 3rd quarter. https://nltimes.nl/2021/11/16/dutch-economy-back-pre-covid-level-3rd-quarter
+- Bank disclosures: ING, Rabobank, ABN AMRO, de Volksbank (see `02_findings.md` §3 and `data/nl_bank_capital.csv`).
