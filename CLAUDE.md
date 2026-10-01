@@ -14,6 +14,7 @@
 - `docs/02_findings.md`: all results, numbers, limitations and open items. This is the source of truth for numbers.
 - `slides/`: Beamer deck (`main.tex`, metropolis theme, 20×11.25cm 16:9). Figures: `python slides/figs.py` (from repo root) → `slides/figs/*.pdf`; build: `cd slides && latexmk -pdf main.tex`. Needs texlive-latex-extra, texlive-fonts-extra (Fira), texlive-pictures. Final PDF copied to `Netherlands_CCyB_slides.pdf`.
 - Speaker notes: single source `docs/speech_script.md` → `python code/make_notes.py` → `slides/notes/sN.tex` (inserted via `\slidenote{N}`). Rehearsal deck with notes pages: `latexmk -pdf main_notes.tex` → `Netherlands_CCyB_slides_with_notes.pdf`.
+- Cue cards: `docs/cue_cards.md` → `python code/make_cue_cards.py` → `slides/cue_cards.tex` → `latexmk -pdf cue_cards.tex` → `Netherlands_CCyB_cue_cards.pdf` (4 per A4, navy = Zheng, red = Diego).
 - `docs/qa_prep.md`: 22 likely professor questions with model answers and verified references.
 - Speakers: Zheng Huang (A: slides 1–8, 17–21), Diego Gutiérrez (B: slides 9–16). Course: Micro- & Macroprudential Management, Master of Financial Technology, Frankfurt School.
 - `docs/03_references.md`: sources in three tiers (verified / cited but unread / unverified).
