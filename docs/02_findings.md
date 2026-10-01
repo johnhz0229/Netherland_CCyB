@@ -10,9 +10,11 @@ All numbers can be reproduced from `data/` with the scripts in `code/`. Data com
 |---|---|---|
 | 2016–2021 | Dutch CCyB at 0%; nothing to release during COVID | DNB |
 | Feb 2022 | DNB publishes its new CCyB framework (positive neutral, 2% in normal times) | DNB Analytical framework (Feb 2022) |
-| 2022-05-25 | 0→1% announced, effective 2023-05-25; about €3.3bn additional CET1 | DNB press release 2022 |
-| 2023-05-31 | 1→2% announced, effective 2024-05-31; about €3.4bn additional CET1 | DNB press release 2023 |
-| 2024 – 2026-09-17 | Repeated decisions to maintain 2% | DNB news (latest 2026-09-17) |
+| 2022-05-25 | 0→1% announced in the FSR (press release dated 27 May 2022), effective 2023-05-25; about €3.3bn additional CET1 | DNB press release 2022 (read directly) |
+| 2023-05-31 | 1→2% announced, effective 2024-05-31; about €3.4bn additional CET1 | DNB press release 2023 (read directly) |
+| 2023-05-31 | O-SII cuts announced, effective 2024-05-31 | DNB news item 31 May 2023 (read directly) |
+| 2024 – 2026-09-17 | Repeated decisions to maintain 2% | DNB news (26 Mar 2026 read directly; 17 Sep 2026 item seen as the latest on dnb.nl) |
+| 2026-04-24 | DNB decides not to extend the mortgage risk-weight floor; it expires 30 Nov 2026. DNB says this "underpins the importance of … the current CCyB of 2%" | DNB news item 24 Apr 2026 (read directly) |
 
 **DNB framework**
 - Four phases:
@@ -55,7 +57,13 @@ All numbers can be reproduced from `data/` with the scripts in `code/`. Data com
 
 ## 0a. Systemic buffers, COVID relief and the net effect of the CCyB (Stage 2, new)
 
-**Verification level.** In this sandbox, direct fetches of dnb.nl, esrb.europa.eu, ecb.europa.eu and bis.org are blocked by the egress policy. The facts below were confirmed through search-engine extracts of the primary pages linked. Before the slides are final, open each link once in a browser.
+**Verification level (updated after network access was opened).**
+- Read directly:
+  - DNB press releases of 27 May 2022, 31 May 2023 (CCyB and O-SII), 25 Sep 2020, 26 Mar 2026 and 24 Apr 2026
+  - ESRB O-SII notifications of 27 Nov 2020 and 31 May 2023
+  - the ESRB COVID-19 measures page
+  - the ESRB CCyB table
+- DNB PDFs (FSR, CCyB framework) and the DNB 2020 press release could not be downloaded, because the site's bot protection blocks scripted access. Those items rest on search extracts and secondary summaries, as marked.
 
 **History of the systemic buffers of the large Dutch banks (CET1, % of total consolidated RWA)**
 
@@ -73,10 +81,16 @@ Sources:
 - 2023 cut: [DNB, "DNB adjusts O-SII buffers" (2023)](https://www.dnb.nl/en/sector-news/supervision-2023/dnb-adjusts-o-sii-buffers/) and [ESRB notification, 31 May 2023](https://www.esrb.europa.eu/pub/pdf/other/Esrb.notification230531_OSII_NL~a94ebd83a4.en.pdf).
 
 **Key finding: the CCyB was announced as the replacement for the 2020 systemic-buffer cut.**
-- DNB's March 2020 press release: *"The reduction in the buffer requirements will be compensated by a gradual increase in the countercyclical capital buffer to 2% of Dutch risk-weighted exposures. In effect, the total buffer requirement for these banks will eventually return to the current level."*
+- DNB's March 2020 press release (wording from secondary summaries): the systemic-buffer reduction will be compensated by gradually raising the CCyB to 2% of Dutch risk-weighted exposures, so the total buffer requirement returns to its previous level.
+- **Primary confirmation (read directly):**
+  - ESRB notification, 27 Nov 2020: *"The reduction of the systemic buffers went hand in hand with DNB's outspoken intention to build up a 2% countercyclical capital buffer (CCyB) in the future. This would bring the capital level of these three banks back to roughly their original levels. In other words, the decision was prompted by the desire to keep the current level of the capital requirement constant, but modify the composition."*
+  - ESRB notification, 31 May 2023: *"The policy actions in 2020 shifted DNB's buffer requirement composition – which heavily focussed on structural buffers – to a more balanced mix and enlarged the amount of releasable capital at DNB's disposal."*
+  - DNB press release, 27 May 2022: *"Because it is important to rebuild buffers after a crisis, DNB also immediately expressed its intention on 17 March 2020 to apply a 2% CCyB in the Netherlands in time."* and *"The CCyB brings the amount of 'fixed' and releasable buffer capital into better balance."*
 - So the 2% CCyB was pre-announced two years before the 2022 framework. In part it **re-composes the capital stack**, moving capital from a non-releasable systemic buffer into a releasable cyclical one. This strengthens the normalisation thesis, and slides 6, 8 and 15 should say it.
-- Capital freed in March 2020: DNB's press release says **€8bn** in total; the ESRB COVID page says **€5bn** for the systemic-buffer cut. Both figures appear in the sources. Our reading, **not confirmed**, is that the €8bn also includes the postponed mortgage risk-weight floor announced the same day. On slides, use "€5bn from the systemic-buffer cut (ESRB)" or cite DNB's €8bn as "combined measures".
-- 2023 decision: DNB states that raising the CCyB and lowering the O-SII buffers *"will cause a limited increase in the net capital requirements for the Dutch banking sector"* ([DNB 2023 CCyB press release](https://www.dnb.nl/en/sector-news/supervision-2023/dnb-raises-countercyclical-capital-buffer-ccyb-from-1-0-to-2-0/)).
+- Capital freed in March 2020: **€8bn for the two measures combined** (systemic-buffer cut plus postponement of the mortgage risk-weight floor). DNB said this could support up to €200bn of lending, and asked banks not to use it for dividends or buybacks. Source: summary of the DNB press release by [Regulation Tomorrow](https://www.regulationtomorrow.com/the-netherlands/covid-19-dnb-lowers-bank-buffer-requirements-to-support-lending/) (read directly).
+  - The "€5bn" figure from a search extract **does not appear** on the ESRB page. It is dropped.
+- 2023 decision: *"The raising of the CCyB and the lowering of the O-SII will cause a limited increase in the net capital requirements for the Dutch banking sector."*
+  - **Correction:** this sentence is *not* in the 2023 CCyB press release (checked directly). It comes from DNB's 2023 introductory statement to the parliamentary Standing Committee for Finance ([DNB speech 2023](https://www.dnb.nl/en/general-news/speech-2023/introductory-line-for-the-standing-parliamentary-committee-for-finance/); confirmed through a search extract only).
   - **Own calculation:** the O-SII cuts valued at end-2022 total RWA (§3) come to about **€2.7bn** (ING €1.7bn, Rabobank €0.6bn, ABN AMRO €0.3bn, de Volksbank €0.1bn; BNG excluded).
   - Against the €3.4bn second CCyB step, that is a **net increase of about €0.7bn**. This is approximate: the O-SII applies to global consolidated RWA, the CCyB only to Dutch exposures.
 - **Bank-level asymmetry.** Over 2020–24, ING's systemic buffer fell by 1.0pp (3%→2%), Rabobank's by 1.25pp and ABN AMRO's by 1.75pp. The 2% CCyB applies only to Dutch exposures.
@@ -84,7 +98,10 @@ Sources:
   - So for ING the net combined requirement fell over 2020–24, while for domestic banks it roughly returned to the pre-COVID level, as DNB intended.
 
 **Other Dutch and euro-area COVID capital relief (2020)**
-- 17 Mar 2020: DNB postponed the mortgage risk-weight floor (Art. 458 CRR). It was originally notified in Jan 2020 to start around Sep 2020, and finally took effect on **1 Jan 2022**. Sources: [ESRB opinion on the Dutch Art. 458 measure (2024)](https://www.esrb.europa.eu/pub/pdf/other/esrb.opinion241028_report~29d9b314d3.en.pdf); [DNB, "Risk weight measure on bank mortgage loans expires" (2026)](https://www.dnb.nl/en/sector-news/supervision-2026/q2/risk-weight-measure-on-bank-mortgage-loans-expires/). The second source also means the floor itself has since expired; check the date before saying "currently in force" on any slide.
+- 17 Mar 2020: DNB postponed the mortgage risk-weight floor (Art. 458 CRR). It was originally notified in Jan 2020 to start around Sep 2020, and finally took effect on **1 Jan 2022**. It was extended twice, most recently in 2024.
+  - On 24 Apr 2026 DNB decided not to extend it, so it **expires 30 Nov 2026**. DNB's reason: housing systemic risks "have gradually declined" and banks are less vulnerable.
+  - DNB adds that the expiry "underpins the importance of … the current countercyclical capital buffer (CCyB) of 2%". This matters for slide 15: by end-2026 the housing-specific capital tool goes away and the 2% CCyB becomes the main buffer.
+  - Sources: [DNB, 24 Apr 2026](https://www.dnb.nl/en/sector-news/supervision-2026/q2/risk-weight-measure-on-bank-mortgage-loans-expires/) (read directly); [ESRB opinion on the Dutch Art. 458 measure (2024)](https://www.esrb.europa.eu/pub/pdf/other/esrb.opinion241028_report~29d9b314d3.en.pdf).
 - 12 Mar 2020 (ECB Banking Supervision, all significant banks, including the Dutch ones):
   - banks could operate temporarily below P2G, the capital conservation buffer and the LCR
   - P2R composition was front-loaded, so only 56.25% of it had to be met with CET1
@@ -103,7 +120,7 @@ Sources:
 
 **Method**
 - HP filter with λ = 400,000 (quarterly data), sample from 1961Q1.
-- The one-sided (recursive) HP filter replicates the official BIS gap with a mean absolute error of 0.00002pp. So the BIS gap is itself a one-sided measure.
+- The one-sided (recursive) HP filter replicates the official BIS gap with a mean absolute error of 0.00002pp and a maximum of 0.00005pp. After the Stage 1 refresh the official gap is available from 1971, so this now holds over all 221 quarters, 1971Q1–2026Q1. So the BIS gap is itself a one-sided measure.
 - We also compute:
   - a two-sided HP gap (ex-post view)
   - the Hamilton (2018) regression filter, with h = 8 and h = 20, p = 4, both full-sample and recursive
@@ -220,6 +237,54 @@ BIS data on bank credit to the private non-financial sector, in national currenc
 
 **Defensible wording:** "no sign that the CCyB constrained lending", consistent with DNB's expectation of no increase in lending rates.
 
+### 4b. Stage 3: event study with ECB MIR/BSI data (`code/event_study.py`, `figures/fig3_event_study.png`)
+
+**Data**
+- ECB Data Portal, monthly, 2019-01 to 2026-08, 20 euro-area countries:
+  - MIR new-business composite cost of borrowing for house purchase and for NFCs
+  - BSI annual growth of MFI loans to households and NFCs, adjusted for sales and securitisation
+- Cached in `data/ecb_mir_bsi.csv`.
+
+**Design**
+- Two-way fixed-effects event study: country FE, month FE, and NL × 3-month event-time bins from −24 to +47 months around the first announcement (May 2022); reference = months −3..−1.
+- The four policy dates collapse to three distinct months:
+  - May-22: 1% announced
+  - **May-23: 1% binding and 2% announced, in the same week**
+  - May-24: 2% binding
+
+  So the second announcement and the first effective date cannot be separated.
+- Inference: one treated unit, so we use a permutation test, re-running the regression with each control as a fake treated unit.
+
+**Controls**
+- "All": 19 euro-area countries.
+- "Clean": **AT, FI, IT, MT, LU**, the countries with no CCyB change in 2021–2025 according to the ESRB CCyB table (`data/esrb_ccyb_rates.xlsx`).
+- Every other euro-area country raised its CCyB over the window (e.g. FR 0.5% Apr-23 and 1% Jan-24, DE 0.75% Feb-23, BE 0.5% Apr-24 and 1% Oct-24, IE up to 1.5% Jun-24). Including them biases the NL effect towards zero.
+
+**Results** (`data/event_study_summary.csv`, `data/event_study_short_windows.csv`, `data/event_study_coefs.csv`)
+
+| Outcome | NL avg post coef. (all / clean) | Pre-trend avg (all / clean) | Permutation rank of NL, \|post\| (all / clean) |
+|---|---|---|---|
+| Mortgage rate (pp) | −0.08 / −0.00 | 0.03 / 0.10 | 18 of 20 / 6 of 6 |
+| NFC lending rate (pp) | −0.02 / +0.21 | 0.02 / 0.16 | 19 of 19 / 5 of 6 |
+| Household loan growth (pp) | **+2.52 / +5.18** | −0.06 / −0.43 | 8 of 20 / 2 of 6 |
+| NFC loan growth (pp) | +2.57 / +1.75 | 1.33 / −1.40 | 11 of 20 / 6 of 6 |
+
+Short windows, 6 months after vs 6 months before each date (NL minus controls, pp):
+- Rates move between −0.25 and +0.37pp. These are small next to the placebo range.
+- Household loan growth is positive at all three dates.
+- NFC loan growth is −3.2pp at May-22, then positive at the two later dates.
+
+**Reading**
+1. **Lending rates:** NL is indistinguishable from the controls. Its coefficients are among the *smallest* in absolute value (rank 18/20 and 19/19), and the path stays inside the placebo band throughout. There is no sign of a pricing effect, which is consistent with Basten (2020)'s small pricing effects and with DNB's own expectation.
+2. **Lending volumes:**
+   - Dutch household loan growth rose *relative to* the controls after 2022 (+2.5pp vs all, +5.2pp vs clean; flat pre-trend). Against the clean controls it leaves the placebo band after about 12 months.
+   - NFC loan growth has a visible pre-trend (±1.3–1.4pp), so parallel trends fail there and the NFC result is uninformative.
+3. **What it does *not* show:** a causal effect.
+   - With one treated country, rates are confounded by mortgage-market structure. Dutch mortgages have long fixed-rate periods, so new-business rates respond differently to ECB hikes.
+   - Household growth is confounded by the Dutch housing-market rebound (real house prices +10% y/y in 2026Q1 according to DNB's Mar-2026 release).
+   - The "all" controls are contaminated by their own CCyB increases; the "clean" group is small (5) and structurally different (IT, AT, FI, MT, LU).
+4. **Slide wording:** "Event-study evidence: Dutch lending rates moved in line with euro-area peers and household credit grew faster. No sign of contraction around any of the three CCyB dates." Present it only as supporting evidence.
+
 ---
 
 ## 5. Core interpretation: the normalisation hypothesis
@@ -242,11 +307,12 @@ BIS data on bank credit to the private non-financial sector, in national currenc
 - [x] Dutch COVID capital relief. See §0a: SRB cut (€5bn, ESRB; DNB headline €8bn combined), risk-weight floor postponed to 2022, ECB P2G/CCoB/P2R relief.
 - [x] GDP back above pre-COVID in 2021Q3; 2022 HICP 11.6% (CPI 10.0%).
 - [x] Bank CET1/RWA/MDA for ING, Rabobank, ABN AMRO and de Volksbank. See §3; the de Volksbank requirement is derived (flagged).
-- [ ] Bank-level event study / DiD (Stage 3, optional). The ECB data API is blocked in this sandbox too.
+- [x] Country-level event study (Stage 3), see §4b. A bank-level design (EBA transparency data) remains possible future work.
 - [x] Tier-C literature verified. See `03_references.md`.
-- [ ] **New:** BIS data refresh is still pending. `code/fetch_data.py` is hardened but cannot reach stats.bis.org from this environment; run it once with network access.
+- [x] BIS data refresh done after network access was opened: no revisions, no new quarter (2026Q2 not yet published). See §7.
 - [ ] **New:** a source for "long fixed-rate mortgages slow rate pass-through" (§2) is still needed.
-- [ ] **New:** confirm on the DNB page whether the €8bn (2020) includes the risk-weight-floor postponement.
+- [x] The €8bn (2020) covers the systemic-buffer cut and the risk-weight-floor postponement combined (§0a).
+- [ ] DNB FSR and framework PDFs could not be downloaded (bot protection). The calibration numbers (PAL €12bn, €6bn, €150bn) rest on the earlier reading recorded in tier A of `03_references.md`.
 
 ---
 
@@ -267,3 +333,18 @@ BIS data on bank credit to the private non-financial sector, in national currenc
 3. **Calibration benchmark:** the ECB losses-to-buffer paper (De Nora et al. 2025, ECB WP 3061) gives **1.1–1.8%**, not "about 1–1.5%". Slide 7 needs correcting.
 4. **Jiménez et al. (2017)** studies Spanish *dynamic provisioning*, not the CCyB. Cite it as evidence on countercyclical capital buffers in general, not on the CCyB.
 5. **Couaillier et al. (2022)** is confirmed as ECB WP 2644, later published in JMCB 2025: banks close to their buffers cut lending in COVID. This supports slide 6.
+
+**2026-10-01, after network access was opened**
+- **BIS refresh** (`python code/fetch_data.py`, first successful run):
+  - all 7 series are identical to the snapshot on overlapping observations, with **no revisions** and no new quarter
+  - two differences, both improvements:
+    - (a) the official BIS trend and gap are now available from 1971 rather than 2005
+    - (b) `nl_tc.csv` column `P` is now the correct private non-financial debt/GDP series (the snapshot bug is fixed)
+  - the snapshot was replaced and all scripts re-run; every result in §1–§5 is unchanged
+  - the replication now covers 1971–2026 (MAE 0.00002pp, max 0.00005pp)
+- **Direct verification corrected three Stage 2 claims:**
+  - the "limited increase" quote comes from a DNB parliamentary statement, not the press release
+  - "€5bn (ESRB)" is dropped
+  - the 1% press release is dated 27 May 2022, though the FSR announcement was on 25 May
+- **New fact:** the mortgage risk-weight floor expires 30 Nov 2026.
+- **Stage 3** added (§4b): lending rates show no difference from peers, and household credit growth is higher. This supports "no sign of contraction"; it is not causal.

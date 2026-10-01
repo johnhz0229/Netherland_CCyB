@@ -1,0 +1,9 @@
+controls,outcome,May-22: 1% announced,May-23: 1% effective + 2% announced,May-24: 2% effective
+all,mort_rate,0.142,-0.254,0.191
+all,nfc_rate,0.131,-0.149,0.372
+all,hh_growth,0.305,1.178,0.415
+all,nfc_growth,-3.213,2.632,2.24
+clean,mort_rate,0.093,-0.164,0.166
+clean,nfc_rate,0.375,-0.006,0.326
+clean,hh_growth,1.126,2.323,0.336
+clean,nfc_growth,-3.143,1.57,2.919

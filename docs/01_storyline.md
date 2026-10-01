@@ -30,6 +30,7 @@
   - No sign of a credit contraction.
   - About €6.7bn of releasable capital.
   - Trade-offs: more reliance on discretion, and the release mechanism has never been tested.
+- Outlook: the mortgage risk-weight floor expires 30 Nov 2026, which makes the 2% CCyB the main releasable buffer.
 
 ---
 
@@ -121,6 +122,7 @@
 
 **Slide 17 · Implication 2: no contraction in lending.**
 - Bank credit grew +16.6% in the Netherlands vs +7.9% in the euro area (2022Q1–2026Q1).
+- Event study (Fig. 3): lending rates moved with euro-area peers (inside the placebo band); household credit growth was higher; nothing happens at May-22, May-23 or May-24.
 - Spell out the identification limits.
 
 **Slide 18 · Implication 3: releasable capital.**

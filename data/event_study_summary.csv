@@ -1,0 +1,9 @@
+controls,outcome,n_units,NL avg post coef,NL avg pre coef,rank of |NL post| among units (1=largest),permutation p (two-sided)
+all,mort_rate,20,-0.079,0.034,18,0.9
+all,nfc_rate,19,-0.024,0.017,19,1.0
+all,hh_growth,20,2.517,-0.059,8,0.4
+all,nfc_growth,20,2.573,1.327,11,0.55
+clean,mort_rate,6,-0.004,0.102,6,1.0
+clean,nfc_rate,6,0.206,0.163,5,0.833
+clean,hh_growth,6,5.183,-0.433,2,0.333
+clean,nfc_growth,6,1.748,-1.403,6,1.0
