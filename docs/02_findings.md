@@ -129,6 +129,7 @@ Sources:
 **Macro facts**
 - GDP regained its pre-COVID (2019Q4) level in **2021Q3** (+1.9% q/q). By end-2021 it was almost 3% above end-2019. Source: CBS, reported in [NL Times, 16 Nov 2021](https://nltimes.nl/2021/11/16/dutch-economy-back-pre-covid-level-3rd-quarter); CBS background: [CBS, 2022 week 8](https://www.cbs.nl/en-gb/news/2022/08/dutch-economy-shows-faster-pandemic-recovery-than-neighbouring-countries).
   - Q2 2021 was almost back at the end-2019 level, but the 2021Q1 lockdown caused a dip.
+- ECB first rate hike: **21 July 2022, +50bp** on all three key rates ([ECB monetary policy decision, 21 Jul 2022](https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.mp220721~53e5bdd317.en.html), read directly).
 - 2022 inflation: **HICP 11.6%** (annual average); national CPI 10.0%. Source: [CBS, "Inflation rate 10.0 percent in 2022"](https://www.cbs.nl/en-gb/news/2023/02/inflation-rate-10-0-percent-in-2022). Use HICP on slides, because it is the euro-area-comparable measure.
 
 ---
