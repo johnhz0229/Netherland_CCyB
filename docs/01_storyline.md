@@ -38,7 +38,7 @@ Every content slide carries a small tag in the top-right corner (*Q1 Environment
 | Act 3b · Wider implications | 17–20 | A | 4.25 |
 | Epilogue | 21 | A | 1.5 |
 
-- **Totals:** Speaker A ≈ 14 min, Speaker B ≈ 10 min.
+- **Totals:** Zheng (A) ≈ 14 min, Diego (B) ≈ 10 min.
 - **Hand-overs:**
   - 8→9: "So that was the setting. Now: what did DNB actually look at?"
   - 16→17: "So the decision was cheap and credit kept flowing. But a CCyB reaches far beyond Dutch banks."
@@ -75,7 +75,7 @@ All numbers come from `docs/02_findings.md` or `data/`. ✔ means verified again
 
 ---
 
-## PROLOGUE (Speaker A)
+## PROLOGUE (Zheng (A))
 
 ### Slide 2 · March 2020: an empty buffer
 **Title:** *When COVID hit, neighbours released their buffers; the Netherlands had nothing to release.*
@@ -116,7 +116,7 @@ All numbers come from `docs/02_findings.md` or `data/`. ✔ means verified again
 
 ---
 
-## ACT 1 · THE SETTING, Q1 Environment (Speaker A)
+## ACT 1 · THE SETTING, Q1 Environment (Zheng (A))
 
 ### Slide 5 · Timeline
 **Title:** *The path to 2% was announced in 2020 and walked step by step.*
@@ -170,7 +170,7 @@ All numbers come from `docs/02_findings.md` or `data/`. ✔ means verified again
 
 ---
 
-## ACT 2 · THE DECISION, Q2 Criteria & risks (Speaker B)
+## ACT 2 · THE DECISION, Q2 Criteria & risks (Diego (B))
 
 ### Slide 9 · Why not follow the Basel rule?
 **Title:** *The Basel rule said 0%, but on Dutch data it had missed the last crisis and raised false alarms.*
@@ -251,7 +251,7 @@ All numbers come from `docs/02_findings.md` or `data/`. ✔ means verified again
 
 ## ACT 3 · THE CONSEQUENCES, Q3 Implications
 
-### Slide 15 · The twist: the rate shock paid for it (Speaker B)
+### Slide 15 · The twist: the rate shock paid for it (Diego (B))
 **Title:** *The storm made it the cheapest moment: higher rates gave banks the profits to build the buffer.*
 - **For banks:**
   - The full 2% absorbs ≈8% (2021) to ≈19% (2022) of the four large banks' CET1 headroom, as upper bounds ✔.
@@ -263,7 +263,7 @@ All numbers come from `docs/02_findings.md` or `data/`. ✔ means verified again
 - **Answer to the slide-4 question:** "Not the wrong moment. Arguably the right one."
 - **Last line:** "Cheap for banks, but did borrowers pay?"
 
-### Slide 16 · Borrowers: no sign of contraction (Speaker B)
+### Slide 16 · Borrowers: no sign of contraction (Diego (B))
 **Title:** *Credit kept flowing, and its price moved with the rest of the euro area.*
 - **Visual:** Fig. 3, the event study (NL vs clean controls AT, FI, IT, MT, LU, with a placebo band).
 - **Rates:** Dutch lending rates stayed inside the placebo range at all three dates.
@@ -274,7 +274,7 @@ All numbers come from `docs/02_findings.md` or `data/`. ✔ means verified again
 - **Caveat on slide:** one treated country, contaminated controls, housing rebound. This is "no sign of contraction", not a causal effect.
 - **Hand-over line:** "So the decision was cheap and credit kept flowing. But a CCyB reaches far beyond Dutch banks and borrowers."
 
-### Slide 17 · Monetary and macroprudential policy: complements, not a double squeeze (Speaker A)
+### Slide 17 · Monetary and macroprudential policy: complements, not a double squeeze (Zheng (A))
 **Title:** *Building the buffer while the ECB hiked did not double the squeeze. It let monetary policy focus on inflation.*
 - **The concern:** two tightenings at once, ECB rates plus capital requirements.
 - **What happened:** lending rates did not diverge from peers (slide 16), and banks' profits rose with rates (slide 15).
@@ -313,7 +313,7 @@ All numbers come from `docs/02_findings.md` or `data/`. ✔ means verified again
 
 ---
 
-## EPILOGUE (Speaker A)
+## EPILOGUE (Zheng (A))
 
 ### Slide 21 · Back to March 2020
 **Title:** *A promise kept: the buffer was refilled in the storm, at the moment it was cheapest.*

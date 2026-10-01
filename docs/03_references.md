@@ -73,3 +73,10 @@ Nothing in tier C failed verification. Remaining caution: the "Borio et al. (spe
 - Herrera, L., Scalone, V. & Pirovano, M. (2024). The importance of being positive: costs and benefits of a positive neutral rate for the countercyclical capital buffer. *ECB Macroprudential Bulletin* 24. https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu202406_01~0ed53a85fa.en.html
 - Detken, C., Hempell, H. S. & Pirovano, M. (2025). Macroprudential and monetary policy interaction: the role of early activation of the countercyclical capital buffer. *ECB Macroprudential Bulletin* 31. https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu20250818_01.en.html
 - ECB (2022-07-21). Monetary policy decisions. https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.mp220721~53e5bdd317.en.html
+
+## G. Added for the Q&A preparation (bibliographically verified, 2026-10-01)
+- Modigliani, F. & Miller, M. H. (1958). The cost of capital, corporation finance and the theory of investment. *American Economic Review* 48(3), 261–297.
+- Myers, S. C. (1977). Determinants of corporate borrowing. *Journal of Financial Economics* 5(2), 147–175.
+- Admati, A. R., DeMarzo, P. M., Hellwig, M. F. & Pfleiderer, P. (2013). Fallacies, irrelevant facts, and myths in the discussion of capital regulation: why bank equity is not expensive. Stanford GSB Working Paper No. 2065.
+- Hodrick, R. J. & Prescott, E. C. (1997). Postwar U.S. business cycles: an empirical investigation. *Journal of Money, Credit and Banking* 29(1), 1–16.
+- Ravn, M. O. & Uhlig, H. (2002). On adjusting the Hodrick-Prescott filter for the frequency of observations. *Review of Economics and Statistics* 84(2), 371–376.
