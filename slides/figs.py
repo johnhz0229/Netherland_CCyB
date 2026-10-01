@@ -59,7 +59,7 @@ def fig_gap():
     kw = dict(fontsize=7.5, arrowprops=dict(arrowstyle='-|>', color='#333', lw=0.8, mutation_scale=9))
     ax.annotate('Missed: −13pp\non the eve of the GFC', xy=(pd.Timestamp('2007-10-01'), -13.4), xytext=(pd.Timestamp('1997-06-01'), -38), **kw)
     ax.annotate('False alarm: +17pp\nin a bust (2012)', xy=(pd.Timestamp('2012-04-01'), 16.8), xytext=(pd.Timestamp('2001-01-01'), 30), **kw)
-    ax.annotate('Rewritten: 2016Q1\n−0.6pp then, +26.9pp now', xy=(pd.Timestamp('2016-01-01'), 26.9), xytext=(pd.Timestamp('2017-03-01'), 36), **kw)
+    ax.annotate('Revised: 2016Q1 read −0.6pp\nin real time, +26.9pp today', xy=(pd.Timestamp('2016-01-01'), 26.9), xytext=(pd.Timestamp('2017-03-01'), 36), **kw)
     for d, v, lab in [('2021-10-01', -32.7, 'May-22 decision:\ngap −33pp'), ('2022-10-01', -46.8, 'May-23 decision:\ngap −47pp')]:
         ax.plot(pd.Timestamp(d), v, 'o', color=NAVY, ms=5, zorder=5)
     ax.annotate('At the decisions: −33pp and −47pp\n(latest data: 2021Q4, 2022Q4) → guide = 0%', xy=(pd.Timestamp('2022-10-01'), -46.8),
