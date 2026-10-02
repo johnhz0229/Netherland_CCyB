@@ -12,7 +12,7 @@
 ## Layout
 - `docs/01_storyline.md`: 22-slide storyline (latest).
 - `docs/02_findings.md`: all results, numbers, limitations and open items. This is the source of truth for numbers.
-- `slides/`: Beamer deck (`main.tex`, metropolis theme, 20×11.25cm 16:9). Figures: `python slides/figs.py` (from repo root) → `slides/figs/*.pdf`; build: `cd slides && latexmk -pdf main.tex`. Needs texlive-latex-extra, texlive-fonts-extra (Fira), texlive-pictures. Final PDF copied to `Netherlands_CCyB_slides.pdf`.
+- `slides/`: Beamer deck (`main.tex`, minimal academic theme: default Beamer + Palatino/newpx, white, hairline titles, one red accent; 20×11.25cm 16:9). Figures: `python slides/figs.py` (from repo root) → `slides/figs/*.pdf`; build: `cd slides && latexmk -pdf main.tex`. Needs texlive-latex-extra, texlive-fonts-extra (newpx), texlive-pictures; figures use TeX Gyre Pagella. Final PDF copied to `Netherlands_CCyB_slides.pdf`.
 - Speaker script (A4, one page per slide: slide on top, SAY / NUMBERS / TERMS / NEXT below): source `docs/speech_script.md` → `python code/make_speaker_script.py` → `cd slides && latexmk -pdf speaker_script.tex` (needs `slides/main.pdf` built first) → `Netherlands_CCyB_speaker_script.pdf`.
 - `docs/qa_prep.md`: 22 likely professor questions with model answers and verified references.
 - Speakers: Zheng Huang (A: slides 1–8, 17–21), Diego Gutiérrez (B: slides 9–16). Course: Micro- & Macroprudential Management, Master of Financial Technology, Frankfurt School.

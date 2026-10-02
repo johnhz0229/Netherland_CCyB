@@ -20,16 +20,16 @@ OUT.mkdir(exist_ok=True)
 sys.path.insert(0, str(ROOT / 'code'))
 
 # ---- style: slide palette and font
-FIRA = Path('/usr/share/texlive/texmf-dist/fonts/opentype/public/fira')
-for f in ['FiraSans-Book.otf', 'FiraSans-Regular.otf', 'FiraSans-Medium.otf', 'FiraSans-SemiBold.otf', 'FiraSans-Bold.otf']:
-    if (FIRA / f).exists():
-        font_manager.fontManager.addfont(str(FIRA / f))
-NAVY, RED, GREY, LIGHT, GOLD, GREEN = '#1F3B73', '#C0392B', '#7F8C8D', '#D5DBE5', '#E0A100', '#2E8B57'
+PAGELLA = Path('/usr/share/texmf/fonts/opentype/public/tex-gyre')
+for f in ['texgyrepagella-regular.otf', 'texgyrepagella-bold.otf', 'texgyrepagella-italic.otf']:
+    if (PAGELLA / f).exists():
+        font_manager.fontManager.addfont(str(PAGELLA / f))
+NAVY, RED, GREY, LIGHT, GOLD, GREEN = '#1F3B73', '#A93226', '#7A7A7A', '#E3E3E3', '#8C8C8C', '#3A3A3A'
 plt.rcParams.update({
-    'font.family': 'Fira Sans', 'font.size': 8.5, 'axes.titlesize': 9, 'axes.labelsize': 8,
+    'font.family': 'TeX Gyre Pagella', 'font.size': 8.5, 'axes.titlesize': 9, 'axes.labelsize': 8,
     'xtick.labelsize': 7.5, 'ytick.labelsize': 7.5, 'legend.fontsize': 7.5, 'lines.markersize': 3,
     'axes.spines.top': False, 'axes.spines.right': False, 'axes.edgecolor': '#555555',
-    'axes.titleweight': 'semibold', 'axes.titlelocation': 'left', 'axes.titlepad': 8,
+    'axes.titleweight': 'bold', 'axes.titlelocation': 'left', 'axes.titlepad': 8,
     'savefig.bbox': 'tight', 'savefig.pad_inches': 0.04, 'pdf.fonttype': 3,
 })
 
@@ -50,8 +50,8 @@ def fig_gap():
     g.index = qidx(g.index)
     g = g.loc['1990':]
     fig, ax = plt.subplots(figsize=(7.6, 3.15))
-    ax.axhspan(2, 10, color=GOLD, alpha=0.18, lw=0)
-    ax.text(pd.Timestamp('1990-03-01'), 12.5, 'Basel buffer guide > 0 when gap is 2–10pp (shaded)', fontsize=7, va='bottom', color='#8a6d00')
+    ax.axhspan(2, 10, color=GOLD, alpha=0.12, lw=0)
+    ax.text(pd.Timestamp('1990-03-01'), 12.5, 'Basel buffer guide > 0 when gap is 2–10pp (shaded)', fontsize=7, va='bottom', color='#555555')
     ax.axhline(0, color='k', lw=0.6)
     ax.axvspan(pd.Timestamp('2008-07-01'), pd.Timestamp('2009-07-01'), color=GREY, alpha=0.15, lw=0)
     ax.plot(g.index, g['gap_hp2s'], color=GREY, lw=1.6, ls=(0, (2, 2)), label='Ex-post gap (two-sided HP, 2026 view)')
@@ -63,7 +63,7 @@ def fig_gap():
     for d, v, lab in [('2021-10-01', -32.7, 'May-22 decision:\ngap −33pp'), ('2022-10-01', -46.8, 'May-23 decision:\ngap −47pp')]:
         ax.plot(pd.Timestamp(d), v, 'o', color=NAVY, ms=5, zorder=5)
     ax.annotate('At the decisions: −33pp and −47pp\n(latest data: 2021Q4, 2022Q4) → guide = 0%', xy=(pd.Timestamp('2022-10-01'), -46.8),
-                xytext=(pd.Timestamp('2011-01-01'), -52), color=NAVY, fontweight='semibold', **{k: v for k, v in kw.items() if k != 'fontsize'}, fontsize=7.5)
+                xytext=(pd.Timestamp('2011-01-01'), -52), color=NAVY, fontweight='bold', **{k: v for k, v in kw.items() if k != 'fontsize'}, fontsize=7.5)
     ax.set_ylabel('percentage points')
     ax.set_ylim(-62, 45)
     ax.legend(frameon=False, loc='lower left', ncol=1)
@@ -103,9 +103,9 @@ def fig_indicators():
                fontsize=7, arrowprops=dict(arrowstyle='-|>', lw=0.7, color='#333'))
     for a in ax:
         for d in dec:
-            a.axvline(d, color=GOLD, lw=1.4, alpha=0.9)
+            a.axvline(d, color=GOLD, lw=0.9, ls='--')
         a.set_xlim(pd.Timestamp('2005-01-01'), pd.Timestamp('2026-06-01'))
-    ax[0].text(dec[0], ax[0].get_ylim()[0] + 1, ' CCyB\n decisions', fontsize=6.8, color='#8a6d00', va='bottom')
+    ax[0].text(dec[0], ax[0].get_ylim()[0] + 1, ' CCyB\n decisions', fontsize=6.8, color='#555555', va='bottom')
     fig.tight_layout(w_pad=2.5)
     save(fig, 'indicators')
 
@@ -128,12 +128,12 @@ def fig_event():
         a.plot(x, list(res['NL'].values()), color=RED, lw=1.8, marker='o', ms=3.5, label='Netherlands')
         a.axhline(0, color='k', lw=0.6)
         for m, lab in [(0, 'May-22\n1% announced'), (12, 'May-23\n1% binding,\n2% announced'), (24, 'May-24\n2% binding')]:
-            a.axvline(m, color=GOLD, lw=1.4)
+            a.axvline(m, color=GOLD, lw=0.9, ls='--')
         a.set_title(title)
         a.set_xlabel('months since first announcement (May 2022)')
     lo, hi = ax[0].get_ylim()
     for m, lab in [(0, '1% ann.'), (12, '1% binding /\n2% ann.'), (24, '2% binding')]:
-        ax[0].text(m + 0.6, hi * 0.97, lab, fontsize=6.8, color='#8a6d00', va='top')
+        ax[0].text(m + 0.6, hi * 0.97, lab, fontsize=6.8, color='#555555', va='top')
     ax[0].legend(frameon=False, loc='lower left', fontsize=7)
     fig.tight_layout(w_pad=2.5)
     save(fig, 'event')
@@ -165,7 +165,7 @@ def fig_headroom():
     a.bar(xs, cc, color=RED, width=0.55, label='CCyB (sector-wide)')
     for i in range(2):
         a.text(i, tot[i] + 0.8, f'€{tot[i]:.1f}bn', ha='center', fontsize=7.5)
-        a.text(i + 0.31, cc[i] / 2, f'€{cc[i]:.1f}bn\n= {cc[i]/tot[i]*100:.0f}%', ha='left', va='center', color=RED, fontsize=7.5, fontweight='semibold')
+        a.text(i + 0.31, cc[i] / 2, f'€{cc[i]:.1f}bn\n= {cc[i]/tot[i]*100:.0f}%', ha='left', va='center', color=RED, fontsize=7.5, fontweight='bold')
     a.set_xticks(xs, ['end-2021\n(1% step)', 'end-2022\n(full 2%)']); a.set_xlim(-0.5, 1.95)
     a.set_title('CCyB as share of headroom (upper bound)')
     a.set_ylim(0, 48); a.legend(frameon=False, loc='upper right', fontsize=7)
@@ -187,14 +187,14 @@ def fig_swap():
         bottom = level if v >= 0 else level + v
         ax.bar(i, abs(v), bottom=bottom, color=col, width=0.6)
         if v >= 0:
-            ax.text(i, bottom + abs(v) + 0.25, f'{v:+.1f}', ha='center', fontsize=8, fontweight='semibold', color=col)
+            ax.text(i, bottom + abs(v) + 0.25, f'{v:+.1f}', ha='center', fontsize=8, fontweight='bold', color=col)
         else:
-            ax.text(i, bottom - 0.25, f'{v:+.1f}', ha='center', va='top', fontsize=8, fontweight='semibold', color=col)
+            ax.text(i, bottom - 0.25, f'{v:+.1f}', ha='center', va='top', fontsize=8, fontweight='bold', color=col)
         if i < len(steps) - 1:
             ax.plot([i + 0.3, i + 0.7], [level + v, level + v], color='#555', lw=0.8, ls=':')
         level += v
     ax.bar(len(steps), level, color=NAVY, width=0.6)
-    ax.text(len(steps), level - 0.6, f'{level:+.1f}', ha='center', va='top', fontsize=8, fontweight='semibold', color=NAVY)
+    ax.text(len(steps), level - 0.6, f'{level:+.1f}', ha='center', va='top', fontsize=8, fontweight='bold', color=NAVY)
     ax.axhline(0, color='k', lw=0.8)
     ax.text(4.35, 0.2, 'pre-COVID level', fontsize=7, color='#333', ha='right')
     ax.set_xticks(range(len(steps) + 1), [s[0] for s in steps] + ['Net vs\npre-COVID'])

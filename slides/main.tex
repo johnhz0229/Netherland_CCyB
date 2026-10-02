@@ -2,11 +2,12 @@
 % Build: cd slides && latexmk -pdf main.tex      (figures: python slides/figs.py from repo root)
 % Storyline: docs/01_storyline.md (v4). Numbers: docs/02_findings.md.
 \documentclass[aspectratio=169,11pt]{beamer}
-\usetheme[progressbar=foot,numbering=fraction,block=fill,sectionpage=none]{metropolis}
+\usetheme{default}
+\usefonttheme{serif}
 \geometry{papersize={20cm,11.25cm}}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[sfdefault]{FiraSans}
+\usepackage{newpxtext,newpxmath}
 \usepackage{textcomp,newunicodechar,booktabs,tabularx,array,colortbl,pifont,tikz,xcolor}
 \usetikzlibrary{positioning,calc,arrows.meta,decorations.pathreplacing,shapes.symbols}
 
@@ -18,53 +19,71 @@
 \newunicodechar{≤}{\ensuremath{\leq}}
 \newunicodechar{½}{\ensuremath{\tfrac{1}{2}}}
 \newunicodechar{€}{\texteuro}
-\newunicodechar{✔}{\textcolor{okgreen}{\ding{51}}}
-\newunicodechar{✘}{\textcolor{nlred}{\ding{55}}}
+\newunicodechar{✔}{\ensuremath{\checkmark}}
+\newunicodechar{✘}{\ensuremath{\times}}
 
-% ---------- palette (same as slides/figs.py)
+% ---------- palette: one accent (red = Netherlands), structure in dark blue, everything else grey
 \definecolor{navy}{HTML}{1F3B73}
-\definecolor{nlred}{HTML}{C0392B}
-\definecolor{gold}{HTML}{E0A100}
-\definecolor{grey}{HTML}{7F8C8D}
-\definecolor{light}{HTML}{D5DBE5}
-\definecolor{okgreen}{HTML}{2E8B57}
-\definecolor{paper}{HTML}{FAFAFA}
-\setbeamercolor{frametitle}{bg=navy,fg=white}
-\setbeamercolor{normal text}{fg=black!85,bg=paper}
+\definecolor{nlred}{HTML}{A93226}
+\definecolor{gold}{HTML}{8C8C8C}      % kept as a name for diagrams; now a neutral grey
+\definecolor{grey}{HTML}{6E6E6E}
+\definecolor{light}{HTML}{E3E3E3}
+\definecolor{okgreen}{HTML}{3A3A3A}   % kept as a name; now near-black
+\setbeamercolor{normal text}{fg=black!88,bg=white}
+\setbeamercolor{structure}{fg=navy}
+\setbeamercolor{frametitle}{fg=navy,bg=}
+\setbeamercolor{title}{fg=navy}
 \setbeamercolor{alerted text}{fg=nlred}
-\setbeamercolor{progress bar}{fg=gold,bg=light}
-\setbeamercolor{block title}{bg=navy!12,fg=navy}
-\setbeamercolor{block body}{bg=navy!4}
-\setbeamercolor{block title alerted}{bg=nlred!14,fg=nlred}
-\setbeamercolor{block body alerted}{bg=nlred!4}
-\setbeamercolor{block title example}{bg=okgreen!14,fg=okgreen!80!black}
-\setbeamercolor{block body example}{bg=okgreen!4}
-\setbeamerfont{frametitle}{size=\large}
-\setbeamerfont{block title}{size=\small,series=\bfseries}
-\setbeamersize{text margin left=0.55cm,text margin right=0.55cm}
+\setbeamercolor{block title}{fg=navy,bg=}
+\setbeamercolor{block body}{bg=}
+\setbeamercolor{block title alerted}{fg=nlred,bg=}
+\setbeamercolor{block body alerted}{bg=}
+\setbeamercolor{block title example}{fg=black!80,bg=}
+\setbeamercolor{block body example}{bg=}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{block title}{size=\normalsize,series=\bfseries}
+\setbeamersize{text margin left=0.7cm,text margin right=0.7cm}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[default]
+\setbeamertemplate{itemize item}{\textendash}
+\setbeamertemplate{itemize subitem}{\textendash}
 
-% ---------- frame title with wrap + assignment tag (Q1/Q2/Q3)
+% ---------- frame title: left-aligned, hairline rule, small grey section label (Q1/Q2/Q3)
 \gdef\theqtag{}
 \newcommand{\qtag}[1]{\gdef\theqtag{#1}}
 \setbeamertemplate{frametitle}{%
-  \nointerlineskip
-  \begin{beamercolorbox}[wd=\paperwidth,sep=0.2cm,leftskip=0.35cm,rightskip=0.2cm]{frametitle}%
-    \begin{minipage}[c]{0.80\paperwidth}\raggedright\usebeamerfont{frametitle}\insertframetitle\end{minipage}%
-    \hfill
-    \begin{minipage}[c]{0.13\paperwidth}\raggedleft\scriptsize\color{gold}\bfseries\theqtag\end{minipage}%
-  \end{beamercolorbox}}
+  \vspace*{0.25cm}%
+  \begin{minipage}[b]{0.82\textwidth}\raggedright\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle\end{minipage}%
+  \hfill
+  \begin{minipage}[b]{0.16\textwidth}\raggedleft\scriptsize\color{grey}\textsc{\theqtag}\end{minipage}\par
+  \vspace{2pt}{\color{black!30}\rule{\textwidth}{0.4pt}}\vspace{-2pt}}
+
+% ---------- footline: authors left, page number right
+\setbeamertemplate{footline}{%
+  \hspace{0.7cm}{\color{grey}\fontsize{7}{8}\selectfont Huang \& Gutiérrez \,·\, The Netherlands' CCyB}%
+  \hfill{\color{grey}\fontsize{7}{8}\selectfont\insertframenumber/\inserttotalframenumber}\hspace{0.7cm}\vspace{0.25cm}}
+
+% ---------- title page
+\setbeamertemplate{title page}{%
+  \vspace*{1.2cm}
+  {\color{navy}\fontsize{24}{28}\selectfont\bfseries\inserttitle\par}
+  \vspace{0.25cm}
+  {\large\color{black!75}\insertsubtitle\par}
+  \vspace{0.35cm}{\color{black!30}\rule{0.6\textwidth}{0.4pt}}\par\vspace{0.35cm}
+  {\normalsize\insertauthor\par}\vspace{0.15cm}
+  {\small\color{grey}\insertinstitute\par}\vspace{0.15cm}
+  {\small\color{grey}\insertdate\par}}
 
 % ---------- helpers
 \newcommand{\source}[1]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=south west,inner sep=0pt,text width=0.86\paperwidth,align=left,font=\fontsize{6.5}{7.5}\selectfont,text=grey]
-      at ($(current page.south west)+(0.55cm,0.30cm)$) {Source: #1};
+    \node[anchor=south west,inner sep=0pt,text width=0.80\paperwidth,align=left,font=\fontsize{6.5}{7.5}\selectfont,text=grey]
+      at ($(current page.south west)+(0.7cm,0.78cm)$) {Source: #1};
   \end{tikzpicture}}
-\newcommand{\kpi}[3]{% value, label, colour
-  \begin{tikzpicture}
-    \node[draw=#3!60,fill=#3!6,rounded corners=3pt,minimum width=3.6cm,minimum height=1.55cm,align=center,inner sep=4pt,font=\scriptsize]
-      {{\Large\bfseries\color{#3}#1}\\[2pt]#2};
-  \end{tikzpicture}}
+\newcommand{\kpi}[3]{% value, label, colour -- plain figure with caption, no box
+  \begin{minipage}[t]{3.9cm}\centering
+    {\LARGE\color{#3}#1}\\[3pt]{\scriptsize\color{black!70}#2}
+  \end{minipage}}
 \newcommand{\quot}[2]{{\itshape “#1”}\hfill{\scriptsize\color{grey}— #2}}
 \newcommand{\hl}[1]{\textcolor{nlred}{\bfseries #1}}
 \newcommand{\nv}[1]{\textcolor{navy}{\bfseries #1}}
@@ -127,7 +146,7 @@
     \foreach \d/\c/\y in {2/Denmark/0.55,3/Norway (→1\%)/1.15,6/Sweden/0.55,17/Belgium/1.15,21/Lithuania\, Germany/0.55,22.6/France\, Ireland/1.15}{
       \fill[navy] (\d,0) circle (2.4pt); \draw[navy] (\d,0)--(\d,\y-0.15) node[above,text=navy,font=\scriptsize\bfseries]{\c};}
     \node[font=\tiny,text=grey] at (22.6,-0.45) {1 Apr};
-    \node[draw=nlred,fill=nlred!8,rounded corners,font=\small\bfseries,text=nlred,align=center] at (11.5,-1.25) {Netherlands: CCyB 0\% — nothing to release};
+    \node[draw=nlred,font=\small\bfseries,text=nlred,align=center] at (11.5,-1.25) {Netherlands: CCyB 0\% — nothing to release};
     \node[anchor=west,font=\scriptsize\bfseries,text=grey] at (0,2.05) {CCyB release announcements, March–April 2020};
   \end{tikzpicture}
   \end{center}
@@ -155,10 +174,10 @@
     \column{0.44\textwidth}
     \centering
     \begin{tikzpicture}[font=\scriptsize,box/.style={draw=white,thick,minimum width=4.1cm,align=center,inner sep=2pt}]
-      \node[box,fill=navy!80,text=white,minimum height=1.25cm] (p1) {Pillar 1 minimum · 4.5\%};
-      \node[box,fill=navy!60,text=white,minimum height=0.65cm,above=0pt of p1] (p2r) {Pillar 2 requirement (bank-specific)};
-      \node[box,fill=grey!55,minimum height=0.85cm,above=0pt of p2r] (ccob) {Capital conservation buffer · 2.5\%};
-      \node[box,fill=grey!35,minimum height=0.65cm,above=0pt of ccob] (osii) {O-SII / systemic risk buffer};
+      \node[box,fill=black!55,text=white,minimum height=1.25cm] (p1) {Pillar 1 minimum · 4.5\%};
+      \node[box,fill=black!38,text=white,minimum height=0.65cm,above=0pt of p1] (p2r) {Pillar 2 requirement (bank-specific)};
+      \node[box,fill=black!20,minimum height=0.85cm,above=0pt of p2r] (ccob) {Capital conservation buffer · 2.5\%};
+      \node[box,fill=black!9,minimum height=0.65cm,above=0pt of ccob] (osii) {O-SII / systemic risk buffer};
       \node[box,fill=nlred,text=white,minimum height=0.65cm,above=0pt of osii,font=\scriptsize\bfseries] (ccyb) {CCyB · 0–2.5\% · \emph{releasable}};
       \node[box,draw=grey,dashed,fill=white,minimum height=0.5cm,above=0pt of ccyb] (p2g) {Pillar 2 guidance (non-binding)};
       \draw[decorate,decoration={brace,amplitude=4pt},thick] ([xshift=3pt]ccyb.north east) -- ([xshift=3pt]ccob.south east)
@@ -196,7 +215,7 @@
       Basel gap \textbf{−33 / −47pp} → guide \textbf{0\%}
     \end{alertblock}
     \column{0.10\textwidth}\centering\vspace{0.9cm}
-    \begin{tikzpicture}\draw[-{Latex[length=3mm]},line width=2pt,navy](0,0)--(1,0);\end{tikzpicture}
+    \begin{tikzpicture}\draw[-{Latex[length=2.5mm]},line width=0.8pt,black!60](0,0)--(1,0);\end{tikzpicture}
     \column{0.42\textwidth}
     \begin{block}{The decision}\small
       CCyB \textbf{0\% → 1\% → 2\%}\\
@@ -211,11 +230,11 @@
   \end{center}
   \vspace{2pt}
   \begin{center}\small
-  \begin{tikzpicture}[node distance=0.35cm,act/.style={draw=navy,fill=navy!6,rounded corners,text width=5.55cm,minimum height=1.15cm,align=center,font=\scriptsize}]
-    \node[act] (a1) {\textbf{Act 1 · The setting} (Q1 Environment)\\timeline · macro\\credit \& housing · banks};
-    \node[act,right=of a1] (a2) {\textbf{Act 2 · The decision} (Q2 Criteria \& risks)\\rule vs framework · DNB's reasons\\risks \& tools · verdict};
-    \node[act,right=of a2] (a3) {\textbf{Act 3 · The consequences} (Q3 Implications)\\banks · borrowers · monetary policy\\borders · resilience · critiques};
-    \draw[-{Latex},navy] (a1)--(a2); \draw[-{Latex},navy] (a2)--(a3);
+  \begin{tikzpicture}[node distance=0.35cm,act/.style={draw=black!35,text width=5.6cm,minimum height=1.15cm,align=center,font=\scriptsize}]
+    \node[act] (a1) {\textbf{Act 1 · The setting}\\(Q1 Environment)\\timeline · macro\\credit \& housing · banks};
+    \node[act,right=of a1] (a2) {\textbf{Act 2 · The decision}\\(Q2 Criteria \& risks)\\rule vs framework · DNB's reasons\\risks \& tools · verdict};
+    \node[act,right=of a2] (a3) {\textbf{Act 3 · The consequences}\\(Q3 Implications)\\banks · borrowers · monetary policy\\borders · resilience · critiques};
+    \draw[-{Latex},black!50] (a1)--(a2); \draw[-{Latex},black!50] (a2)--(a3);
   \end{tikzpicture}
   \end{center}
   \source{CBS (HICP 2022); ECB monetary policy decision, 21 Jul 2022; BIS credit-to-GDP gaps (latest data at each decision: 2021Q4, 2022Q4).}
@@ -226,8 +245,8 @@
 \begin{frame}{The path to 2\% was announced in 2020 — and walked step by step\\ as the ECB began to tighten}
   \centering
   \begin{tikzpicture}[x=1.95cm,font=\scriptsize]
-    \fill[gold!18] (2.54,-0.35) rectangle (3.75,0.35);
-    \node[text=gold!70!black,font=\scriptsize\bfseries,anchor=west] at (2.56,-0.95) {ECB hikes Jul-22 – Sep-23};
+    \fill[black!7] (2.54,-0.35) rectangle (3.75,0.35);
+    \node[text=grey,font=\scriptsize\itshape,anchor=west] at (2.56,-0.95) {ECB hikes Jul-22 – Sep-23};
     \draw[-{Latex[length=2mm]},thick,grey] (-0.1,0)--(7.1,0);
     \foreach \y/\x in {2020/0,2021/1,2022/2,2023/3,2024/4,2025/5,2026/6}{\draw[grey](\x,0.07)--(\x,-0.07) node[below=1pt]{\y};}
     \fill[nlred] (0.21,0) circle (2.6pt); \draw[nlred] (0.21,0)--(0.21,1.25) node[above,align=center,text width=2.05cm,font=\scriptsize]{\textbf{17 Mar 2020}\\systemic buffers cut + promise of 2\% CCyB};
@@ -247,10 +266,10 @@
 \qtag{Q1 · Environment}
 \begin{frame}{The economy had fully recovered — then war, energy and inflation darkened the outlook}
   \centering
-  \kpi{2021Q3}{GDP back above\\pre-COVID level}{okgreen}\hfill
+  \kpi{2021Q3}{GDP back above\\pre-COVID level}{navy}\hfill
   \kpi{11.6\%}{HICP inflation, 2022\\(national CPI 10.0\%)}{nlred}\hfill
   \kpi{+50bp}{ECB's first hike\\21 July 2022}{navy}\hfill
-  \kpi{record}{energy \& commodity prices\\after the invasion}{gold}
+  \kpi{record}{energy \& commodity prices\\after the invasion}{navy}
   \vspace{10pt}
   \raggedright
   \begin{block}{DNB, Financial Stability Report, spring 2022}\small
@@ -283,8 +302,8 @@
   \centering
   \kpi{17.7\%}{core capital (CET1) ratio\\end-2021 (EU 15.7\%, 21Q3)}{navy}\hfill
   \kpi{16.3\%}{CET1 ratio, end-2022\\“in line with EU average”}{navy}\hfill
-  \kpi{+6.7\%}{net interest income 2022\\(67.7\% of income)}{okgreen}\hfill
-  \kpi{11.5\%}{4 major banks' CET1 after a\\severe stress test (min.\ 8\%)}{gold}
+  \kpi{+6.7\%}{net interest income 2022\\(67.7\% of income)}{navy}\hfill
+  \kpi{11.5\%}{4 major banks' CET1 after a\\severe stress test (min.\ 8\%)}{navy}
   \vspace{8pt}
   \raggedright
   \begin{columns}[T,onlytextwidth]
@@ -306,7 +325,7 @@
 \qtag{Q2 · Criteria \& risks}
 \begin{frame}{The Basel rule said 0\% — but on Dutch data it had missed the last crisis and raised false alarms}
   \centering
-  \includegraphics[height=0.66\textheight]{figs/gap.pdf}\par
+  \includegraphics[height=0.58\textheight]{figs/gap.pdf}\par
   \vspace{-2pt}
   \raggedright\small
   \textbf{Credit-to-GDP gap} = credit/GDP ratio minus its long-run trend (Hodrick-Prescott filter). \textbf{Rule:} gap $<$ 2pp → 0\%, gap $>$ 10pp → 2.5\%. Our one-sided filter ($\lambda=400{,}000$) reproduces the official BIS gap within 0.00005pp (1971–2026).\\
@@ -319,19 +338,19 @@
 \begin{frame}{DNB's compass: 2\% is the normal-times level, calibrated on past crisis losses — not on credit growth}
   \centering
   \begin{tikzpicture}[font=\scriptsize,ph/.style={draw=white,minimum height=1.05cm,minimum width=3.15cm,align=center,inner sep=2pt}]
-    \node[ph,fill=grey!35] (a) {\textbf{1 · Recovery}\\CCyB released};
+    \node[ph,fill=black!8] (a) {\textbf{1 · Recovery}\\CCyB released};
     \node[ph,fill=nlred,text=white,right=1pt of a] (b) {\textbf{2 · Normality}\\\textbf{CCyB 2\%}};
-    \node[ph,fill=gold!70,right=1pt of b] (c) {\textbf{3 · Increased risk}\\CCyB $>$ 2\%};
-    \node[ph,fill=navy!75,text=white,right=1pt of c] (d) {\textbf{4 · Materialisation}\\release};
+    \node[ph,fill=black!16,right=1pt of b] (c) {\textbf{3 · Increased risk}\\CCyB $>$ 2\%};
+    \node[ph,fill=black!28,right=1pt of c] (d) {\textbf{4 · Materialisation}\\release};
     \node[below=1pt of b,font=\scriptsize\color{nlred}] {built up 1pp a year → 2\% after two years};
   \end{tikzpicture}
   \vspace{8pt}
 
-  \begin{tikzpicture}[font=\small,st/.style={draw=navy,fill=navy!6,rounded corners,minimum height=1.0cm,text width=4.6cm,align=center,font=\small}]
+  \begin{tikzpicture}[font=\small,st/.style={draw=black!35,minimum height=1.0cm,text width=4.6cm,align=center,font=\small}]
     \node[st] (x) {Peak accumulated losses\\of Dutch banks, 2007–16:\\\textbf{€12bn}};
     \node[st,right=0.8cm of x] (y) {2\% buffer ≈ \textbf{€6bn}\\of releasable core capital};
     \node[st,right=0.8cm of y] (z) {release creates lending\\headroom of \textbf{up to €150bn}};
-    \draw[-{Latex},thick,navy](x)--(y); \draw[-{Latex},thick,navy](y)--(z);
+    \draw[-{Latex},black!55](x)--(y); \draw[-{Latex},black!55](y)--(z);
   \end{tikzpicture}
   \vspace{6pt}
   \raggedright\small
@@ -372,7 +391,7 @@
     \toprule
     \textbf{Financial-stability risks named by DNB (FSR 2022/23)} & \textbf{Instrument} \\
     \midrule
-    War, energy and supply shocks · rapid tightening of financial conditions and market corrections · debt sustainability of governments, firms, households · bank turmoil abroad (SVB, Credit Suisse, 2023) & \cellcolor{nlred!10}\textbf{CCyB} — releasable for \emph{any} shock \\
+    War, energy and supply shocks · rapid tightening of financial conditions and market corrections · debt sustainability of governments, firms, households · bank turmoil abroad (SVB, Credit Suisse, 2023) & \cellcolor{black!5}\textbf{CCyB} — releasable for \emph{any} shock \\
     \midrule
     “Overheated” housing · high mortgage debt of first-time buyers · interest-only loans & borrower limits (loan-to-value, loan-to-income), tax reform, \textbf{mortgage risk-weight floor} (Jan 2022 – Nov 2026) \\
     \midrule
@@ -399,13 +418,13 @@
     Path & +1pp a year, stop at 2\% & follows risk & 1\% → 2\% → held & ✔ \\
     2023: house prices falling, rates jumping & raise anyway & pause & raised & ✔ \\
     2024–26: house prices rising again (+10\% y/y, Mar-26) & stay at 2\% & go above 2\% (framework phase 3) & held at 2\% & ✔ \\
-    \rowcolor{gold!15} Other buffers & cut structural ones to compensate & keep them & cut in 2020 and 2024 & ✔ \\
+    \rowcolor{black!6} Other buffers & cut structural ones to compensate & keep them & cut in 2020 and 2024 & ✔ \\
     \bottomrule
   \end{tabular}
   \vspace{8pt}
 
   \begin{tikzpicture}
-    \node[draw=nlred,fill=nlred!6,rounded corners,inner sep=7pt,font=\normalsize]
+    \node[draw=none,inner sep=4pt,font=\normalsize]
       {Five predictions, five matches: \hl{normalisation}. The last row is the key to the whole story.};
   \end{tikzpicture}
   \source{BIS (WS\_CREDIT\_GAP, WS\_DSR, WS\_TC, WS\_SPP); DNB press releases 2022–2026 (house prices: DNB, 26 Mar 2026); DNB framework (2022); ESRB O-SII notifications.}
@@ -416,7 +435,7 @@
 \begin{frame}{A swap, not a squeeze: DNB moved capital from structural to releasable buffers}
   \begin{columns}[c,onlytextwidth]
     \column{0.60\textwidth}
-    \includegraphics[width=\textwidth]{figs/swap.pdf}
+    \includegraphics[width=0.92\textwidth]{figs/swap.pdf}
     \column{0.38\textwidth}\small
     \textbf{DNB's own words}\\[2pt]
     \quot{more or less capital-neutral for the three large banks}{2020}\\[3pt]
@@ -433,7 +452,7 @@
 \qtag{Q3 · Implications}
 \begin{frame}{The twist: the storm made it the cheapest moment —\\ higher rates gave banks the profits to build the buffer}
   \centering
-  \includegraphics[width=0.92\textwidth]{figs/headroom.pdf}
+  \includegraphics[width=0.84\textwidth]{figs/headroom.pdf}
   \vspace{-2pt}
   \raggedright\small
   \begin{columns}[T,onlytextwidth]
@@ -451,7 +470,7 @@
 \qtag{Q3 · Implications}
 \begin{frame}{Credit kept flowing — and its price moved with the rest of the euro area}
   \centering
-  \includegraphics[height=0.47\textheight]{figs/event.pdf}
+  \includegraphics[height=0.42\textheight]{figs/event.pdf}
   \vspace{-2pt}
   \raggedright\small
   \begin{columns}[T,onlytextwidth]
@@ -513,7 +532,7 @@
       Germany & 0.75\% & Feb 2023 \\
       France & 1.0\% & Jan 2024 \\
       Ireland & 1.5\% & Jun 2024 \\
-      \rowcolor{nlred!10}\textbf{Netherlands} & \textbf{2.0\%} & \textbf{May 2024} \\
+      \rowcolor{black!6}\textbf{Netherlands} & \textbf{2.0\%} & \textbf{May 2024} \\
       Belgium & 1.0\% & Oct 2024 \\
       Portugal & 0.75\% & Jan 2026 \\
       Spain & 1.0\% & Oct 2026 \\
@@ -529,7 +548,7 @@
   \centering
   \kpi{€0 → €6.7bn}{releasable-by-design capital\\2020 → 2024}{nlred}\hfill
   \kpi{≈ half}{of the €12bn peak losses\\after the GFC}{navy}\hfill
-  \kpi{€150bn}{lending headroom\\if released}{okgreen}
+  \kpi{€150bn}{lending headroom\\if released}{navy}
   \vspace{10pt}
   \raggedright
   \begin{columns}[T,onlytextwidth]
@@ -584,7 +603,8 @@
   \vspace{16pt}
   \begin{center}
     \begin{tikzpicture}
-      \node[fill=navy,text=white,rounded corners=4pt,inner sep=12pt,text width=0.82\textwidth,align=center,font=\large]
+      \draw[black!30] (-0.41\textwidth,0.95) -- (0.41\textwidth,0.95); \draw[black!30] (-0.41\textwidth,-0.95) -- (0.41\textwidth,-0.95);
+      \node[draw=none,text=navy,inner sep=10pt,text width=0.82\textwidth,align=center,font=\large] at (0,0)
         {In March 2020, the Netherlands had nothing to release.\\ Next time, it will.\\[6pt]
          {\normalsize\itshape The best time to fill a buffer is when nobody thinks you need it — even in a storm.}};
     \end{tikzpicture}
