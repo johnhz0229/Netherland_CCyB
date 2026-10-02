@@ -22,7 +22,7 @@ SAY:
 NUMBERS:
 - CCyB 0% → 2% (fully binding 31 May 2024)
 TERMS:
-- DNB — De Nederlandsche Bank, the Dutch central bank and macroprudential authority
+- DNB: De Nederlandsche Bank, the Dutch central bank and macroprudential authority.
 NEXT: "Here is the whole talk on one slide."
 
 ## 2 · One-pager | Zheng | 0:45 | 0:15
@@ -37,9 +37,9 @@ NUMBERS:
 - Credit-to-GDP gap at the decisions: −33pp and −47pp → Basel guide 0%
 - Inflation 11.6% (2022) · CET1 17.7% (end-2021) · €6.7bn releasable
 TERMS:
-- CCyB — countercyclical capital buffer: extra bank capital (0–2.5% of risk-weighted assets) built in good times, released in bad times
-- Credit-to-GDP gap — how far credit/GDP is above its long-run trend; the Basel starting point for the CCyB
-- O-SII — "other systemically important institution"; the O-SII buffer is an extra capital charge on large banks
+- CCyB: Countercyclical capital buffer. Extra bank capital (0–2.5% of risk-weighted assets) built in good times, released in bad times.
+- Credit-to-GDP gap: How far credit/GDP is above its long-run trend; the Basel starting point for the CCyB.
+- O-SII: "Other systemically important institution". The O-SII buffer is an extra capital charge on large banks.
 NEXT: "The story starts in March 2020."
 
 ## 3 · March 2020 | Zheng | 1:30 | 1:00
@@ -61,9 +61,9 @@ NUMBERS:
 - Also: Iceland 2.0% → 0% · Czech Republic 1.75% → 1.0%
 - NL: systemic buffers 3% → 2.5% (ING) / 2% (Rabo) / 1.5% (ABN AMRO); €8bn freed (incl. the floor postponement); up to €200bn of lending
 TERMS:
-- Release — the authority lowers the CCyB rate with immediate effect, so banks may use that capital to absorb losses and keep lending
-- Systemic (risk) buffer — a structural capital charge on large banks; not designed to be released
-- Mortgage risk-weight floor — a minimum average risk weight on Dutch mortgages for banks using internal models
+- Release: The authority lowers the CCyB rate with immediate effect, so banks may use that capital to absorb losses and keep lending.
+- Systemic (risk) buffer: A structural capital charge on large banks; not designed to be released.
+- Mortgage risk-weight floor: A minimum average risk weight on Dutch mortgages for banks using internal models.
 NEXT: "Why does it matter *which* buffer you hold?"
 
 ## 4 · The releasable layer | Zheng | 1:00 | 2:30
@@ -78,10 +78,10 @@ NUMBERS:
 - Pillar 1 minimum 4.5% CET1 · capital conservation buffer 2.5%
 - CCyB 0–2.5% of RWA (higher possible) · increases bind after 12 months · releases are immediate
 TERMS:
-- RWA — risk-weighted assets: assets weighted by riskiness (a mortgage counts less than a corporate loan)
-- CET1 — Common Equity Tier 1: the highest-quality capital (shares, retained earnings), as % of RWA
-- MDA — maximum distributable amount: the cap on payouts that applies once capital falls below the combined buffer requirement
-- Pillar 2 requirement / guidance — the supervisor's bank-specific add-on (binding) / extra expectation (non-binding)
+- RWA: Risk-weighted assets. Assets weighted by riskiness (a mortgage counts less than a corporate loan).
+- CET1: Common Equity Tier 1. The highest-quality capital (shares, retained earnings), as % of RWA.
+- MDA: Maximum distributable amount. The cap on payouts that applies once capital falls below the combined buffer requirement.
+- Pillar 2 requirement / guidance: The supervisor's bank-specific add-on (binding) / extra expectation (non-binding).
 NEXT: "Two years later DNB filled exactly that layer, and the timing looks strange."
 
 ## 5 · The question | Zheng | 1:00 | 3:30
@@ -94,8 +94,8 @@ NUMBERS:
 - HICP inflation 11.6% (2022) · ECB first hike 21 Jul 2022 (+50bp)
 - Credit-to-GDP gap −33pp (data to 2021Q4) and −47pp (data to 2022Q4)
 TERMS:
-- Procyclical — policy that reinforces the cycle (tighter in bad times, looser in good times)
-- Basel buffer guide — gap below 2pp → 0% buffer; above 10pp → 2.5%; linear in between
+- Procyclical: Policy that reinforces the cycle (tighter in bad times, looser in good times).
+- Basel buffer guide: Gap below 2pp → 0% buffer; above 10pp → 2.5%; linear in between.
 NEXT: "Act 1, the setting. First, the timeline."
 
 ## 6 · Timeline | Zheng | 1:00 | 4:30
@@ -109,8 +109,8 @@ NUMBERS:
 - 17 Mar 2020 · 29 Dec 2020 · 1 Jan 2022 · Feb 2022 · 25 May 2022 · 31 May 2023 · 31 May 2024 · 30 Nov 2026
 - ECB hikes: first on 21 Jul 2022; still hiking on 14 Sep 2023
 TERMS:
-- Announcement vs binding date — banks get 12 months between a CCyB increase being announced and having to meet it
-- CRD V — the 2019 revision of the EU Capital Requirements Directive; it made the O-SII and systemic risk buffers additive, prompting DNB's conversion
+- Announcement vs binding date: Banks get 12 months between a CCyB increase being announced and having to meet it.
+- CRD V: The 2019 revision of the EU Capital Requirements Directive; it made the O-SII and systemic risk buffers additive, prompting DNB's conversion.
 NEXT: "What did the economy look like at those dates?"
 
 ## 7 · Macro | Zheng | 1:05 | 5:30
@@ -125,8 +125,8 @@ NUMBERS:
 - HICP 11.6% in 2022 (national CPI 10.0%)
 - ECB +50bp on 21 Jul 2022
 TERMS:
-- HICP — Harmonised Index of Consumer Prices, the euro-area-comparable inflation measure
-- Basis point (bp) — 0.01 percentage point; 50bp = 0.5pp
+- HICP: Harmonised Index of Consumer Prices, the euro-area-comparable inflation measure.
+- Basis point (bp): 0.01 percentage point; 50bp = 0.5pp.
 NEXT: "In the financial system the picture was split."
 
 ## 8 · Credit and housing | Zheng | 1:15 | 6:35
@@ -142,8 +142,8 @@ NUMBERS:
 - Household debt/GDP: 110% (2019Q4) → 107% (2022Q1) → 100% (2023Q1); euro area 57.7% (2022Q1)
 - Debt-service ratio, households: 14.6% (2022Q1)
 TERMS:
-- Debt-service ratio — interest plus principal payments as a share of income
-- Real house prices — nominal prices deflated by consumer prices
+- Debt-service ratio: Interest plus principal payments as a share of income.
+- Real house prices: Nominal prices deflated by consumer prices.
 NEXT: "Who would carry the losses if this went wrong? The banks."
 
 ## 9 · Banks | Zheng | 1:05 | 7:50
@@ -157,9 +157,9 @@ NUMBERS:
 - Stress test (FSR 2023): −3.8pp → 11.5% at end-2025 (min. 8%)
 - Net interest income +6.7% in 2022; 67.7% of bank income
 TERMS:
-- Stress test — a simulation of a severe recession to check whether capital stays above the minimum
-- Net interest income — interest earned on loans minus interest paid on deposits and funding
-NEXT: **HAND-OVER** — "That was the setting. Diego will now show what DNB looked at, and what it was insuring against."
+- Stress test: A simulation of a severe recession to check whether capital stays above the minimum.
+- Net interest income: Interest earned on loans minus interest paid on deposits and funding.
+NEXT: **HAND-OVER:** "That was the setting. Diego will now show what DNB looked at, and what it was insuring against."
 
 ## 10 · Why not the Basel rule? | Diego | 1:15 | 8:55
 SAY:
@@ -174,9 +174,9 @@ NUMBERS:
 - Credit/GDP 47% (1961) → 352% (2015Q1 peak)
 - Replication error ≤ 0.00005pp (1971–2026)
 TERMS:
-- HP filter — splits a series into a smooth trend and a cycle; λ = 400,000 for credit cycles
-- One-sided vs two-sided filter — one-sided uses only data up to each date (what policymakers see); two-sided also uses later data (hindsight)
-- False alarm / missed crisis — type II / type I errors of an early-warning indicator
+- HP filter: Splits a series into a smooth trend and a cycle; λ = 400,000 for credit cycles.
+- One-sided vs two-sided filter: One-sided uses only data up to each date (what policymakers see); two-sided also uses later data (hindsight).
+- False alarm / missed crisis: Type II / type I errors of an early-warning indicator.
 NEXT: "So DNB used a different compass."
 
 ## 11 · DNB's framework | Diego | 1:15 | 10:10
@@ -195,9 +195,9 @@ NUMBERS:
 - Build-up: 1pp per year → 2% after two years
 - 17 jurisdictions with a positive neutral CCyB (BCBS 2024); ECB loss-based range 1.1–1.8%
 TERMS:
-- Positive neutral CCyB — a CCyB kept above zero in a "standard" risk environment
-- Peak accumulated losses — the largest cumulative loss a bank suffered over a crisis period
-- Guided discretion — decisions informed by a published set of indicators, with judgement, not a formula
+- Positive neutral CCyB: A CCyB kept above zero in a "standard" risk environment.
+- Peak accumulated losses: The largest cumulative loss a bank suffered over a crisis period.
+- Guided discretion: Decisions informed by a published set of indicators, with judgement, not a formula.
 NEXT: "What reasons did DNB actually give?"
 
 ## 12 · DNB's reasons | Diego | 1:00 | 11:25
@@ -209,7 +209,7 @@ NUMBERS:
 - 1% step: about €3.3bn of extra CET1 (announced 25/27 May 2022)
 - 2% step: about €3.4bn (announced 31 May 2023)
 TERMS:
-- Cyclical systemic risk — risk that builds up over the financial cycle (credit, asset prices, risk-taking) and can materialise system-wide
+- Cyclical systemic risk: Risk that builds up over the financial cycle (credit, asset prices, risk-taking) and can materialise system-wide.
 NEXT: "So which risks was the buffer meant to cover?"
 
 ## 13 · Risks and tools | Diego | 1:15 | 12:25
@@ -223,9 +223,9 @@ NUMBERS:
 - Banking sector: ≈ 400% of GDP (when O-SII buffers were phased in) → 280% (end-2022)
 - Risk-weight floor in force Jan 2022 – Nov 2026
 TERMS:
-- LTV / LTI — loan-to-value / loan-to-income: caps on mortgage size relative to house value or income
-- Tinbergen principle — reach each policy target with its own instrument
-- Borrower-based measures — rules on borrowers (LTV, LTI) rather than on bank capital
+- LTV / LTI: Loan-to-value / loan-to-income. Caps on mortgage size relative to house value or income.
+- Tinbergen principle: Reach each policy target with its own instrument.
+- Borrower-based measures: Rules on borrowers (LTV, LTI) rather than on bank capital.
 NEXT: "Now we can test our two suspects."
 
 ## 14 · The verdict | Diego | 1:30 | 13:40
@@ -243,7 +243,7 @@ NUMBERS:
 - Gap, debt-service ratio and household debt ratio all falling in 2022–23
 - House prices +10% y/y (DNB, Mar 2026) · CCyB held at 2% since May 2024
 TERMS:
-- Phase 3 ("increased risk") — the framework phase in which the CCyB goes above 2%
+- Phase 3 ("increased risk"): The framework phase in which the CCyB goes above 2%.
 NEXT: "Here is what that last row means in euros."
 
 ## 15 · A swap, not a squeeze | Diego | 1:15 | 15:10
@@ -260,8 +260,8 @@ NUMBERS:
 - −6.0 (2020: ING 1.7, Rabo 2.4, ABN 1.9) · +3.3 (May-23) · +3.4 (May-24) · −2.7 (May-24 O-SII) → net ≈ −2.0 €bn vs pre-COVID
 - Valued at end-2022 total RWA; BNG excluded
 TERMS:
-- Structural buffer — a capital charge for permanent features (size, interconnectedness), kept through the cycle
-- UK approach — the UK offset its 2% neutral CCyB by lowering Pillar 2A and resolution requirements
+- Structural buffer: A capital charge for permanent features (size, interconnectedness), kept through the cycle.
+- UK approach: The UK offset its 2% neutral CCyB by lowering Pillar 2A and resolution requirements.
 NEXT: "But even a swap has a cost, especially in a storm. So, was it the wrong moment?"
 
 ## 16 · The twist | Diego | 1:15 | 16:25
@@ -280,8 +280,8 @@ NUMBERS:
   - de Volksbank 1.9 / 1.7
 - Total headroom €42.3bn / €35.5bn → CCyB €3.3bn = 8%, €6.7bn = 19%
 TERMS:
-- Headroom — CET1 capital above the bank's requirement (its MDA trigger)
-- Retained earnings — profits kept in the bank instead of being paid out
+- Headroom: CET1 capital above the bank's requirement (its MDA trigger).
+- Retained earnings: Profits kept in the bank instead of being paid out.
 NEXT: "Cheap for banks, but did borrowers pay?"
 
 ## 17 · Borrowers | Diego | 1:15 | 17:40
@@ -295,9 +295,9 @@ NUMBERS:
 - Dates: May-22 (1% announced) · May-23 (1% binding, 2% announced) · May-24 (2% binding)
 - Bank credit 2022Q1–2026Q1: NL +16.6% vs euro area +7.9%; 2019–22: NL +4.3% vs +11.3%
 TERMS:
-- Event study — tracks the difference between treated and control groups before and after an event
-- Placebo test — rerun the analysis pretending an untreated country was treated, to see what chance alone produces
-NEXT: **HAND-OVER** — "Cheap, and credit kept flowing. But a buffer reaches beyond Dutch banks and borrowers. Zheng."
+- Event study: Tracks the difference between treated and control groups before and after an event.
+- Placebo test: Rerun the analysis pretending an untreated country was treated, to see what chance alone produces.
+NEXT: **HAND-OVER:** "Cheap, and credit kept flowing. But a buffer reaches beyond Dutch banks and borrowers. Zheng."
 
 ## 18 · Monetary policy | Zheng | 1:05 | 18:55
 SAY:
@@ -309,8 +309,8 @@ SAY:
 NUMBERS:
 - ECB hiking from Jul 2022 (first +50bp) to at least Sep 2023
 TERMS:
-- Macroprudential policy — policy aimed at the stability of the financial system as a whole
-- Monetary policy — interest-rate policy aimed at price stability (ECB, euro area-wide)
+- Macroprudential policy: Policy aimed at the stability of the financial system as a whole.
+- Monetary policy: Interest-rate policy aimed at price stability (ECB, euro area-wide).
 NEXT: "Second: borders."
 
 ## 19 · Across borders | Zheng | 1:00 | 20:00
@@ -322,8 +322,8 @@ NUMBERS:
 - Germany 0.75% (Feb 2023) · France 1.0% (Jan 2024) · Ireland 1.5% (Jun 2024) · NL 2.0% (May 2024) · Belgium 1.0% (Oct 2024) · Portugal 0.75% (Jan 2026) · Spain 1.0% (Oct 2026)
 - Positive-neutral rates in 2023: Cyprus 0.5%, Estonia and Lithuania 1.0%, Ireland 1.5%, NL 2.0%
 TERMS:
-- Reciprocity — foreign banks apply the host country's CCyB rate to exposures there (mandatory in the EU up to 2.5%)
-- Leakage — credit shifting to lenders not covered by the rule (foreign branches, non-banks)
+- Reciprocity: Foreign banks apply the host country's CCyB rate to exposures there (mandatory in the EU up to 2.5%).
+- Leakage: Credit shifting to lenders not covered by the rule (foreign branches, non-banks).
 NEXT: "Third: what the Netherlands gained."
 
 ## 20 · Resilience | Zheng | 1:00 | 21:00
@@ -335,7 +335,7 @@ NUMBERS:
 - €0 → €6.7bn releasable · ≈ half of €12bn peak losses · up to €150bn of lending
 - Lang & Menno (2023): −0.1% lending per +1pp (normal times) vs up to +10% per 1pp release (bad times)
 TERMS:
-- State-dependent effect — the impact of a policy depends on the state of the economy (small in good times, large in bad times)
+- State-dependent effect: The impact of a policy depends on the state of the economy (small in good times, large in bad times).
 NEXT: "Fourth: this is not a clean win."
 
 ## 21 · Critiques | Zheng | 1:00 | 22:00
@@ -348,8 +348,8 @@ SAY:
 NUMBERS:
 - ECB loss-based range 1.1–1.8% vs NL 2% · +€3.3bn vs 2021 before the O-SII offset
 TERMS:
-- Rules vs discretion — the trade-off between predictable formulas and flexible judgement (Kydland & Prescott 1977)
-- Excess-profit levy — a temporary tax on bank profits seen as windfalls from higher rates
+- Rules vs discretion: The trade-off between predictable formulas and flexible judgement (Kydland & Prescott 1977).
+- Excess-profit levy: A temporary tax on bank profits seen as windfalls from higher rates.
 NEXT: "Let me answer the three questions."
 
 ## 22 · Conclusion | Zheng | 1:30 | 23:00
@@ -362,7 +362,7 @@ SAY:
 NUMBERS:
 - 0% → 2% · −33 / −47pp gap · ≤ 1/5 of headroom · €6.7bn releasable
 TERMS:
-- Normalisation — returning the buffer to its normal-times level, not reacting to overheating
+- Normalisation: Returning the buffer to its normal-times level, not reacting to overheating.
 NEXT: Questions; leave the conclusion slide up, or go to page 23 or 24.
 
 ## 23 · Glossary | both | backup | Q&A
@@ -384,5 +384,5 @@ SAY:
 NUMBERS:
 - Data: BIS, ECB Data Portal (MIR, BSI), ESRB, DNB, bank reports
 TERMS:
-- Two-way fixed effects — regression with country and time dummies, so differences are measured relative to common trends
+- Two-way fixed effects: Regression with country and time dummies, so differences are measured relative to common trends.
 NEXT: Back to the question.

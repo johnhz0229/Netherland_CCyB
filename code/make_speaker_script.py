@@ -64,9 +64,9 @@ def items(lines, terms=False):
         while level > lvl:
             out.append(r'\end{itemize}'); level -= 1
         txt = m.group(2)
-        if terms and ' — ' in txt:
-            term, defn = txt.split(' — ', 1)
-            txt_tex = r'\textbf{' + inline(term) + '} — ' + inline(defn)
+        if terms and ': ' in txt:
+            term, defn = txt.split(': ', 1)
+            txt_tex = r'\textbf{' + inline(term) + ':} ' + inline(defn)
         else:
             txt_tex = inline(txt)
         out.append(r'\item ' + txt_tex)

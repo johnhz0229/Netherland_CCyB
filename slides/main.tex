@@ -84,7 +84,7 @@
   \begin{minipage}[t]{3.9cm}\centering
     {\LARGE\color{#3}#1}\\[3pt]{\scriptsize\color{black!70}#2}
   \end{minipage}}
-\newcommand{\quot}[2]{{\itshape “#1”}\hfill{\scriptsize\color{grey}— #2}}
+\newcommand{\quot}[2]{{\itshape “#1”}\hfill{\scriptsize\color{grey}(#2)}}
 \newcommand{\hl}[1]{\textcolor{nlred}{\bfseries #1}}
 \newcommand{\nv}[1]{\textcolor{navy}{\bfseries #1}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
@@ -105,7 +105,7 @@
 
 % ===================================================================================== 1
 \qtag{Summary}
-\begin{frame}{The Netherlands raised its countercyclical capital buffer (CCyB) to 2\% when the rulebook said 0\% — refilling a buffer, not fighting a boom}
+\begin{frame}{The Netherlands raised its countercyclical capital buffer (CCyB) to 2\% when the rulebook said 0\%. It was refilling a buffer, not fighting a boom}
   \small
   \textbf{Decision:} CCyB 0\% → 1\% (ann.\ May 2022) → \hl{2\%} (ann.\ May 2023, binding 31 May 2024), together with lower buffers for systemically important banks (O-SII).\\[3pt]
   \textbf{Puzzle:} the Basel reference indicator, the credit-to-GDP gap (credit above its long-run trend), stood at \nv{−33pp} and \nv{−47pp} at the two decisions → the buffer guide implied \nv{0\%}.
@@ -138,7 +138,7 @@
 
 % ===================================================================================== 2
 \qtag{Prologue}
-\begin{frame}{When COVID hit, neighbours released their buffers —\\ the Netherlands had nothing to release}
+\begin{frame}{When COVID hit, neighbours released their buffers.\\ The Netherlands had nothing to release}
   \begin{center}
   \begin{tikzpicture}[x=0.62cm,y=1cm,font=\scriptsize]
     \draw[-{Latex[length=2mm]},thick,grey] (0,0) -- (23.5,0);
@@ -146,7 +146,7 @@
     \foreach \d/\c/\y in {2/Denmark/0.55,3/Norway (→1\%)/1.15,6/Sweden/0.55,17/Belgium/1.15,21/Lithuania\, Germany/0.55,22.6/France\, Ireland/1.15}{
       \fill[navy] (\d,0) circle (2.4pt); \draw[navy] (\d,0)--(\d,\y-0.15) node[above,text=navy,font=\scriptsize\bfseries]{\c};}
     \node[font=\tiny,text=grey] at (22.6,-0.45) {1 Apr};
-    \node[draw=nlred,font=\small\bfseries,text=nlred,align=center] at (11.5,-1.25) {Netherlands: CCyB 0\% — nothing to release};
+    \node[draw=nlred,font=\small\bfseries,text=nlred,align=center] at (11.5,-1.25) {Netherlands: CCyB at 0\%, nothing to release};
     \node[anchor=west,font=\scriptsize\bfseries,text=grey] at (0,2.05) {CCyB release announcements, March–April 2020};
   \end{tikzpicture}
   \end{center}
@@ -225,7 +225,7 @@
   \end{columns}
   \vspace{6pt}
   \begin{center}\large
-    Raising capital in a downturn is the \hl{procyclical mistake} — amplifying the cycle — that the CCyB was invented to avoid.\\[2pt]
+    Raising capital in a downturn amplifies the cycle. That \hl{procyclical mistake} is what the CCyB was invented to avoid.\\[2pt]
     \normalsize Tightening into a slowdown? Fighting a hidden boom? Or something else?
   \end{center}
   \vspace{2pt}
@@ -242,7 +242,7 @@
 
 % ===================================================================================== 5
 \qtag{Q1 · Environment}
-\begin{frame}{The path to 2\% was announced in 2020 — and walked step by step\\ as the ECB began to tighten}
+\begin{frame}{The path to 2\% was announced in 2020 and followed step by step\\ as the ECB began to tighten}
   \centering
   \begin{tikzpicture}[x=1.95cm,font=\scriptsize]
     \fill[black!7] (2.54,-0.35) rectangle (3.75,0.35);
@@ -264,7 +264,7 @@
 
 % ===================================================================================== 6
 \qtag{Q1 · Environment}
-\begin{frame}{The economy had fully recovered — then war, energy and inflation darkened the outlook}
+\begin{frame}{The economy had fully recovered when war, energy and inflation darkened the outlook}
   \centering
   \kpi{2021Q3}{GDP back above\\pre-COVID level}{navy}\hfill
   \kpi{11.6\%}{HICP inflation, 2022\\(national CPI 10.0\%)}{nlred}\hfill
@@ -276,13 +276,13 @@
     \itshape “After a strong recovery from the pandemic, the economic outlook has worsened due to the war in Ukraine and high inflation, and financial stability risks have increased.”\\[3pt]
     “Higher funding costs may put pressure on the debt sustainability of governments, businesses and households.”
   \end{block}
-  \small By end-2021 the Dutch economy was almost 3\% larger than at end-2019 — the recovery DNB's framework requires before building the buffer.
+  \small By end-2021 the Dutch economy was almost 3\% larger than at end-2019. DNB's framework requires this recovery before the buffer is built.
   \source{CBS (GDP, Nov 2021; inflation 2022); ECB monetary policy decision 21 Jul 2022; DNB Financial Stability Report, spring 2022.}
 \end{frame}
 
 % ===================================================================================== 7
 \qtag{Q1 · Environment}
-\begin{frame}{Credit was cold; housing was the one hot spot — and it turned}
+\begin{frame}{Credit was cold. Housing was the one hot spot, and it turned}
   \centering
   \includegraphics[width=\textwidth]{figs/indicators.pdf}
   \vspace{-2pt}
@@ -298,7 +298,7 @@
 
 % ===================================================================================== 8
 \qtag{Q1 · Environment}
-\begin{frame}{Banks entered the storm well capitalised —\\ and rising rates were lifting their profits}
+\begin{frame}{Banks entered the storm well capitalised,\\ and rising rates were lifting their profits}
   \centering
   \kpi{17.7\%}{core capital (CET1) ratio\\end-2021 (EU 15.7\%, 21Q3)}{navy}\hfill
   \kpi{16.3\%}{CET1 ratio, end-2022\\“in line with EU average”}{navy}\hfill
@@ -308,7 +308,7 @@
   \raggedright
   \begin{columns}[T,onlytextwidth]
     \column{0.48\textwidth}
-    \begin{alertblock}{Q1 in one line — against raising now}\small
+    \begin{alertblock}{Q1 in one line: against raising now}\small
       war and energy shock · 11.6\% inflation\\ rapid ECB tightening · house prices turning
     \end{alertblock}
     \column{0.48\textwidth}
@@ -323,19 +323,19 @@
 
 % ===================================================================================== 9
 \qtag{Q2 · Criteria \& risks}
-\begin{frame}{The Basel rule said 0\% — but on Dutch data it had missed the last crisis and raised false alarms}
+\begin{frame}{The Basel rule said 0\%, but on Dutch data it had missed the last crisis and raised false alarms}
   \centering
   \includegraphics[height=0.58\textheight]{figs/gap.pdf}\par
   \vspace{-2pt}
   \raggedright\small
   \textbf{Credit-to-GDP gap} = credit/GDP ratio minus its long-run trend (Hodrick-Prescott filter). \textbf{Rule:} gap $<$ 2pp → 0\%, gap $>$ 10pp → 2.5\%. Our one-sided filter ($\lambda=400{,}000$) reproduces the official BIS gap within 0.00005pp (1971–2026).\\
-  {\scriptsize\color{grey}Alternative trend filters are noisy around COVID (two-sided HP +4.2pp in 2021Q4) — one more reason not to trigger on any of them.}
+  {\scriptsize\color{grey}Alternative trend filters are noisy around COVID (two-sided HP +4.2pp in 2021Q4), which is one more reason not to rely on any of them.}
   \source{BIS credit-to-GDP gaps (Q.NL.P.A); Drehmann et al.\ (2010); Repullo \& Saurina (2011); Edge \& Meisenzahl (2011); own calculations.}
 \end{frame}
 
 % ===================================================================================== 10
 \qtag{Q2 · Criteria \& risks}
-\begin{frame}{DNB's compass: 2\% is the normal-times level, calibrated on past crisis losses — not on credit growth}
+\begin{frame}{DNB's compass: 2\% is the normal-times level, calibrated on past crisis losses rather than on credit growth}
   \centering
   \begin{tikzpicture}[font=\scriptsize,ph/.style={draw=white,minimum height=1.05cm,minimum width=3.15cm,align=center,inner sep=2pt}]
     \node[ph,fill=black!8] (a) {\textbf{1 · Recovery}\\CCyB released};
@@ -364,7 +364,7 @@
 
 % ===================================================================================== 11
 \qtag{Q2 · Criteria \& risks}
-\begin{frame}{DNB justified the steps by recovery, uncertainty and its 2020 promise —\\ not by credit growth}
+\begin{frame}{DNB justified the steps by recovery, uncertainty and its 2020 promise,\\ not by credit growth}
   \begin{columns}[T,onlytextwidth]
     \column{0.49\textwidth}
     \begin{block}{May 2022 · 0\% → 1\%}\small
@@ -391,7 +391,7 @@
     \toprule
     \textbf{Financial-stability risks named by DNB (FSR 2022/23)} & \textbf{Instrument} \\
     \midrule
-    War, energy and supply shocks · rapid tightening of financial conditions and market corrections · debt sustainability of governments, firms, households · bank turmoil abroad (SVB, Credit Suisse, 2023) & \cellcolor{black!5}\textbf{CCyB} — releasable for \emph{any} shock \\
+    War, energy and supply shocks · rapid tightening of financial conditions and market corrections · debt sustainability of governments, firms, households · bank turmoil abroad (SVB, Credit Suisse, 2023) & \cellcolor{black!5}\textbf{CCyB}, releasable for \emph{any} shock \\
     \midrule
     “Overheated” housing · high mortgage debt of first-time buyers · interest-only loans & borrower limits (loan-to-value, loan-to-income), tax reform, \textbf{mortgage risk-weight floor} (Jan 2022 – Nov 2026) \\
     \midrule
@@ -408,7 +408,7 @@
 
 % ===================================================================================== 13
 \qtag{Q2 · Criteria \& risks}
-\begin{frame}{The verdict: every prediction fits normalisation — none fits overheating}
+\begin{frame}{The verdict: every prediction fits normalisation and none fits overheating}
   \centering\small
   \renewcommand{\arraystretch}{1.08}\begin{tabular}{@{}L{4.6cm}L{3.3cm}L{3.0cm}L{5.0cm}c@{}}
     \toprule
@@ -450,7 +450,7 @@
 
 % ===================================================================================== 15
 \qtag{Q3 · Implications}
-\begin{frame}{The twist: the storm made it the cheapest moment —\\ higher rates gave banks the profits to build the buffer}
+\begin{frame}{The storm made it the cheapest moment:\\ higher rates gave banks the profits to build the buffer}
   \centering
   \includegraphics[width=0.84\textwidth]{figs/headroom.pdf}
   \vspace{-2pt}
@@ -462,13 +462,13 @@
     \textbf{ECB:} gradual build-up + high profitability “limit these economic costs” (MPB 24); activating buffers during the 2022–23 tightening “can mitigate implementation costs” (MPB 31).
   \end{columns}
   \vspace{3pt}
-  \centering\hl{Not the wrong moment — arguably the right one.}
+  \centering\hl{It was not the wrong moment. Arguably it was the right one.}
   \source{Bank disclosures (ING, Rabobank, ABN AMRO, de Volksbank, 2021–22), de Volksbank requirement derived; DNB FSR 2023; ECB Macroprudential Bulletin 24 (2024) and 31 (2025, Box 2).}
 \end{frame}
 
 % ===================================================================================== 16
 \qtag{Q3 · Implications}
-\begin{frame}{Credit kept flowing — and its price moved with the rest of the euro area}
+\begin{frame}{Credit kept flowing, and its price moved with the rest of the euro area}
   \centering
   \includegraphics[height=0.42\textheight]{figs/event.pdf}
   \vspace{-2pt}
@@ -489,7 +489,7 @@
 
 % ===================================================================================== 17
 \qtag{Q3 · Implications}
-\begin{frame}{Building the buffer while the ECB hiked did not double the squeeze —\\ it let monetary policy focus on inflation}
+\begin{frame}{Building the buffer while the ECB hiked did not double the squeeze.\\ It let monetary policy focus on inflation}
   \begin{columns}[T,onlytextwidth]
     \column{0.47\textwidth}
     \begin{alertblock}{The concern}\small
@@ -507,19 +507,19 @@
     \end{block}
   \end{columns}
   \vspace{6pt}
-  \small\centering One monetary policy for the euro area, but national macroprudential policy: the CCyB is the \textbf{Dutch-specific lever} — and the insurance against a rate shock gone wrong.
+  \small\centering One monetary policy for the euro area, but national macroprudential policy: the CCyB is the \textbf{Dutch-specific lever} and the insurance against a rate shock gone wrong.
   \source{ECB Macroprudential Bulletin 31 (Detken, Hempell \& Pirovano, 2025); DNB Financial Stability Report, spring 2022.}
 \end{frame}
 
 % ===================================================================================== 18
 \qtag{Q3 · Implications}
-\begin{frame}{Through reciprocity every bank lending in the Netherlands holds the 2\% —\\ and Europe is moving the same way}
+\begin{frame}{Through reciprocity every bank lending in the Netherlands holds the 2\%,\\ and Europe is moving the same way}
   \begin{columns}[T,onlytextwidth]
     \column{0.45\textwidth}\small
     \textbf{Across borders}
     \begin{itemize}\setlength\itemsep{2pt}
       \item Foreign banks with Dutch exposures must also hold the 2\% (mandatory reciprocity up to 2.5\%)
-      \item Limits leakage to foreign lenders — a known problem with national capital tools (Aiyar, Calomiris \& Wieladek, 2014); \emph{non-bank} leakage remains
+      \item Limits leakage to foreign lenders, a known problem with national capital tools (Aiyar, Calomiris \& Wieladek, 2014); \emph{non-bank} leakage remains
       \item In April 2023, 5 banking-union countries had positive-neutral frameworks; NL had the \textbf{highest} rate (2\%)
     \end{itemize}
     \column{0.52\textwidth}
@@ -568,15 +568,15 @@
 
 % ===================================================================================== 20
 \qtag{Q3 · Implications}
-\begin{frame}{The price of discretion is credibility — and the buffer has never been tested}
+\begin{frame}{The price of discretion is credibility, and the buffer has never been tested}
   \small
   \begin{tabularx}{\textwidth}{@{}L{3.3cm}X@{}}
     \toprule
-    \textbf{Credibility} & Without a mechanical rule, markets must trust DNB's judgement and communication — the classic rules-vs-discretion trade-off (Kydland \& Prescott, 1977). \\
+    \textbf{Credibility} & Without a mechanical rule, markets must trust DNB's judgement and communication. This is the classic rules-vs-discretion trade-off (Kydland \& Prescott, 1977). \\
     \textbf{Calibration} & Why 2\%, not 1.5\%? The ECB's loss-based range is 1.1–1.8\%; NL chose the top of the banking union. \\
-    \textbf{Untested} & No release yet: will banks lend the freed capital — or hoard it, as with usable buffers in COVID? \\
+    \textbf{Untested} & No release yet. Will banks lend the freed capital, or hoard it as they did with usable buffers in COVID? \\
     \textbf{Baseline} & Relative to 2021 (not 2019) it \emph{was} an increase: +€3.3bn before the O-SII offset. \\
-    \textbf{Same profits, two claims} & The ECB lists the Netherlands among countries adopting bank levies on excess profits in 2022–23 — partly claiming the earnings that fund the buffer. \\
+    \textbf{Same profits, two claims} & The ECB lists the Netherlands among countries adopting bank levies on excess profits in 2022–23. These partly claim the earnings that fund the buffer. \\
     \bottomrule
   \end{tabularx}
   \source{Kydland \& Prescott (1977); De Nora et al.\ (2025); ECB Macroprudential Bulletin 21 (2023) and 31 (2025); DNB (2022, 2023).}
@@ -584,7 +584,7 @@
 
 % ===================================================================================== 21
 \qtag{Epilogue}
-\begin{frame}{A promise kept: the buffer was refilled in the storm —\\ at the moment it was cheapest}
+\begin{frame}{A promise kept: the buffer was refilled in the storm,\\ at the moment it was cheapest}
   \small
   \begin{columns}[T,onlytextwidth]
     \column{0.32\textwidth}
@@ -606,7 +606,7 @@
       \draw[black!30] (-0.41\textwidth,0.95) -- (0.41\textwidth,0.95); \draw[black!30] (-0.41\textwidth,-0.95) -- (0.41\textwidth,-0.95);
       \node[draw=none,text=navy,inner sep=10pt,text width=0.82\textwidth,align=center,font=\large] at (0,0)
         {In March 2020, the Netherlands had nothing to release.\\ Next time, it will.\\[6pt]
-         {\normalsize\itshape The best time to fill a buffer is when nobody thinks you need it — even in a storm.}};
+         {\normalsize\itshape The best time to fill a buffer is when nobody thinks you need it, even in a storm.}};
     \end{tikzpicture}
   \end{center}
 \end{frame}
