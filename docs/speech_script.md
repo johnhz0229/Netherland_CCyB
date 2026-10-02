@@ -6,7 +6,7 @@
 
 **Build:** `python code/make_speaker_script.py && cd slides && latexmk -pdf speaker_script.tex` → `Netherlands_CCyB_speaker_script.pdf`.
 
-**Timing and speakers:** ≈ 24.5 minutes in total.
+**Timing and speakers:** ≈ 19:35 minutes of speaking at about 120 words per minute, leaving 3–4 minutes of the 25 for hand-overs, pointing at charts and pauses. Q&A is separate.
 - Zheng Huang: pages 1–9 and 18–22.
 - Diego Gutiérrez: pages 10–17.
 - Pages 23–24 are backup for questions.
@@ -15,23 +15,22 @@ Page numbers below are the numbers printed on the slides (n/24). All figures com
 
 ---
 
-## 1 · Title | Zheng | 0:15 | 0:00
+
+## 1 · Title | Zheng | 0:20 | 0:00
 SAY:
-- Good morning. We are Zheng Huang and Diego Gutiérrez, Master of Financial Technology.
-- Our case for Micro- and Macroprudential Management is the Netherlands: how and why De Nederlandsche Bank, DNB, raised its countercyclical capital buffer from zero to two percent.
+- Good morning. We are Zheng Huang and Diego Gutiérrez.
+- Our case is the Netherlands: why the Dutch central bank, DNB, raised its countercyclical capital buffer from zero to two percent.
 NUMBERS:
 - CCyB 0% → 2% (fully binding 31 May 2024)
 TERMS:
 - DNB: De Nederlandsche Bank, the Dutch central bank and macroprudential authority.
 NEXT: "In short, here is the whole story on one slide."
 
-## 2 · One-pager | Zheng | 0:45 | 0:15
+## 2 · One-pager | Zheng | 0:40 | 0:20
 SAY:
-- This slide is the whole talk; you can come back to it at any point.
-- DNB raised the buffer twice, to two percent, while the Basel reference indicator, the credit-to-GDP gap, pointed to zero.
+- DNB raised the buffer twice, to two percent, while the Basel indicator, the credit-to-GDP gap, pointed to **zero**.
 - The three boxes answer the three questions of the assignment: environment, criteria and risks, implications.
-- Our verdict: **normalisation, not tightening**. DNB was refilling a buffer, not fighting a credit boom.
-- The cost to banks was small, it was largely offset by cutting other buffers, and we see **no sign of a contraction in lending**.
+- Our verdict: **normalisation, not tightening**. DNB refilled a buffer; it did not fight a boom. It cost banks little, was largely offset by cuts elsewhere, and we see no sign of a contraction in lending.
 NUMBERS:
 - Announcements: May 2022 (1%) and May 2023 (2%); binding 25 May 2023 and 31 May 2024
 - Credit-to-GDP gap at the decisions: −33pp and −47pp → Basel guide 0%
@@ -42,13 +41,15 @@ TERMS:
 - O-SII: "Other systemically important institution". The O-SII buffer is an extra capital charge on large banks.
 NEXT: "It starts in March 2020."
 
-## 3 · March 2020 | Zheng | 1:30 | 1:00
+## 3 · March 2020 | Zheng | 1:25 | 1:00
 SAY:
-- March 2020: COVID hits Europe. Within three weeks, a string of countries **release** their countercyclical buffers, telling banks to use that capital to keep lending.
-- Sweden and Norway had been at 2.5 percent, the maximum normally used. Denmark, Ireland and Lithuania were at one percent. Germany and Belgium cancelled increases that had been announced but not yet applied.
-- The Netherlands could not do this. Its buffer was at **zero**, so there was **nothing to release**.
-- So DNB improvised. On 17 March 2020 it cut the systemic buffers of ING, Rabobank and ABN AMRO and postponed a planned floor on mortgage risk weights. Together that freed about eight billion euros.
-- And it made a promise *(pause)*: once things were back to normal, it would rebuild this capital as a two-percent countercyclical buffer. The whole story turns on that promise.
+- March 2020: COVID hits. Within three weeks our neighbours **release** their countercyclical buffers so that banks can keep lending.
+- Sweden and Norway were at 2.5 percent; Denmark, Ireland and Lithuania at one percent.
+- The Netherlands was at **zero**. There was nothing to release.
+- France and Ireland followed on the first of April, and Belgium and Germany cancelled increases they had already announced. Across Europe, buffers built in good times were being used exactly as intended.
+- So DNB improvised. It cut the systemic buffers of ING, Rabobank and ABN AMRO and postponed a mortgage rule, freeing about eight billion euros.
+- DNB said this capital could support up to 200 billion euros of lending. But it was a workaround: these buffers were never designed to be released, so the cut had to be negotiated and explained bank by bank.
+- And it made a promise *(pause)*: once things were normal, it would rebuild this capital as a two-percent countercyclical buffer.
 NUMBERS:
 - Releases (rate in force → new rate):
   - Denmark 1.0% → 0% (12 Mar)
@@ -66,14 +67,12 @@ TERMS:
 - Mortgage risk-weight floor: A minimum average risk weight on Dutch mortgages for banks using internal models.
 NEXT: "That empty buffer mattered, because not all capital can be released."
 
-## 4 · The releasable layer | Zheng | 1:00 | 2:30
+## 4 · The releasable layer | Zheng | 1:00 | 2:25
 SAY:
-- Not all capital is usable in a crisis. Read the stack from the bottom.
-- First come **requirements** that must always be met: the legal minimum and the bank-specific Pillar 2 requirement.
-- On top sits the **combined buffer**: the conservation buffer, the systemic buffer and the CCyB.
-- The red dashed line is the MDA trigger. A bank whose capital falls below the top of the combined buffer automatically faces limits on dividends and bonuses. So banks avoid dipping into buffers, even when allowed to; markets punish it.
-- The CCyB is the only layer the authority can **switch off**. When it is released, the requirement itself falls, and there is no stigma.
-- In COVID, ECB research found that banks close to the MDA trigger cut lending anyway. Only explicitly released capital really works.
+- Read the stack from the bottom: first the requirements banks must always meet, then the buffers on top.
+- The red dashed line is the MDA trigger. Below it, dividends and bonuses are automatically restricted. So banks avoid using buffers even when they are allowed to; in COVID, banks near that line cut lending instead.
+- The CCyB is different. The authority can switch it off, so the requirement itself falls and there is no stigma. It is the only truly **releasable** layer.
+- A release is also immediate, while an increase only binds after twelve months. That asymmetry is why the buffer has to be filled before the crisis, not during it.
 NUMBERS:
 - Pillar 1 minimum 4.5% CET1 · capital conservation buffer 2.5%
 - CCyB 0–2.5% of RWA (higher possible) · increases bind after 12 months · releases are immediate
@@ -84,12 +83,12 @@ TERMS:
 - Pillar 2 requirement / guidance: The supervisor's bank-specific add-on (binding) / extra expectation (non-binding).
 NEXT: "Two years later DNB refilled exactly that layer, at a strange moment."
 
-## 5 · The question | Zheng | 1:00 | 3:30
+## 5 · The question | Zheng | 0:50 | 3:25
 SAY:
-- In 2022 DNB keeps its promise, but look at the timing on the left: war in Ukraine, record energy prices, 11.6 percent inflation, ECB rate hikes, house prices about to turn. And the Basel indicator says zero.
-- Raising capital requirements in a downturn is *procyclical*: it amplifies the cycle. That is exactly the mistake the CCyB was invented to prevent.
-- So our question is: **was this the wrong moment?**
-- We answer in three acts, the three questions of the assignment. The boxes show what each act covers, without overlap: the setting, the decision, the consequences.
+- Now look at 2022: war, record energy prices, 11.6 percent inflation, ECB rate hikes and a housing market about to turn. And the Basel indicator says zero.
+- Under the Basel guide, a gap below two points means a zero buffer, and the gap was more than thirty points below that threshold.
+- Raising capital in a downturn amplifies the cycle, which is exactly what the CCyB is meant to avoid.
+- So our question: **was this the wrong moment?** We answer it in three acts, which are the three questions of the assignment.
 NUMBERS:
 - HICP inflation 11.6% (2022) · ECB first hike 21 Jul 2022 (+50bp)
 - Credit-to-GDP gap −33pp (data to 2021Q4) and −47pp (data to 2022Q4)
@@ -98,13 +97,11 @@ TERMS:
 - Basel buffer guide: Gap below 2pp → 0% buffer; above 10pp → 2.5%; linear in between.
 NEXT: "Act 1, the setting. The refill followed a path promised in 2020."
 
-## 6 · Timeline | Zheng | 1:00 | 4:30
+## 6 · Timeline | Zheng | 0:35 | 4:15
 SAY:
-- The path was set in March 2020 with the promise.
-- In December 2020 the systemic risk buffer was folded into O-SII buffers under new EU rules, and in January 2022 the mortgage risk-weight floor finally came into force.
-- In February 2022 DNB published its new CCyB framework. In May 2022 it announced one percent, just before the ECB began to hike in July. In May 2023 it announced two percent, together with lower O-SII buffers.
-- Both changes became binding on the same day, 31 May 2024, and DNB has held the buffer at two percent every quarter since.
-- Looking ahead: the mortgage floor expires at the end of November 2026.
+- After the promise in 2020, DNB published its framework in February 2022 and announced one percent in May 2022, just before the ECB began to hike.
+- In May 2023 it announced two percent, together with lower buffers for the largest banks. Both became binding on 31 May 2024.
+- It has held two percent every quarter since. The mortgage floor expires in November 2026.
 NUMBERS:
 - 17 Mar 2020 · 29 Dec 2020 · 1 Jan 2022 · Feb 2022 · 25 May 2022 · 31 May 2023 · 31 May 2024 · 30 Nov 2026
 - ECB hikes: first on 21 Jul 2022; still hiking on 14 Sep 2023
@@ -113,13 +110,11 @@ TERMS:
 - CRD V: The 2019 revision of the EU Capital Requirements Directive; it made the O-SII and systemic risk buffers additive, prompting DNB's conversion.
 NEXT: "By then the economy had fully recovered, but the outlook was darkening."
 
-## 7 · Macro | Zheng | 1:05 | 5:30
+## 7 · Macro | Zheng | 0:45 | 4:50
 SAY:
-- By the third quarter of 2021, Dutch GDP was back above its pre-COVID level; by the end of 2021 it was almost three percent larger than at the end of 2019. That recovery is the condition DNB's framework requires before building the buffer.
-- Then the storm. DNB's spring 2022 Financial Stability Report: "the economic outlook has worsened due to the war in Ukraine and high inflation."
-- Energy prices hit records, inflation reached 11.6 percent, and on 21 July 2022 the ECB raised rates by fifty basis points, its first hike.
-- DNB also warned that higher funding costs would weigh on the debt sustainability of governments, firms and households.
-- So the macro picture argued both ways: build now while the economy can take it, or wait because it is weakening.
+- By the third quarter of 2021 GDP was back above its pre-COVID level. That recovery is what DNB's framework requires before building the buffer.
+- Then came the storm: war in Ukraine, record energy prices, inflation of 11.6 percent and the ECB's first hike in July 2022. DNB warned that higher funding costs would strain debt sustainability.
+- So the macro picture argued **both ways**: build while the economy can take it, or wait because it is weakening.
 NUMBERS:
 - GDP above pre-COVID level: 2021Q3 (+1.9% q/q) · end-2021 ≈ +3% vs end-2019
 - HICP 11.6% in 2022 (national CPI 10.0%)
@@ -129,12 +124,12 @@ TERMS:
 - Basis point (bp): 0.01 percentage point; 50bp = 0.5pp.
 NEXT: "In the financial system, credit was cold and only housing was hot."
 
-## 8 · Credit and housing | Zheng | 1:15 | 6:35
+## 8 · Credit and housing | Zheng | 0:55 | 5:35
 SAY:
-- Left panel, **housing was hot**. In early 2022 nominal house prices rose 19 percent year on year, and real prices were 16 percent above their 2007 peak. DNB itself called the housing market "overheated".
-- But watch what happens next: as mortgage rates rose, real prices fell by about nine percent within a year.
-- Middle panel, **credit was cold**. Household debt is high by international standards, about 107 percent of GDP versus 58 percent in the euro area, but it was falling.
-- Right panel: the household debt-service ratio, the share of income spent on interest and repayments, was at its lowest since 2005.
+- Left: **housing was hot**. Nominal prices rose 19 percent in a year, and DNB itself called the market overheated. But as mortgage rates rose, real prices fell about nine percent.
+- In real terms prices were 16 percent above their 2007 peak, so the level was high even after correcting for inflation.
+- Middle: household debt is high, 107 percent of GDP against 58 in the euro area, but it was **falling**.
+- Right: the share of income spent on debt service was the lowest since 2005.
 - If there was a boom, it was in house prices, not in credit.
 NUMBERS:
 - Nominal house prices +19.0% y/y (2022Q1); real index 129 vs 2007 peak 111 (+16%)
@@ -146,12 +141,11 @@ TERMS:
 - Real house prices: Nominal prices deflated by consumer prices.
 NEXT: "And the banks entered this storm well capitalised."
 
-## 9 · Banks | Zheng | 1:05 | 7:50
+## 9 · Banks | Zheng | 0:45 | 6:30
 SAY:
-- The banks were in good shape. The core capital ratio was 17.7 percent at the end of 2021, above the EU average, and 16.3 percent a year later.
-- In DNB's 2023 stress test the four major banks would lose 3.8 points of capital and still end at 11.5 percent, above the 8 percent minimum.
-- And rising rates were lifting profits: net interest income grew 6.7 percent in 2022. DNB wrote that higher rates "may ultimately have a positive impact on the profitability of financial institutions". Keep that sentence in mind; it is our twist later.
-- The bottom row is Act 1 in one line: against raising now, war, inflation, rate hikes and a turning housing market. For raising now, a recovered economy, cold credit and strong, increasingly profitable banks.
+- Core capital was 17.7 percent of risk-weighted assets at the end of 2021, above the EU average, and in DNB's stress test the big banks stayed well above the minimum.
+- Rising rates also **lifted profits**: net interest income grew 6.7 percent in 2022. Remember that, because it comes back.
+- Act 1 in one line: war, inflation, rate hikes and a turning housing market argued against raising now; a recovered economy, cold credit and strong banks argued for it.
 NUMBERS:
 - CET1 17.7% (end-2021; EU 15.7% in 2021Q3) → 16.3% (end-2022, in line with EU)
 - Stress test (FSR 2023): −3.8pp → 11.5% at end-2025 (min. 8%)
@@ -161,13 +155,15 @@ TERMS:
 - Net interest income: Interest earned on loans minus interest paid on deposits and funding.
 NEXT: **HAND-OVER:** "That was the setting. So why did DNB ignore its own rulebook? Diego."
 
-## 10 · Why not the Basel rule? | Diego | 1:15 | 8:55
+## 10 · Why not the Basel rule? | Diego | 1:30 | 7:15
 SAY:
 - Thank you. So why ignore the rulebook? Because on Dutch data it has a poor record.
-- The red line is the credit-to-GDP gap, credit relative to its long-run trend. The trend is estimated with a statistical smoother, the Hodrick-Prescott filter. Our own calculation matches the official BIS series almost exactly.
-- On Dutch data, the rule failed three times. It **missed** the financial crisis: minus 13 points in 2007. It raised a **false alarm** in 2012, during a house-price bust, because falling GDP inflated the ratio. And it gets **revised**: 2016 read slightly negative in real time but plus 27 with today's data.
-- Why so bad? Dutch credit rose from under 50 percent of GDP in the 1960s to around 350 percent at its 2015 peak. The filter treats that structural deepening as trend, so once the ratio falls the gap turns deeply negative.
-- At the two decisions it read minus 33 and minus 47 points, so the rule said zero. DNB had good reason to use a different compass.
+- The red line is the credit-to-GDP gap, credit relative to its long-run trend. We rebuilt it and match the official BIS series.
+- Under the Basel guide the buffer starts when the gap exceeds two points and reaches its maximum at ten. So everything depends on this one number being reliable.
+- It **missed** the financial crisis, at minus 13 in 2007. It raised a **false alarm** in 2012, during a bust. And it gets **revised**: 2016 read slightly negative at the time and plus 27 today.
+- The reason: Dutch credit grew from about 50 to 350 percent of GDP, and the filter mistakes that structural rise for trend.
+- One-sided means the filter only uses data available at each date, which is what a policymaker actually sees. That is why the signal can change years later, once new data arrive.
+- At the two decisions it read minus 33 and minus 47. The rule said zero.
 NUMBERS:
 - Gap: −13.4pp (2007Q4) · +16.8pp (2012Q2) · 2016Q1 −0.6pp real time vs +26.9pp ex post
 - −32.7pp (2021Q4) and −46.8pp (2022Q4) at the decisions
@@ -179,17 +175,13 @@ TERMS:
 - False alarm / missed crisis: Type II / type I errors of an early-warning indicator.
 NEXT: "So DNB used its own compass instead."
 
-## 11 · DNB's framework | Diego | 1:15 | 10:10
+## 11 · DNB's framework | Diego | 1:10 | 8:45
 SAY:
-- That compass is DNB's 2022 framework, with four phases.
-  - After a crisis, the buffer is released.
-  - In normal times it should be at two percent, built up one point a year.
-  - Only when risks are clearly elevated does it go above two percent.
-  - In a crisis it is released.
-- This is called a *positive neutral* buffer: already filled when risks are neither high nor low.
-- Two percent is calibrated on history: Dutch banks' peak accumulated losses in past crises were about 12 billion euros. Two percent equals about six billion of releasable capital, and releasing it could support up to 150 billion of lending.
-- DNB decides by *guided discretion*: a dashboard of indicators informs the decision but does not dictate it. It also chose two percent "taking into account the buffer reduction in March 2020".
-- The Netherlands is not alone: seventeen jurisdictions run such a framework; Sweden, the UK and Poland also target two percent.
+- DNB's 2022 framework has four phases: release after a crisis, **two percent in normal times**, more when risks are high, and release again in a crisis.
+- This is a *positive neutral* buffer: already filled when risks are neither high nor low.
+- The two percent comes from history. Past crises cost Dutch banks about 12 billion euros at the peak. Two percent is about six billion of releasable capital, enough to support up to 150 billion of lending.
+- The ECB's own loss-based estimates give 1.1 to 1.8 percent, so two percent is at the top of that range but not outside it. We come back to that in the critiques.
+- Seventeen jurisdictions now work this way; Sweden, the UK and Poland also target two percent.
 NUMBERS:
 - Peak accumulated losses €12bn (2007–2016) → 2% ≈ €6bn → up to €150bn of lending
 - Build-up: 1pp per year → 2% after two years
@@ -200,11 +192,11 @@ TERMS:
 - Guided discretion: Decisions informed by a published set of indicators, with judgement, not a formula.
 NEXT: "And its stated reasons were never credit growth."
 
-## 12 · DNB's reasons | Diego | 1:00 | 11:25
+## 12 · DNB's reasons | Diego | 0:35 | 9:55
 SAY:
-- **In 2022,** DNB wrote: "When the systemic risk buffers were lowered in March 2020, we also announced our intention to restore the buffers by raising the CCyB." It cited the strong recovery, described risks as "normal to elevated", and acknowledged the uncertainty of the war.
-- **In 2023,** it said explicitly that the credit gap shows "no signs of excessive credit growth". The reasons it cited: investors' rising risk appetite, falling real-estate prices, debt sustainability of firms and governments, and banks made more robust by higher rates.
-- In neither decision was credit growth the reason. Both rest on a normal-to-elevated risk picture, strong banks and the promise.
+- In 2022 DNB wrote that it was **restoring the buffers** it had lowered in March 2020, citing the recovery and a normal-to-elevated risk picture.
+- In 2023 it said the credit gap showed **no signs of excessive credit growth**, and pointed instead to risk appetite, falling property prices, debt sustainability and strong banks.
+- Credit growth was never the reason.
 NUMBERS:
 - 1% step: about €3.3bn of extra CET1 (announced 25/27 May 2022)
 - 2% step: about €3.4bn (announced 31 May 2023)
@@ -212,13 +204,13 @@ TERMS:
 - Cyclical systemic risk: Risk that builds up over the financial cycle (credit, asset prices, risk-taking) and can materialise system-wide.
 NEXT: "So what was the buffer meant for?"
 
-## 13 · Risks and tools | Diego | 1:15 | 12:25
+## 13 · Risks and tools | Diego | 0:55 | 10:30
 SAY:
-- DNB's reports name the financial-stability risks, and each was matched to a tool.
-- **Shocks nobody can forecast** go to the CCyB, because it can be released whatever the source: the war, an energy shock, a sudden tightening of financial conditions, debt-sustainability problems, or bank turmoil abroad such as SVB and Credit Suisse in 2023.
-- **The known hot spot, housing,** went to other tools: limits on loan-to-value and loan-to-income, tax reform, and the mortgage risk-weight floor.
-- **The size of the big banks** goes to the O-SII buffer. The sector shrank from about 400 to 280 percent of GDP, which is why that buffer was cut.
-- This is the Tinbergen principle: one instrument per target. DNB itself said more releasable capital is valuable "given the sensitivity of the Dutch economy to external events".
+- Each risk got its own tool.
+- This matters for our question. If housing had been the target, the CCyB would be the wrong tool: it hits all lending, not just mortgages.
+- **Shocks nobody can forecast**, such as war, an energy shock, a sudden tightening or bank turmoil abroad, go to the CCyB, because it can be released whatever the source.
+- **Housing**, the known hot spot, went to borrower limits, tax reform and a mortgage risk-weight floor. The **size of the big banks** goes to the systemic buffer.
+- One instrument per target: the Tinbergen principle.
 NUMBERS:
 - Banking sector: ≈ 400% of GDP (when O-SII buffers were phased in) → 280% (end-2022)
 - Risk-weight floor in force Jan 2022 – Nov 2026
@@ -228,17 +220,17 @@ TERMS:
 - Borrower-based measures: Rules on borrowers (LTV, LTI) rather than on bank capital.
 NEXT: "Now we can test the evidence against both readings."
 
-## 14 · The verdict | Diego | 1:30 | 13:40
+## 14 · The verdict | Diego | 1:15 | 11:25
 SAY:
-- Was DNB fighting overheating or normalising? Each makes different predictions. Row by row:
-  - **Indicators.** Overheating says the buffer rises with them. In fact they all fell while the buffer went up.
-  - **Path.** Normalisation says one point a year, stop at two. That is exactly what happened.
-  - **2023.** House prices were falling and rates jumping. An overheating fighter would pause; DNB raised anyway.
-  - **2024–26.** House prices rose again, about ten percent a year by early 2026. An overheating fighter would go above two percent; DNB held at two.
-  - **Other buffers.** Normalising means cutting structural buffers to compensate. DNB did, twice.
-- *(pause)* Five predictions, five matches.
-- The strongest evidence against us is house prices at plus 19 percent in 2022. But DNB used other tools for housing, and when house prices fell, it raised the buffer anyway.
-- That last row is the key to the whole story.
+- Overheating or normalisation? Each predicts something different. Row by row:
+- If DNB was fighting a boom, the buffer should follow credit and prices. If it was refilling, it should follow a fixed path back to its normal level. These readings make different predictions, so we can test them.
+- **Indicators.** Overheating says the buffer rises with them. They all fell while the buffer rose.
+- **Path.** Normalisation says one point a year, then stop at two. That is exactly what happened.
+- **2023.** Prices falling, rates jumping. An overheating fighter pauses; DNB raised.
+- **2024 to 2026.** Prices up ten percent again. An overheating fighter goes above two; DNB held.
+- **Other buffers.** Normalising means cutting structural buffers in return. DNB did, twice.
+- *(pause)* Five out of five.
+- Every observation fits normalisation, and none fits overheating. This is the core of our argument.
 NUMBERS:
 - Gap, debt-service ratio and household debt ratio all falling in 2022–23
 - House prices +10% y/y (DNB, Mar 2026) · CCyB held at 2% since May 2024
@@ -246,16 +238,13 @@ TERMS:
 - Phase 3 ("increased risk"): The framework phase in which the CCyB goes above 2%.
 NEXT: "And that last row tells us the refill was a swap, not a squeeze."
 
-## 15 · A swap, not a squeeze | Diego | 1:15 | 15:10
+## 15 · A swap, not a squeeze | Diego | 1:00 | 12:40
 SAY:
-- This waterfall is our own approximate calculation.
-  - In 2020 the systemic-buffer cut released about six billion euros of required capital.
-  - The CCyB then added 3.3 billion in 2023 and 3.4 billion in 2024.
-  - In 2024 the O-SII cut released another 2.7 billion.
-- Net, relative to before COVID: roughly unchanged, if anything slightly lower.
-- DNB said the same: the 2020 plan would be "more or less capital-neutral", and in 2023 Governor Knot spoke of "a limited increase in the net capital requirements".
-- Two caveats. The bases differ: the cuts apply to big banks' worldwide assets, the CCyB to all banks' Dutch exposures. And measured from 2021, not 2019, there was a modest increase.
-- So capital was **moved**, from buffers that cannot be released into one that can. The UK did something similar.
+- In euros, by our own estimate: the 2020 cut released about six billion; the CCyB then added 3.3 and 3.4 billion; the 2024 cut released another 2.7 billion.
+- Net, compared with before COVID, the requirement is roughly unchanged. DNB called it "more or less capital-neutral".
+- Two caveats: the bases differ, and compared with 2021 rather than 2019 it was a modest increase.
+- So capital was **moved**, from buffers that cannot be released into one that can.
+- Think of it as moving money from a locked savings account into a current account that the authority can open in a crisis. The total is similar; what changes is who can use it, and when.
 NUMBERS:
 - −6.0 (2020: ING 1.7, Rabo 2.4, ABN 1.9) · +3.3 (May-23) · +3.4 (May-24) · −2.7 (May-24 O-SII) → net ≈ −2.0 €bn vs pre-COVID
 - Valued at end-2022 total RWA; BNG excluded
@@ -264,14 +253,13 @@ TERMS:
 - UK approach: The UK offset its 2% neutral CCyB by lowering Pillar 2A and resolution requirements.
 NEXT: "So, was it the wrong moment?"
 
-## 16 · The twist | Diego | 1:15 | 16:25
+## 16 · The twist | Diego | 1:00 | 13:40
 SAY:
-- Here is the twist: the storm made it the **cheapest** moment.
-- Headroom is the capital a bank holds above its requirement. The left panel shows it by bank: ING and Rabobank each had over ten billion euros, ABN AMRO about seven.
-- In total the four banks had about 36 billion at the end of 2022. The full two-percent buffer is 6.7 billion, at most about a fifth, and that is an upper bound.
-- Why so cheap? Rising rates lifted net interest income, so banks could build the buffer from retained earnings instead of cutting loans. Headroom shrank between 2021 and 2022 because risk-weighted assets grew and banks paid out capital, not because of the buffer.
-- The ECB agrees: a gradual build-up with profitable banks "limits these economic costs", and activating buffers during the 2022–23 tightening "can mitigate implementation costs".
-- Not the wrong moment. Arguably the right one.
+- No. The storm made it the **cheapest** moment.
+- Headroom is capital above a bank's requirement. The four big banks had about 36 billion euros at the end of 2022; the full buffer of 6.7 billion is **at most a fifth** of that.
+- Bank by bank: Rabobank had 14.2 billion of headroom, ING 12.6, ABN AMRO 7.1, and even the smallest, de Volksbank, 1.7 billion. The first step of 3.3 billion was only 8 percent of the total.
+- And rising rates lifted profits, so banks could build the buffer from retained earnings instead of cutting loans.
+- ECB research agrees: profitable banks and a gradual build-up keep the costs low, also during the 2022 to 2023 tightening.
 NUMBERS:
 - Headroom end-2021 / end-2022 (€bn):
   - ING 16.9 / 12.6
@@ -284,13 +272,14 @@ TERMS:
 - Retained earnings: Profits kept in the bank instead of being paid out.
 NEXT: "And borrowers did not pay either."
 
-## 17 · Borrowers | Diego | 1:15 | 17:40
+## 17 · Borrowers | Diego | 1:15 | 14:40
 SAY:
-- We ran an event study: Dutch lending rates and loan growth compared with five euro-area countries that never changed their buffer (Austria, Finland, Italy, Malta, Luxembourg), around each policy date.
-- How to read it: the red line is the Netherlands minus those countries; zero means no difference. The grey band shows how big differences get by pure chance. We pretend each control country raised its buffer and plot those "fake" effects.
-- Left: Dutch mortgage rates stay inside the band at all three dates. Right: household credit actually grew faster.
-- Honest detail: before 2022 the Netherlands had lagged, so part of that is catch-up.
-- Our claim is modest. With one treated country this is "no sign of contraction", not a causal estimate. DNB's own verdict in September 2026: "no signs of constraints in bank credit supply".
+- We compare Dutch lending with five euro-area countries that never changed their buffer.
+- The controls are Austria, Finland, Italy, Malta and Luxembourg. They kept their buffer unchanged throughout, so any difference is not driven by their own policy.
+- The red line is the Netherlands minus those countries. The grey band shows the differences that arise by chance, when we pretend each control country was treated.
+- Mortgage rates stay **inside the band** at all three dates. Household credit grew **faster**, partly as catch-up.
+- In numbers: Dutch bank credit grew 16.6 percent from early 2022 to early 2026, against 7.9 percent in the euro area. Between 2019 and 2022 it had lagged, 4.3 against 11.3 percent. That is the catch-up.
+- So: **no sign of contraction**, though not a causal estimate. DNB reached the same view in September 2026.
 NUMBERS:
 - Dates: May-22 (1% announced) · May-23 (1% binding, 2% announced) · May-24 (2% binding)
 - Bank credit 2022Q1–2026Q1: NL +16.6% vs euro area +7.9%; 2019–22: NL +4.3% vs +11.3%
@@ -299,13 +288,11 @@ TERMS:
 - Placebo test: Rerun the analysis pretending an untreated country was treated, to see what chance alone produces.
 NEXT: **HAND-OVER:** "So banks and borrowers were fine. What about the wider effects? Zheng."
 
-## 18 · Monetary policy | Zheng | 1:05 | 18:55
+## 18 · Monetary policy | Zheng | 0:35 | 15:55
 SAY:
-- Thank you. First, the buffer did not double the ECB's squeeze.
-- The worry was a **double squeeze**, the ECB raising rates while DNB raised capital requirements.
-- But Dutch lending rates did not diverge from their peers, and bank profits rose with rates.
-- The ECB argues that early buffers "help monetary policy focus on its primary objective of price stability". Macroprudential policy looks after the financial system so that monetary policy can fight inflation.
-- For a euro-area country this matters even more: one monetary policy for twenty countries, but national macroprudential policy. The CCyB is the Dutch-specific lever, and the insurance if a rate shock goes wrong.
+- Thank you. First, the buffer did not double the ECB's squeeze: Dutch lending rates moved with their peers, and bank profits rose with rates.
+- The ECB argues that building buffers early lets monetary policy focus on inflation.
+- With one monetary policy for twenty countries, the CCyB is the **Dutch-specific lever**, and insurance if a rate shock goes wrong.
 NUMBERS:
 - ECB hiking from Jul 2022 (first +50bp) to at least Sep 2023
 TERMS:
@@ -313,11 +300,10 @@ TERMS:
 - Monetary policy: Interest-rate policy aimed at price stability (ECB, euro area-wide).
 NEXT: "Through reciprocity, the 2% also reaches foreign lenders."
 
-## 19 · Across borders | Zheng | 1:00 | 20:00
+## 19 · Across borders | Zheng | 0:30 | 16:30
 SAY:
-- Under EU reciprocity, any foreign bank lending into the Netherlands must also hold the Dutch two percent on those loans. That limits leakage, lending simply moving to foreign banks, a known weakness of national capital rules. Lending can still leak to non-banks.
-- And the Netherlands is part of a wider shift, shown in the table: Germany, France, Ireland and Belgium raised their buffers in 2023–24; Portugal and Spain follow in 2026.
-- In 2023, five banking-union countries had positive-neutral frameworks, and the Netherlands had the highest rate.
+- Foreign banks lending into the Netherlands must hold the Dutch two percent too, which limits leakage to foreign lenders. Leakage to non-banks remains.
+- And Europe is moving the same way: Germany, France, Ireland and Belgium raised their buffers in 2023 and 2024, and Portugal and Spain follow in 2026.
 NUMBERS:
 - Germany 0.75% (Feb 2023) · France 1.0% (Jan 2024) · Ireland 1.5% (Jun 2024) · NL 2.0% (May 2024) · Belgium 1.0% (Oct 2024) · Portugal 0.75% (Jan 2026) · Spain 1.0% (Oct 2026)
 - Positive-neutral rates in 2023: Cyprus 0.5%, Estonia and Lithuania 1.0%, Ireland 1.5%, NL 2.0%
@@ -326,11 +312,12 @@ TERMS:
 - Leakage: Credit shifting to lenders not covered by the rule (foreign branches, non-banks).
 NEXT: "The result for the Netherlands:"
 
-## 20 · Resilience | Zheng | 1:00 | 21:00
+## 20 · Resilience | Zheng | 0:55 | 17:00
 SAY:
-- In 2020 the Netherlands had no capital that was releasable by design. Today it has about 6.7 billion euros, roughly half of the peak losses after the financial crisis, enough to support up to 150 billion of lending.
-- ECB research shows why that is a good deal: raising requirements in normal times costs very little lending, about 0.1 percent per point, while a release in bad times can boost lending by up to ten percent.
-- And its role is growing. The mortgage risk-weight floor expires at the end of November 2026, and DNB says this "underpins the importance" of the two-percent buffer.
+- In 2020 the Netherlands had no releasable capital. Today it has **6.7 billion euros**, about half of past peak losses and enough to support up to 150 billion of lending.
+- It is cheap to hold and powerful to release: research suggests a release in bad times raises lending far more than the build-up costs in good times.
+- In numbers: a one-point build-up in normal times reduces lending by about 0.1 percent, while a one-point release in bad times can raise it by up to ten percent.
+- And with the mortgage floor expiring in November 2026, it matters even more.
 NUMBERS:
 - €0 → €6.7bn releasable · ≈ half of €12bn peak losses · up to €150bn of lending
 - Lang & Menno (2023): −0.1% lending per +1pp (normal times) vs up to +10% per 1pp release (bad times)
@@ -338,13 +325,14 @@ TERMS:
 - State-dependent effect: The impact of a policy depends on the state of the economy (small in good times, large in bad times).
 NEXT: "The price is reliance on discretion."
 
-## 21 · Critiques | Zheng | 1:00 | 22:00
+## 21 · Critiques | Zheng | 0:50 | 17:55
 SAY:
-- **Credibility.** Without a mechanical rule, markets must trust DNB's judgement. That is the classic rules-versus-discretion trade-off: a rule is predictable but can be wrong, as we saw; discretion must be explained every quarter.
-- **Calibration.** Why two percent? ECB estimates suggest 1.1 to 1.8.
-- **Untested.** We do not yet know whether banks will lend released capital or hoard it.
-- **Baseline.** Measured against 2021 rather than 2019, it *was* an increase of 3.3 billion before the O-SII offset.
-- **Same profits, two claims.** The ECB lists the Netherlands among countries that levied excess-profit taxes on banks in 2022–23, partly the same earnings that fund the buffer.
+- **Credibility:** without a rule, markets must trust DNB's judgement, so it has to explain itself every quarter.
+- **Calibration:** why two percent, when ECB estimates suggest 1.1 to 1.8?
+- **Untested:** will banks lend released capital, or hoard it?
+- In 2020 many banks did not use the buffers they were allowed to use. A released CCyB is different, because the requirement itself falls, but that has not yet been tested in the Netherlands.
+- **Baseline:** compared with 2021, it was an increase.
+- **Profits:** the same bank profits were also targeted by excess-profit levies.
 NUMBERS:
 - ECB loss-based range 1.1–1.8% vs NL 2% · +€3.3bn vs 2021 before the O-SII offset
 TERMS:
@@ -352,13 +340,12 @@ TERMS:
 - Excess-profit levy: A temporary tax on bank profits seen as windfalls from higher rates.
 NEXT: "In short, the promise was kept."
 
-## 22 · Conclusion | Zheng | 1:30 | 23:00
+## 22 · Conclusion | Zheng | 0:50 | 18:45
 SAY:
-- **Environment:** a recovered economy hit by war, inflation and rate hikes; credit cold; housing hot, then cooling; strong, profitable banks.
-- **Criteria and risks:** a two-percent normal-times level calibrated on past losses, insuring against shocks no one can forecast. Housing went to other tools; structural buffers were cut in return.
-- **Implications:** cheap, largely a swap, no sign of contraction, complementary to monetary policy, reciprocated abroad, and 6.7 billion euros now releasable. The price is reliance on discretion.
-- The one idea to take away: this was less about *how much* capital banks hold and more about *which kind*.
-- *(pause)* In March 2020, the Netherlands had nothing to release. **Next time, it will.** The best time to fill a buffer is when nobody thinks you need it, even in a storm. Thank you; we look forward to your questions.
+- **Environment:** a recovered economy in a storm, cold credit, cooling housing and strong banks.
+- **Criteria and risks:** a two-percent normal level based on past losses, for shocks nobody can forecast, with housing left to other tools.
+- **Implications:** cheap, largely a swap, no sign of contraction, and 6.7 billion euros now releasable, at the price of discretion.
+- *(pause)* In March 2020 the Netherlands had nothing to release. **Next time, it will.** The best time to fill a buffer is when nobody thinks you need it. Thank you.
 NUMBERS:
 - 0% → 2% · −33 / −47pp gap · ≤ 1/5 of headroom · €6.7bn releasable
 TERMS:

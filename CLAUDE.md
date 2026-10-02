@@ -15,7 +15,7 @@
 - `slides/`: Beamer deck (`main.tex`, minimal academic theme: default Beamer + Palatino/newpx, white, hairline titles, one red accent; 20×11.25cm 16:9). Figures: `python slides/figs.py` (from repo root) → `slides/figs/*.pdf`; build: `cd slides && latexmk -pdf main.tex`. Needs texlive-latex-extra, texlive-fonts-extra (newpx), texlive-pictures; figures use TeX Gyre Pagella. Final PDF copied to `Netherlands_CCyB_slides.pdf`.
 - Speaker script (A4, one page per slide: slide on top, SAY / NUMBERS / TERMS / NEXT below): source `docs/speech_script.md` → `python code/make_speaker_script.py` → `cd slides && latexmk -pdf speaker_script.tex` (needs `slides/main.pdf` built first) → `Netherlands_CCyB_speaker_script.pdf`.
 - `docs/qa_prep.md`: 22 likely professor questions with model answers and verified references.
-- Speakers: Zheng Huang (A: slides 1–8, 17–21), Diego Gutiérrez (B: slides 9–16). Course: Micro- & Macroprudential Management, Master of Financial Technology, Frankfurt School.
+- Speakers: Zheng Huang (pages 1–9, 18–22), Diego Gutiérrez (pages 10–17). Talk limit 25 min (Q&A separate); script ≈ 19:35 of speaking at 120 wpm. Course: Micro- & Macroprudential Management, Master of Financial Technology, Frankfurt School.
 - `docs/03_references.md`: sources in three tiers (verified / cited but unread / unverified).
 - `data/`: BIS data snapshot (downloaded 2026-10-01) and derived results.
 - `code/fetch_data.py`: re-downloads the BIS data to `data/fresh/` and diffs it against the snapshot (`--replace` to overwrite). Last run 2026-10-01: no revisions.

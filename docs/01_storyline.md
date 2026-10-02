@@ -27,18 +27,20 @@ Every content slide carries a small tag in the top-right corner (*Q1 Environment
 - **Action titles:** the title states the conclusion; the body proves it; the last spoken sentence opens the next slide.
 - **Honesty beats:** we show the strongest counter-evidence (housing, slide 7 and slide 13), the noisy filters (slide 9 footnote) and the 2021 baseline (slide 20).
 
-## Timing and speakers (≈25 min)
+## Timing and speakers (25 min limit, Q&A separate)
 
-| Block | Slides | Speaker | Minutes |
+Page numbers are PDF pages (page 1 = title). Times come from `docs/speech_script.md` (120 words per minute).
+
+| Block | Pages | Speaker | Minutes |
 |---|---|---|---|
-| One-pager, prologue and question | 1–4 | A | 4.0 |
-| Act 1 · The setting | 5–8 | A | 4.5 |
-| Act 2 · The decision | 9–14 | **B** | 7.5 |
-| Act 3a · Direct costs (the twist + borrowers) | 15–16 | **B** | 2.5 |
-| Act 3b · Wider implications | 17–20 | A | 4.25 |
-| Epilogue | 21 | A | 1.5 |
+| Title, one-pager, prologue and question | 1–5 | Zheng | 4:15 |
+| Act 1 · The setting | 6–9 | Zheng | 3:00 |
+| Act 2 · The decision | 10–15 | **Diego** | 6:25 |
+| Act 3a · Direct costs (the twist + borrowers) | 16–17 | **Diego** | 2:15 |
+| Act 3b · Wider implications | 18–21 | Zheng | 2:50 |
+| Conclusion | 22 | Zheng | 0:50 |
 
-- **Totals:** Zheng (A) ≈ 14 min, Diego (B) ≈ 10 min.
+- **Totals:** ≈ 19:35 of speaking (Zheng ≈ 10:55, Diego ≈ 8:40), leaving about 5 minutes for hand-overs, charts and pauses.
 - **Hand-overs:**
   - 8→9: "So that was the setting. Now: what did DNB actually look at?"
   - 16→17: "So the decision was cheap and credit kept flowing. But a CCyB reaches far beyond Dutch banks."
