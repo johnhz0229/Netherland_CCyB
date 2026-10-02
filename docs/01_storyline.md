@@ -357,3 +357,32 @@ All numbers come from `docs/02_findings.md` or `data/`. ✔ means verified again
 - Not "no tightening at all": relative to 2021 there was a modest net increase.
 - Not "DNB saw no overheating": DNB called housing "overheated" in 2022, but did not use the CCyB for it.
 - Nothing that rests only on search extracts (e.g. ING's 47bp CCyB).
+
+## Title track (slides as of 2026-10-02)
+
+Read in order, the slide titles tell the whole story.
+
+1. *(title page)*
+2. In 2022–23 the Netherlands raised its CCyB to 2% while the rulebook said 0%. It was refilling a buffer, not fighting a boom.
+3. In March 2020 COVID struck and neighbours released their buffers, but the Dutch buffer was empty.
+4. That mattered because the CCyB is the only layer of bank capital an authority can release in a crisis.
+5. Two years later DNB refilled it in the middle of a storm and against its own rulebook. Was that the wrong moment?
+6. The refill followed the path promised in 2020, one step per year, just as the ECB started to tighten.
+7. By then the economy had fully recovered, but war, energy prices and inflation were darkening the outlook.
+8. In the financial system credit was cold and only housing was hot, and even housing soon turned.
+9. Banks entered this storm well capitalised, and rising rates were lifting their profits.
+10. So why ignore the rulebook? On Dutch data the Basel rule had missed the last crisis and raised false alarms.
+11. DNB used its own compass instead: 2% in normal times, calibrated on past crisis losses rather than on credit growth.
+12. Its stated reasons were recovery, uncertainty and the 2020 promise, never credit growth.
+13. The buffer was meant for shocks nobody can forecast, while the known hot spots got their own tools.
+14. Tested against the evidence, every prediction fits normalisation and none fits overheating.
+15. And the refill was a swap, not a squeeze: capital moved from structural buffers into the releasable one.
+16. So was it the wrong moment? No. Higher rates gave banks the profits to build the buffer cheaply.
+17. Borrowers did not pay either: credit kept flowing and its price moved with the rest of the euro area.
+18. Nor did the buffer double the ECB's squeeze. It let monetary policy focus on inflation.
+19. Through reciprocity the 2% also binds foreign lenders, and the rest of Europe is moving the same way.
+20. The result: next time, DNB can release €6.7bn overnight.
+21. The price is reliance on discretion, and the buffer has never been tested.
+22. In short, the promise was kept: the buffer was refilled in a storm, at the moment it was cheapest.
+23. Glossary *(backup)*
+24. Methods and references *(backup)*

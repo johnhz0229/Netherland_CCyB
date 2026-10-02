@@ -23,7 +23,7 @@ NUMBERS:
 - CCyB 0% → 2% (fully binding 31 May 2024)
 TERMS:
 - DNB: De Nederlandsche Bank, the Dutch central bank and macroprudential authority.
-NEXT: "Here is the whole talk on one slide."
+NEXT: "In short, here is the whole story on one slide."
 
 ## 2 · One-pager | Zheng | 0:45 | 0:15
 SAY:
@@ -40,7 +40,7 @@ TERMS:
 - CCyB: Countercyclical capital buffer. Extra bank capital (0–2.5% of risk-weighted assets) built in good times, released in bad times.
 - Credit-to-GDP gap: How far credit/GDP is above its long-run trend; the Basel starting point for the CCyB.
 - O-SII: "Other systemically important institution". The O-SII buffer is an extra capital charge on large banks.
-NEXT: "The story starts in March 2020."
+NEXT: "It starts in March 2020."
 
 ## 3 · March 2020 | Zheng | 1:30 | 1:00
 SAY:
@@ -64,7 +64,7 @@ TERMS:
 - Release: The authority lowers the CCyB rate with immediate effect, so banks may use that capital to absorb losses and keep lending.
 - Systemic (risk) buffer: A structural capital charge on large banks; not designed to be released.
 - Mortgage risk-weight floor: A minimum average risk weight on Dutch mortgages for banks using internal models.
-NEXT: "Why does it matter *which* buffer you hold?"
+NEXT: "That empty buffer mattered, because not all capital can be released."
 
 ## 4 · The releasable layer | Zheng | 1:00 | 2:30
 SAY:
@@ -82,7 +82,7 @@ TERMS:
 - CET1: Common Equity Tier 1. The highest-quality capital (shares, retained earnings), as % of RWA.
 - MDA: Maximum distributable amount. The cap on payouts that applies once capital falls below the combined buffer requirement.
 - Pillar 2 requirement / guidance: The supervisor's bank-specific add-on (binding) / extra expectation (non-binding).
-NEXT: "Two years later DNB filled exactly that layer, and the timing looks strange."
+NEXT: "Two years later DNB refilled exactly that layer, at a strange moment."
 
 ## 5 · The question | Zheng | 1:00 | 3:30
 SAY:
@@ -96,7 +96,7 @@ NUMBERS:
 TERMS:
 - Procyclical: Policy that reinforces the cycle (tighter in bad times, looser in good times).
 - Basel buffer guide: Gap below 2pp → 0% buffer; above 10pp → 2.5%; linear in between.
-NEXT: "Act 1, the setting. First, the timeline."
+NEXT: "Act 1, the setting. The refill followed a path promised in 2020."
 
 ## 6 · Timeline | Zheng | 1:00 | 4:30
 SAY:
@@ -111,7 +111,7 @@ NUMBERS:
 TERMS:
 - Announcement vs binding date: Banks get 12 months between a CCyB increase being announced and having to meet it.
 - CRD V: The 2019 revision of the EU Capital Requirements Directive; it made the O-SII and systemic risk buffers additive, prompting DNB's conversion.
-NEXT: "What did the economy look like at those dates?"
+NEXT: "By then the economy had fully recovered, but the outlook was darkening."
 
 ## 7 · Macro | Zheng | 1:05 | 5:30
 SAY:
@@ -127,7 +127,7 @@ NUMBERS:
 TERMS:
 - HICP: Harmonised Index of Consumer Prices, the euro-area-comparable inflation measure.
 - Basis point (bp): 0.01 percentage point; 50bp = 0.5pp.
-NEXT: "In the financial system the picture was split."
+NEXT: "In the financial system, credit was cold and only housing was hot."
 
 ## 8 · Credit and housing | Zheng | 1:15 | 6:35
 SAY:
@@ -144,7 +144,7 @@ NUMBERS:
 TERMS:
 - Debt-service ratio: Interest plus principal payments as a share of income.
 - Real house prices: Nominal prices deflated by consumer prices.
-NEXT: "Who would carry the losses if this went wrong? The banks."
+NEXT: "And the banks entered this storm well capitalised."
 
 ## 9 · Banks | Zheng | 1:05 | 7:50
 SAY:
@@ -159,11 +159,11 @@ NUMBERS:
 TERMS:
 - Stress test: A simulation of a severe recession to check whether capital stays above the minimum.
 - Net interest income: Interest earned on loans minus interest paid on deposits and funding.
-NEXT: **HAND-OVER:** "That was the setting. Diego will now show what DNB looked at, and what it was insuring against."
+NEXT: **HAND-OVER:** "That was the setting. So why did DNB ignore its own rulebook? Diego."
 
 ## 10 · Why not the Basel rule? | Diego | 1:15 | 8:55
 SAY:
-- Thank you. Let me start with the rule DNB chose *not* to follow.
+- Thank you. So why ignore the rulebook? Because on Dutch data it has a poor record.
 - The red line is the credit-to-GDP gap, credit relative to its long-run trend. The trend is estimated with a statistical smoother, the Hodrick-Prescott filter. Our own calculation matches the official BIS series almost exactly.
 - On Dutch data, the rule failed three times. It **missed** the financial crisis: minus 13 points in 2007. It raised a **false alarm** in 2012, during a house-price bust, because falling GDP inflated the ratio. And it gets **revised**: 2016 read slightly negative in real time but plus 27 with today's data.
 - Why so bad? Dutch credit rose from under 50 percent of GDP in the 1960s to around 350 percent at its 2015 peak. The filter treats that structural deepening as trend, so once the ratio falls the gap turns deeply negative.
@@ -177,7 +177,7 @@ TERMS:
 - HP filter: Splits a series into a smooth trend and a cycle; λ = 400,000 for credit cycles.
 - One-sided vs two-sided filter: One-sided uses only data up to each date (what policymakers see); two-sided also uses later data (hindsight).
 - False alarm / missed crisis: Type II / type I errors of an early-warning indicator.
-NEXT: "So DNB used a different compass."
+NEXT: "So DNB used its own compass instead."
 
 ## 11 · DNB's framework | Diego | 1:15 | 10:10
 SAY:
@@ -198,7 +198,7 @@ TERMS:
 - Positive neutral CCyB: A CCyB kept above zero in a "standard" risk environment.
 - Peak accumulated losses: The largest cumulative loss a bank suffered over a crisis period.
 - Guided discretion: Decisions informed by a published set of indicators, with judgement, not a formula.
-NEXT: "What reasons did DNB actually give?"
+NEXT: "And its stated reasons were never credit growth."
 
 ## 12 · DNB's reasons | Diego | 1:00 | 11:25
 SAY:
@@ -210,7 +210,7 @@ NUMBERS:
 - 2% step: about €3.4bn (announced 31 May 2023)
 TERMS:
 - Cyclical systemic risk: Risk that builds up over the financial cycle (credit, asset prices, risk-taking) and can materialise system-wide.
-NEXT: "So which risks was the buffer meant to cover?"
+NEXT: "So what was the buffer meant for?"
 
 ## 13 · Risks and tools | Diego | 1:15 | 12:25
 SAY:
@@ -226,7 +226,7 @@ TERMS:
 - LTV / LTI: Loan-to-value / loan-to-income. Caps on mortgage size relative to house value or income.
 - Tinbergen principle: Reach each policy target with its own instrument.
 - Borrower-based measures: Rules on borrowers (LTV, LTI) rather than on bank capital.
-NEXT: "Now we can test our two suspects."
+NEXT: "Now we can test the evidence against both readings."
 
 ## 14 · The verdict | Diego | 1:30 | 13:40
 SAY:
@@ -244,7 +244,7 @@ NUMBERS:
 - House prices +10% y/y (DNB, Mar 2026) · CCyB held at 2% since May 2024
 TERMS:
 - Phase 3 ("increased risk"): The framework phase in which the CCyB goes above 2%.
-NEXT: "Here is what that last row means in euros."
+NEXT: "And that last row tells us the refill was a swap, not a squeeze."
 
 ## 15 · A swap, not a squeeze | Diego | 1:15 | 15:10
 SAY:
@@ -262,7 +262,7 @@ NUMBERS:
 TERMS:
 - Structural buffer: A capital charge for permanent features (size, interconnectedness), kept through the cycle.
 - UK approach: The UK offset its 2% neutral CCyB by lowering Pillar 2A and resolution requirements.
-NEXT: "But even a swap has a cost, especially in a storm. So, was it the wrong moment?"
+NEXT: "So, was it the wrong moment?"
 
 ## 16 · The twist | Diego | 1:15 | 16:25
 SAY:
@@ -282,7 +282,7 @@ NUMBERS:
 TERMS:
 - Headroom: CET1 capital above the bank's requirement (its MDA trigger).
 - Retained earnings: Profits kept in the bank instead of being paid out.
-NEXT: "Cheap for banks, but did borrowers pay?"
+NEXT: "And borrowers did not pay either."
 
 ## 17 · Borrowers | Diego | 1:15 | 17:40
 SAY:
@@ -297,11 +297,11 @@ NUMBERS:
 TERMS:
 - Event study: Tracks the difference between treated and control groups before and after an event.
 - Placebo test: Rerun the analysis pretending an untreated country was treated, to see what chance alone produces.
-NEXT: **HAND-OVER:** "Cheap, and credit kept flowing. But a buffer reaches beyond Dutch banks and borrowers. Zheng."
+NEXT: **HAND-OVER:** "So banks and borrowers were fine. What about the wider effects? Zheng."
 
 ## 18 · Monetary policy | Zheng | 1:05 | 18:55
 SAY:
-- Thank you. First wider implication: monetary policy.
+- Thank you. First, the buffer did not double the ECB's squeeze.
 - The worry was a **double squeeze**, the ECB raising rates while DNB raised capital requirements.
 - But Dutch lending rates did not diverge from their peers, and bank profits rose with rates.
 - The ECB argues that early buffers "help monetary policy focus on its primary objective of price stability". Macroprudential policy looks after the financial system so that monetary policy can fight inflation.
@@ -311,7 +311,7 @@ NUMBERS:
 TERMS:
 - Macroprudential policy: Policy aimed at the stability of the financial system as a whole.
 - Monetary policy: Interest-rate policy aimed at price stability (ECB, euro area-wide).
-NEXT: "Second: borders."
+NEXT: "Through reciprocity, the 2% also reaches foreign lenders."
 
 ## 19 · Across borders | Zheng | 1:00 | 20:00
 SAY:
@@ -324,7 +324,7 @@ NUMBERS:
 TERMS:
 - Reciprocity: Foreign banks apply the host country's CCyB rate to exposures there (mandatory in the EU up to 2.5%).
 - Leakage: Credit shifting to lenders not covered by the rule (foreign branches, non-banks).
-NEXT: "Third: what the Netherlands gained."
+NEXT: "The result for the Netherlands:"
 
 ## 20 · Resilience | Zheng | 1:00 | 21:00
 SAY:
@@ -336,7 +336,7 @@ NUMBERS:
 - Lang & Menno (2023): −0.1% lending per +1pp (normal times) vs up to +10% per 1pp release (bad times)
 TERMS:
 - State-dependent effect: The impact of a policy depends on the state of the economy (small in good times, large in bad times).
-NEXT: "Fourth: this is not a clean win."
+NEXT: "The price is reliance on discretion."
 
 ## 21 · Critiques | Zheng | 1:00 | 22:00
 SAY:
@@ -350,7 +350,7 @@ NUMBERS:
 TERMS:
 - Rules vs discretion: The trade-off between predictable formulas and flexible judgement (Kydland & Prescott 1977).
 - Excess-profit levy: A temporary tax on bank profits seen as windfalls from higher rates.
-NEXT: "Let me answer the three questions."
+NEXT: "In short, the promise was kept."
 
 ## 22 · Conclusion | Zheng | 1:30 | 23:00
 SAY:
