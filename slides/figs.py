@@ -343,6 +343,88 @@ def fig_resilience():
     save(fig, 'resilience')
 
 
+# ---------------------------------------------------------------- 12. appendix: the verdict table, row by row (slide 14)
+DEC = [pd.Timestamp('2022-05-25'), pd.Timestamp('2023-05-31')]
+
+
+def _ccyb_series():
+    # announced rate path (ESRB/DNB): 0% until May-22, 1% announced May-22, 2% announced May-23
+    idx = pd.date_range('2019-01-01', '2026-06-30', freq='D')
+    s = pd.Series(0.0, index=idx)
+    s[s.index >= DEC[0]] = 1.0
+    s[s.index >= DEC[1]] = 2.0
+    return s
+
+
+def _style(a, title):
+    a.set_title(title, fontsize=8)
+    for x in DEC:
+        a.axvline(x, color=GREY, lw=0.7, ls='--')
+    a.set_xlim(pd.Timestamp('2019-01-01'), pd.Timestamp('2026-06-30'))
+    a.xaxis.set_major_locator(matplotlib.dates.YearLocator(2)); a.xaxis.set_major_formatter(matplotlib.dates.DateFormatter('%Y'))
+
+
+def fig_verdict_a():
+    gap = pd.read_csv(D / 'nl_gaps.csv', index_col=0); gap.index = qidx(gap.index)
+    dsr = pd.read_csv(D / 'nl_dsr.csv', index_col=0); dsr.index = qidx(dsr.index)
+    tc = pd.read_csv(D / 'nl_tc.csv', index_col=0); tc.index = qidx(tc.index)
+    fig, ax = plt.subplots(1, 4, figsize=(7.3, 1.75))
+    c = _ccyb_series()
+    a = ax[0]
+    a.step(c.index, c, where='post', color=RED, lw=1.9)
+    a.set_ylim(-0.2, 3.2); _style(a, 'CCyB rate (announced), %')
+    a.text(pd.Timestamp('2019-02-01'), 2.55, 'two steps of 1pp,\na year apart,\nthen held at 2%', fontsize=6.6, color='#444', va='center')
+    for a, s, title in [(ax[1], gap['gap_bis'].fillna(gap['gap_hp1s']), 'Credit-to-GDP gap, pp'),
+                        (ax[2], dsr['H'], 'Debt service, % of income'),
+                        (ax[3], tc['H'], 'Household debt, % of GDP')]:
+        s = s.loc['2019':]
+        a.plot(s.index, s, color=NAVY, lw=1.6)
+        _style(a, title)
+    fig.tight_layout(w_pad=1.6)
+    save(fig, 'verdict_a')
+
+
+def fig_verdict_b():
+    spp = pd.read_csv(D / 'nl_spp.csv', index_col=0); spp.index = qidx(spp.index)
+    r = pd.read_csv(D / 'nl_macro.csv', index_col=0, parse_dates=True)['dfr'].dropna()
+    fig, ax = plt.subplots(1, 3, figsize=(7.3, 1.8), gridspec_kw={'width_ratios': [1.15, 0.85, 1.2]})
+    a = ax[0]
+    h = spp['N771'].loc['2019':]
+    a.bar(h.index, h, width=70, color=[RED if v < 0 else '#B9C3D6' for v in h])
+    a.axhline(0, color='k', lw=0.5)
+    _style(a, 'House prices, nominal % y/y')
+    a.annotate('2023: falling\n→ DNB raised', xy=(pd.Timestamp('2023-04-01'), -4.0), xytext=(pd.Timestamp('2019-03-01'), -6.5),
+               fontsize=6.8, arrowprops=dict(arrowstyle='-|>', lw=0.7, color='#333'))
+    a.annotate('2024–25: ≈ +10%\n→ DNB held at 2%', xy=(pd.Timestamp('2024-10-01'), 10.8), xytext=(pd.Timestamp('2024-07-01'), 15.5),
+               fontsize=6.8, ha='center', arrowprops=dict(arrowstyle='-|>', lw=0.7, color='#333'))
+    a.set_ylim(-9, 21)
+    a = ax[1]
+    rr = r.loc['2021-06':'2024-06']
+    a.step(rr.index, rr, where='post', color=NAVY, lw=1.7)
+    a.axhline(0, color='k', lw=0.5)
+    a.set_title('ECB deposit rate, %', fontsize=8)
+    for x in DEC:
+        a.axvline(x, color=GREY, lw=0.7, ls='--')
+    a.text(DEC[1] + pd.Timedelta(days=20), 0.3, '2% announced:\nrate at 3.25%', fontsize=6.5, color='#444')
+    a.xaxis.set_major_locator(matplotlib.dates.YearLocator()); a.xaxis.set_major_formatter(matplotlib.dates.DateFormatter('%Y'))
+    a = ax[2]
+    # systemic buffers of the large banks, % of RWA (docs/02_findings.md, section 0a)
+    banks = ['ING', 'Rabobank', 'ABN AMRO']
+    vals = {'until Mar 2020': [3.0, 3.0, 3.0], 'from Mar 2020': [2.5, 2.0, 1.5], 'from May 2024': [2.0, 1.75, 1.25]}
+    cols = ['#B5B5B5', '#7F93B8', NAVY]
+    x = np.arange(len(banks)); w = 0.26
+    for k, (lab, v) in enumerate(vals.items()):
+        a.bar(x + (k - 1) * w, v, width=w * 0.92, color=cols[k], label=lab)
+        for xi, vi in zip(x + (k - 1) * w, v):
+            a.text(xi, vi + 0.05, f'{vi:g}', ha='center', fontsize=6, color='#333')
+    a.set_xticks(x, banks); a.set_ylim(0, 4.4)
+    a.set_title('Systemic buffer by bank, % of RWA', fontsize=8)
+    a.legend(frameon=False, fontsize=6.3, ncol=3, loc='upper center', bbox_to_anchor=(0.5, 1.0), handlelength=1, columnspacing=0.8)
+    fig.tight_layout(w_pad=1.6)
+    save(fig, 'verdict_b')
+
+
 if __name__ == '__main__':
     fig_gap(); fig_indicators(); fig_event(); fig_headroom(); print('swap', fig_swap())
     fig_releases(); fig_macro(); fig_banks(); fig_rates(); fig_europe(); fig_resilience()
+    fig_verdict_a(); fig_verdict_b()

@@ -339,3 +339,28 @@ NUMBERS:
 TERMS:
 - Two-way fixed effects: Regression with country and time dummies, so differences are measured relative to common trends.
 NEXT: Back to the question.
+
+## 25 · Appendix A1: verdict rows 1–2 | both | backup | Q&A
+SAY:
+- (Only if asked about page 14.) The left panel shows the path: two steps of one point, a year apart, then held at two percent, exactly as normalisation predicts.
+- The other three panels show the credit indicators. Between the two announcements the credit gap, the debt-service ratio and household debt all fell, so the buffer did not follow credit.
+NUMBERS:
+- CCyB announced: 1% (25 May 2022), 2% (31 May 2023); held at 2% since
+- Gap −33pp (2021Q4) → −47pp (2022Q4); household debt 107% (2022Q1) → 100% (2023Q1) of GDP; debt-service ratio 14.6% (2022Q1)
+TERMS:
+- Debt-service ratio: Interest plus principal payments as a share of income.
+NEXT: Return to page 14 or 15.
+
+## 26 · Appendix A2: verdict rows 3–5 | both | backup | Q&A
+SAY:
+- (Only if asked about page 14.) On the left, house prices: in 2023 they were falling, yet DNB announced two percent. In 2024 and 2025 they grew about ten percent a year, yet DNB held at two percent.
+- In the middle, the ECB deposit rate stood at 3.25 percent when the second step was announced.
+- On the right, the systemic buffers of the three large banks were cut in 2020 and again in 2024, which is what normalisation predicts.
+NUMBERS:
+- House prices, nominal y/y (BIS): −4.0% (2023Q2); +10.8% (2024Q4 and 2025Q1); +5.1% (2026Q1)
+- ECB deposit rate 3.25% on 31 May 2023
+- Systemic buffers: ING 3 → 2.5 → 2.0%; Rabobank 3 → 2.0 → 1.75%; ABN AMRO 3 → 1.5 → 1.25% (until Mar 2020 / from Mar 2020 / from May 2024)
+TERMS:
+- O-SII buffer: Structural capital charge on systemically important banks; replaced the systemic risk buffer from 29 Dec 2020.
+NEXT: Return to page 14 or 15.
+
