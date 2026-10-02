@@ -33,14 +33,14 @@ Page numbers are PDF pages (page 1 = title). Times come from `docs/speech_script
 
 | Block | Pages | Speaker | Minutes |
 |---|---|---|---|
-| Title, one-pager, prologue and question | 1–5 | Zheng | 4:15 |
-| Act 1 · The setting | 6–9 | Zheng | 3:00 |
-| Act 2 · The decision | 10–15 | **Diego** | 6:25 |
+| Title, one-pager, prologue and question | 1–5 | Zheng | 4:55 |
+| Act 1 · The setting | 6–9 | Zheng | 3:55 |
+| Act 2 · The decision | 10–15 | **Diego** | 7:10 |
 | Act 3a · Direct costs (the twist + borrowers) | 16–17 | **Diego** | 2:15 |
-| Act 3b · Wider implications | 18–21 | Zheng | 2:50 |
-| Conclusion | 22 | Zheng | 0:50 |
+| Act 3b · Wider implications | 18–21 | Zheng | 3:55 |
+| Conclusion | 22 | Zheng | 1:05 |
 
-- **Totals:** ≈ 19:35 of speaking (Zheng ≈ 10:55, Diego ≈ 8:40), leaving about 5 minutes for hand-overs, charts and pauses.
+- **Totals:** ≈ 23:15 of speaking (Zheng ≈ 13:50, Diego ≈ 9:25), leaving about 1.5 minutes for hand-overs and pauses. At a natural pace of 130 words per minute it is about 20 minutes.
 - **Hand-overs:**
   - 8→9: "So that was the setting. Now: what did DNB actually look at?"
   - 16→17: "So the decision was cheap and credit kept flowing. But a CCyB reaches far beyond Dutch banks."

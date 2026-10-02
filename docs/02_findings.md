@@ -427,3 +427,10 @@ Rate in force → new rate, by announcement date:
 - Slovakia: pending 2.0% cancelled; 1.5% kept, then cut to 1.0% from Aug 2020
 
 The UK is not in the ESRB table and is therefore not quoted.
+
+**2026-10-02: macro series for the slide-7 chart (ECB Data Portal, `code/fetch_macro.py` → `data/nl_macro.csv`)**
+
+- Dutch real GDP (MNA, chain-linked, s.a.), index 2019Q4 = 100: 101.8 in 2021Q2, 103.7 in 2021Q4. In the current vintage GDP is back above its pre-COVID level in 2021Q2; CBS's first estimate (Nov 2021) dated this to 2021Q3. The slides therefore say "in 2021".
+- Dutch HICP inflation: 2022 average 11.6% (matches CBS); peak 17.1% in Sep 2022.
+- ECB deposit facility rate: −0.50% until Jul 2022, 4.00% from Sep 2023 (fourteen months).
+- Slide-18 chart: Dutch MIR mortgage rate vs the average of the five clean controls (AT, FI, IT, MT, LU) and the deposit rate, from `data/ecb_mir_bsi.csv`.
